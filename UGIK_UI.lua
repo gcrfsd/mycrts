@@ -1,1 +1,1181 @@
-return(function(...)local V={"I`natj@.V]dt@\"","I\'n3\\<IOgT8<+/2M";";ZJuX+lE9";";c47MYb==";";/c0ISndj",";Kd/7oj==";";EN8O1py3VM==","Ii^lH,f9\\e","IV\"$8\\",";3T/mDmYm9HnKQ7Wu";";NY5HHj==","Irrmr=W2Tnlj`b","IWhH,M%-dS.>\'_d*Fm";";FcHoEKhYH9qZD5RWtM==";";/cBKcqu+ZCj8WjvwtYjN";"I;rip&FtTf#dD";"IF4-5,";";AbGkQjy=","I-UB:/.D";";huC5XSF=";"IQE\"m4";";6uwBxg+0UvL=";";wFCsA/o6mOT=",";yJ8sOeuY5b==";"I<_=AG;;%FacA#^^","IqHlLj","I\\,+i5l\"0$";"IpR(gFHLMu/XeN$6#`Fq";";cAfrE7/=","I$0*W7\\%C;";"I&7b]aYtWXQ";";4epJvKyd",";6OGwKfiV5m==","ISWB$YefgL=Wnh0","IdkN>p_0PZ","I-mqfa";"IGBnKfGt,kepHt4ohsF";";yGcNk0Fd6gj=","IRc8Vch8J";"I#\\H[\"MG]","ItJ\"f7SsHJGtn\'__gTKLM";";VPNqwb==";";4TkUDZC2Iph=",";BTGxKmQuz+Tq4e/f5b==";"ItdbilG?(=FiA)Y><]i&fM$;64MQ`";";ZbVnLe+EGBUijEm=","IKIcNY$ph9J";";+mp4","I;/^YM0$sH";";dCD6N0Qd","I2\\";";Ict3IkbzP/nYMNul";";Q3wroOKW";";Bcdvd5Ag";"IGdQk[c$Gj.70jaE:lO2%","IdprDa+jL","I.D^$,d$a","Ij36PKpAd";"I7LA4fO-Tdhft]",";r68pgU+v/j==","I5qUOop+$%7=S](9";"IMqfiFj)I","I%mQJQ\'(a1#QcF50lCu]",";Dj==",";auqpqj6lZr/=";"IVe7;a@`<","I_u1J_IE@#";"IT8`^(",";L2NHqFM=","ISQdt<Rf6#,f8\"b0DQj";";Uop4dKwBavHLQjgm","ID>3,k9dSqi#4q=_D=\\",";KiCtGm==";"I&s5.fTM";";msgiDJ8=";"I_[fK",";PHSGZb0AjU2PPb==",";hLBeq4J4M3bMwSEdtj==";"IY+ia5IZ8_@REkQ";";NpenaM==";";VA49iM==";";HKp85t+ZoM4VNw8=",";E90NjPY3";"IDjiY^R1fJ`477>(en\\","Iq()AU\'Y!YFqXc";"IO):Zjmf?(l7IKY)#8h36","I0Lm[RdkP";";FHr1/uYW";"I=D8u!";"ICq=XDZ2J",";QMY/Iy1dPdpjHKp0ybE2+4PKidgffM==",";Acy8a0hv",";ELnxa3zK";"It81[0jdr;=6>N";";sgbJhgh=","I=$-q3VJi.@";";jxiWLcX1EH32Dj==",";Bdv0zxoZ";";yXyFRuP0jGwjjSIU";"I@Is8@#dY&K@S+\"eq`";";X8f0DvRPGdC+";";L0TNGj==",";cCgpLzRyvb==";"IH:",";Cgvs";"IW2rNPe3)]I[GU`";";EMSQsry=",";hWP1sBJs";";a5jw";"It$HZ?iO*]6k^$h]5^";"It$UtDK0_-pC/(rKm5ZUZ","IUkpo)-uZ1cMI:`=kI\'Tm_Mh";"I+0@=H,_(7fo2s@";";aO7QUm==","IS@OuS##4F:",";ihA+ocChOztZDk+tIHFA";";48klaM5uMM==","IA/rZ";";XM4XBMN5",";3ewJJjxYUl0J3WX320/=",";Rm==","I,S\"\\";"I&^#bcct4UK1Mc","I\"2:<Uk8QI<[tTAc5s)\"hDWV3768U","I;G;6:^a/6O",";Aovx2EfQ";";8BgrNGl8Dn/Zyb==",";RzXMMAQqKvxXKZMyEM==",";kjs/d7Rl41C=",";ow6apSdtqcCt4M==";";5xRV",";3tpKvfz27GlZlLQD","I\"D6F1YEg#o/`TEHcLl";";SSLw6PSbUyio7d3LjhE=","IhR0,m#,3-nl4A8r";"I`PJb*V=GqS=Hl@h","I$\'nHG";";kicJLBUD";"IUBG/\\B.\'";";QvzIRc8c",";tjsxQj==","IKef>Kcu8sEX#1K";"I=9-M`-01",";MtXCHyxYmppZqM==";";ZDwLHRU5dqVYgb==";"IZVr/dtjKBq",";mYbPMJNapZB+Fb==";"I4pTP`+f";"IDDl3Q>/";";9vugttdA5M==";"I*I0l";"I0QG%\"","I/::nC1oQ@b2TmgN\'\"CCU","Il,MVmhsF",";ozMz";"IlL#)XM?CQIT\"9[#WY>","InCRl$9Y^;M","I\"iRe0,I?o&5u-",";iEYhLSmPqle4";";g0Kigk/V";";HqRLQ2KbNM==","Imq6LM",";1Z1+jF+Z","IN17KCGDe";";8BUHn92qvBjIsXPZP4C3OM==";"I`p2.S3Qg]\'4@:";"I51Q[C",";cO6/FQlH","IbtKM3";";KnvZa5h=","Is3tE.MINL:lO\"\"F/#","IqCm3Z","IHs-Z)k1L";"I[..>";";a2raQXEX7M==";";v2KJhlsa6j==";";XaB+JEFedu9mffOi","IjjI,j&h","IO\'0XSLr9","IHMdmjpLD-\\Ip+dT4Cr","Iesprm<W4kDS1/L=\'1#\'@","Ig+aH!u4J4Ytq\\","IWor3*&h";";N84qKmxMo4ZSuM==","Im:",";24LEKM==",";+jvXnM==",";KOsB";";FpzuEb==";";zzJFzUSCTtYV";"ItJ?k&.+$<D:Xt\"a$D,I","I)=\'/)1K&C8N]b5liLH?b";";qwTlpgax",";gIQNPb==","IRNGambU$)d",";NEFC800g";";ov7i","IcJ(;a.Xa9?";"I.(McZAjU-AT8m","IqXt:J7]KC&";"ITucst=UWAD/K:u(D;mB";"I:k.O_aFPM>!WV!.4Yj=FiQ@d__mb",";t91NQIp8";"I[lI5d&h",";cIfB6+hBx2deIb==","IT3cU?cH8\'";";QUPTJHj81nBjOm==",";Riw00CL=";"IT5[%%4W@[";"IZo\"OI","IL%K2`<9/0JBVtq<brfK",";MKbkTrO52VSy",";udWhPEmY3Im=",";Mj==";"IM6M,_";";LtEnkb==",";8dHu7ANASIy95MpnTj==",";IWoZzIH9lxvqJxT=";"ID<ONpQdQF7lUJl","I>?PW";";JquKFiUZiSEBum==",";g1nAQ8anFnsEtj==";";fxwK";"I6?S\\(eT1&",";djvmzNWQ",";DwZ0b3FKozDhU2b=","I78","I:G\"*q\'Gr^23Wc(R",";sL/eqZsyPb/eYC/ORUH8Ub==",";WMvRY9hiXm==","I_TuT0j?^";";yKsppbZ3Oum=";"IIB2+q5I@/O\\gWc*]hdd9";"I@Rr",";VNWqfrcfwChltC0fecxCLsCtoKZWQM==","IJtj5";"I+^hF)",";ah+b";"ILW(1","IPeb!Tb+d=O=ZoWM";";CsKq","Ifl+t$+mRSp)16",";jHQJautBcm==";"IKM_5WK9,6!XAW";"Ie=I01C:>",";7+AScGIKDt2V/M==";";5HYfkdvo";";t+iJQ5dvvj==","I>/.4Clfq";";xNT0hNrJhZid7m==","Il5/dn",";Idz8S8T0","I%_<if_W0\"c";";FdXK","IcaL-@I<-\\EG,_^n9M?6DDO";"IId%q3pIO";";JdNsAzw8Sm/cE3ju3JFM";"IOY!\\sua";"IiVgJ6O[Xja\"`nIe^<G!1";";D07CvDGyDLYhoj==","IY#JC.u%s%BWm";"IfLZKq",";wvfr3iYZ",";RdphxlDVirn8M7IVt4gBsm==";"IN!#Z\\j0","I`2[MAHd[",";lOyUsfM=";"Ig:T]g,I",";5zk4","I:\'J463ej,";"IO.*3[Q?!tQ3W/";";hWy=";"I)9MBB";"IT4&Nhfu.p>&hEi";"IZuGk";";J2YTOKibenm=";"IHgpa7FJ,)3.A$",";Cszhe9C=",";V8WpPYmXR4Mx1JfXKmS=";";PRc2RvSNNm==";";Ufr7MauoH5aqXDWo","IU7:I";"IVU$tVu-KQ+";";yjivHgYoBM==";";3M==",";ZZVyQIlr8m==";"IWUO9p";"I,:_(Ha\"t)o;ZMX?gkFq";"IT/3J",";dal+1wL=";";LTD93m==","I$&-$Fe0]f5Pn7iFJ&&MH-K4*";"IBf9sIH4pPtD;q";"IGLP*1=?gs,@KEgX/#";"I,$qGdfe[CdP2D";";w7ZMAOtgL8tx";"IJqLV&";"IqD",";ATbIpEAyR/S3BM==";";TAnkoj==",";4oT/ub==","I0A2g<pb@=B!r";";i5xfifp=",";DI6ENqg5tEAHwm==",";OBmfir3MhbCsSj==";"I[\\7bPh*DPXl%2",";FkjgIm==","I[*n&+DAr+";"ITa>Ok16\\mkb.i",";cGv69+tn/YTQgZY2W9tZrj==";"ITWc7=c_5k;",";XdHA3XfIiEIVMRMGUXSf";";CCeqOnqOZwiuyM==";"Ic-o<65WqD2<f,LS%:tiK",";++Oben8=",";6YdWG5QKTr9GTtfK6JCzGb==","ID\\DP@","IDZp&p";"I<P[TXPg\")[[:`9LDG?";";xBT3OV9j4xeoZb==",";pAvRiSO9bBaniARbLm==";";RATyniC=";";/5qHO8gC";";zCAuZm==",";jBogJgM=";";BhJHhxBTWE8bvMDMfSNC",";SKq9Km==";";+CBewz5q","I#0Y8f",";j6V0PTv0mj==","I\"md4ifL","IafLhAmO#",";cvmvzxZPRSpiykrhtoWBCM==","I;@A#.?Q",";/Jlw";"I\"H#-[N5hQ2N65LKI6\\^";";Cyhkkj==";"I_l4\"#X!$sgMVR";";kjS9dCy=";";9Vn+",";JtM1YXB=","IHTD!/u\'m5";";c20gy3tMLUfALb==","IBaQj0Ggf*qA=P192\\","IW_?\'Z39Z7";"IJNIKF#u5I","Ih,=u.!3UVQBE[>";"ID4/$T";"Ip,LO!TG-ik=LGS","I0U+<AGJ6";";t1yig+2TOPK4","IWo9L:";";2Uie5Pf4SkHO00IiGyL=";";JOi/NwXcBbzR03TmKYHc";";8mnbOkekCupof26a","I<Q^C>\\Q!?_H8f";";msZOnoon/5FWpM==";"Ih$@JoYfj","I>(X1SoLG";";+fxiGM==";";zWtkMa8=",";VLZZzBm2CBbosSG3",";IcFGut/4vNC=";"ITQbUl";"I#__i47%b,^2NX,Ht#)",";Fg0H8zKK","I?dmS1\\k4s";"Ie]r6>Yq\\8^Ma6]$0<A*","IQ%+lSh^6A/";"IsG,Hn","Iu*#*04(ZDl_8+";"I?XES9.l5","I/]5kGWH`";";Gm==",";LcEHfP/h9iSmem==";";bsDFdmh=",";W/PHrAcK0Ispx8vA5Tb=";"IFhMu)","IuFl*]l[rH";"IA^HEhoCf";"I\"<&3WqC\\3\"mptjsp?`aItSkET`In";";cm/38pyxSk/=";";MjyKPZqX","Il:MIMf8";"I.A;lb)QA","I2i:/3k\\/4";"IgC[N_S+]",";PFhGZAA85/da3Tzj";"I`VMDn$^";"IrTDcL\']L3Dh2s",";CE7xcHIT",";shhcb75s",";8RLjF6v7gPpu2x78JzeGqb==";";lm==";"I>fR)WAn$$pgcg,U",";8heH95TefugMBj==";"IZuR%7)lYc8kK_G","I3%NDMlN72";";PjruZF3v";";+5NmDc7U5M==";";CMizHm==";"IQ^#i$GZTT0k.M",";1d5Cpkr80FxA2Aj=","I$XtqS?\\HU\"J<[J","IC+A!(m7h79F``W&r;\'",";HaX3";";1j==";"IsZ]GF?-HR+Ga",";gDKy";"ItR8o(",";nrCS11LtLbRBUb==",";dpBFF80TbHS=";";Fq//";";MFxGPY1YPxrkIIpsgb==";";+8hCpc3ijnprA3IM";"IYO6PpS:_^","In^jN)$sdR3WLkL4eTo!nLH,(",";Y+imQ2S1KfEYkb==","IL\"/i;-X-;1<N`";";647bsFI8";"IoZ1_[g\'O";";6dpp";";oN9JqxOZMm==","Ih*\"4coZ,&?q>C<)Vj=@";";Qd2m/52GaqBA4+rZf+Md0j==";";GbL5+joeyAxY8yJB8j==";";Vj==","IjAs&otG)",";osiIFGZoz7B=";";iWFmwVp/kw7G";";hYDJFqEX";"I\'LooWd7e7W+Mnf!";";eAalZm==";"Ip2s#jC_r";"IOK^gZfl\"PU",";0j==";";E1C1cJMRan9EhtrVt/kzf3jKYZIpyj==",";ZZKAYeT=";";vlFwcYofROh=";"I3sN@NQf";"Ik>_d@CB4\'($:Y.","IAl*B:A<^@.";"IWITs.Xto";"IT`<+:NO@";"Ik,Oa";"Il=X7W]s`I&Ak7B",";4uJZ79EsHm==";"I`NId",";3zMwSKCJQpBR3Sh=",";lFDTKcBS","IcrN4a2[Us2GN#tmZfl(_";";oWCXKM==",";zywIiffj",";yRw5kJ07a9C=","IZ9pR#h(,6qD\\jru4M3",";RA5fjCrG/wNAPm==";";5+ZeBm==";"IN2\'$Y3$^";";ujKkwBU+";";Cm==",";AK00wdk0sERomyc+Wnh=";";QPF0";";/EnuRm==","I/QWqV_H;;ae5eLqY5ID6";"IRi&=>2!<q";";wYGpkUNmsyE=","I4@dJ\\";";Xibr/pj=","Ih-3H<KJ@%X";"Ih7";"If8L#Y";"I]S!,Fen","I3R",";eGecPDdORo2e/81pYfS=","IrV#(OhM*","Ic.8V6$eC];",";iezAWM==","I0Q^TPj9j","IiM\'p\\I&[";";NJ9s1PPx";"I*^TY(_ohX";"IHkA5@-XM*\\1)XM";"IhK:-.","I^<cOIo$QN13WaC7";";oU9tLmchB0j=";";Gw1aZZj=";"I@Y;TM:.6\\",";97T2deBMRb==",";K2Gefl/i","Im7qi+*\"6OK!%WtI1f+\"";";bHwXbM==","I\"dbi5",";0bEAzS8=";"Ir<@M>MpR^?F93=","Id7bID/7niL/0L";"I#ZaggXK","Ikfa6cCoV",";NUuu";"IH-cB2itF";"I)4V<sJ>CB!Ut]R:",";q1jITW8xodb=";";HfPoGZPDRwm4BDFip/yP3b==",";vujvwb==",";bKz0FstJ","I6D.;.OXD";";WF9rZZwq";";7f9Dsnb7Imnl4j==","IN^\'cN)[O7f";"I5`*1Rl9f";";iDspXJlxraPpQ4Sehcy=","I(,@r3Z1RIoii*_nt`NX/n\\B@";"Ip/>JI0SW";"IJYGjM","ID2+mU^8YP]n!\'eJX3+N^i72;";"IBKHo:bD;]U_Dgq<qD","I#7:XK9o-W","I>HW?6",";c+vsRGuZR9eJsSUww65MOcboHxDjHm==",";LcLcRM==","I5er%G_68bOf1U",";bT0O3M==";";zdgQJsp=";";zDV7","Ij7<LOg`bgnC\'S",";JB1fYoiBdkcsOzav","I$Jn1a0;lDf_u.YpA=",";wYtXMCY67M==","IaA:j",";zGrkWbSo4/y=","Im??;<Tj","ICM]1X/V7o","I>e<bN:)S1F>*\\cj";";Uv/G1KIY";";N6qZWP8cuk6p";";mOq4zCg8vVb=";"I=gO9Pdo\"";";p8dV6c8SDOM=";"IsgCaZlT[s+,1?4_Q$u#=DfR+pG3d";"I<$\\\"[LsG";"IrotP5OsW_ISf+7/",";V2sbwM==";";T1RT/r27qHp=";"ITX^@B<sJ1EMJ<^4","IZReSXRp0NEd/\\+";";09LGN+urfjb=","IBCUZ;";"I\'[<t<hmk4u";"I$>CH*O/b";"I.2Y.1Fm";"IY)\"02\"To\"V",";CekRGogz",";NXOYUnGL";"I7V6Vg-r>","IK1fYI[8:","I=Hh]k>\'%6";";/LJ/zj==","IqBSgOSs=cn.H2@.M0",";z26nkaU+DpahBJ4wuYip",";GtzJ+nC5qWmxz666+dkZISC=","IoJ*[UD^i?h2W&!AFX+W=";";E8RJm16r";";oLyS";"InQ#gO!2;Bpj+pMks4>9f",";zNY+FAXL",";FCjBbPwS";";ddqulcPR",";AVCb+SB42m15";";OM1WSb==","I@;hgt\\7";";PSkYLSJj","ItXcS_[g8","I\\4",";+lmOlPwHxePwRlz8",";Jm+LDM==","INhOGi";";NdwsLM==",";vtZXxFFv",";rUmE3cJ9";"I4\'3fU",";Ph8GXM==","I\"UZa`N8_`9?r";"IT\"as5Bo3AYUS1?","I+^3\\q";";4WS9tl+m77hmZmBL23gMdnLsLA/7kj==";";mz6n78W0raZiMm==";";gbeAazuIHM==",";rZ6afv2x",";UtpzsQjGxp8=","I,\\)>Q,du]9a[A.";"I#J\"","I5\"O!ucTp2D5,L";";aIca/mUcNhB1siW+lrg27M==";";jI9xUOSxoYlSEny8mOU/i2DMaM==",";Eaai0M==",";z4nmUb==";";AE26gpv3c7XeKz9T",";7zU/idl+g/USC3FamScIPm==";"IuR4%]l/J%hX5J-",";6fDAhcSltbGiyDgH4m==","IRBBn";";ecw0nE8vVpw/8m==",";F+540IS=","Ilu8B\\$Q#","I)\'";";ePKtb4R6rAczjkSQSMgwT0VANzT9rb==","Id8";"I!*reOc[GHueZQW_",";HGx4BM==","Iq6F8GJL!";";gPPjTufEXZI5jPq8mM==",";syJjGlH8","I1Lf(Co\'T_(Cg8ZocBi&V";"IXDe=nR`h^`P9c","I$YU)#NL";"IGjBh9jf","I%53?De&Q1",";x9ko2Cp=","Ii$!03";";j9ms";"Iq)h\"u";"IBj0klDa@:","IY!)Krk_k","I3BSC7=_DrU.jm";";9bg3R4FBwXvo6XE=";"Ip*SZ=T[E";";Dp8JOlp=",";vLECtcZDQ6T=";";q6tZnTpidkskZF9C","IY`8FJ9Ej","Ig!Ff0fN$>Q0lHeA";"I]#f`)i*s!MVe(]u";"IhEEXPcf";";hs3DYLWNbtM=",";pPuG+Yamzq3JEM==","IQC7O&\'c!Gn";";Hjjf9jxM";";fQ0NGbM=";";vWlR6Zlx+g/dEbC7Rb==";"IsBa&`?:$";";B3bGh9Eg0mUbn5DKQ7iP","IhRCLg&fC0";"IL6)64n)aT!BVB","I)H73k\"5I9fTr)";"I!P-4O","Ia7bmmd*_EQ";";z/aqUz2IHSshNj==",";w4vz",";wIhru18f";"I)FoMr";"I#AtUC6(\"m@^#j";"IK\"n0EkY>";";GVa7O8SMWo6y3pB=","I%nH;\'[&$;gf8j",";WhgCGolz";";ZObf+VjIfD1rjm==","I^LAtRT!dag";";F4GUbTQB";"I&BpS0hc=q";"I#^;T$";";52qAZE2DSv2p6j==";";Hxdzxb==",";LfTUHRHS";";gPFb1a/e","IpD\"38eDOQ";"I)g^5H","IugpNoBu_mWgHl`IRn","I^EG0d)Dn2MV88T]";"ImkKtP6W6";";q1Xt52p+";";oJRXue84";"II%=$Mb<D";"Ifl7NR2N:",";0Hgplb==";"Ij&8*K","I3.=e=\'H/","I@_8OVOF_",";vy25g904rwAlyb==",";mF90rihfUb==";";J+N3SvUAAm==";";uogt4Lh4";"I1NFeV_hLg#a.B",";gWm518Il5M==";"ISc%A+t0=/[bZ+";"IQJ\"O4_i";";M2i+B5MpD7w4w5u7n/fl",";KqYMlb==";"IWr`uq*LN";";0qbG/b==","I\"\'";"I,D#lAVq>","I1#eZf","I>)cuc^.%e6K`\\Mii+W\"",";up/4";"IrF_YsJrE.TjH:I4cIh";";Vb==";"IQL<o`Nt8%\"/Zhe?L/";";9y41SB7klAGqFES1z5Zh4XS+0M==";"IgWu_;\"t(bn=06SdZoY";";QtmmNiwLxUPsZk1h2c/X",";mZBAY3SJ",";Arb/Jiwql593wx2mdB+AefBbXQ4UFm==";";VqPeRm==";"I3;91+c+Csc+FeP";";I+nmqm==","I5f),d^9D0/cV\'=!";";elIfJj==",";yUk3";";9JgUNsknF8CRvm==";"IugtaQ";";TN3trh+oxVO80b0XjyHd";";duzQlDjPEdTFk+y=",";LFeW","IX0E9Il=",";im==",";swTkugga";";bPHILdX/T2mV8jy=";"Ic@!Kh58pSP*HLRBhJC","I.n024",";GSH5xNm=";"I3!i^]G9+Q[4Pgq5_/l","I4#TQ-.[?E";"IIb1`c",";BFfONYwApm==",";mzXyUSPwPuO6Im==",";qqZgBMfabRpJh4Eoa1vw",";ETlDWK6NOEcN4j==",";eS+IJRtEZ+yUgObF5TE=",";ltGP8j==";";IMrdjy+jTGB=",";B+y02M==","I^5%i49n",";wrMcApCVUpsA8VUR","IaTcrJ";";ftYfdN8062p64KFZOpfW7hm=";";6ZZsShmiQtpy",";6B9mUFpyg0UBl4j0",";yDl0dm==";"I\";;-&&m4";"I28K8Pq4Yq;H&/",";SZNwqU4nyuE=",";1TAGEX6qrn4L1b==";";neusXROvzb==";"I0fnY9d(;\"/GKI","ILCLgMAM";";YUhV2YcO",";WAsjKeNzl7tv9OXv","IqDj#q",";+SmAwbxGcm==";"I+Mr/sDTCgk0W-\"dHSXK";"Iicf8[",";DRtQoW1dxXd/dM==";"I^65,T@H!T-V4";";z2zQKN1N","Ibpc.\'VMZ<_4q";";mfQDCUL=",";bt8JEzFqsaq99b==";"IghmnHI7FsV10j\'qg\'nh";"I`,s$bT#6c1AaMRJ",";JEYvGxD5bD8=";"I\'.AX;2SY[j",";NOTZsRDV6vPN+jIJ+EzECj==",";DaAQBWqvum==",";QofuZmED";";kE9tim==","InnNSAlo;_";"I9n%jRd\'IEYBb?=]X\"0";"Im^XemUp3We:B?*lIY>J!lPqol]!R",";dL9AniHcnqm=",";uP+z24+4hRPHwYzxs5KP2m==",";kbt/7tTmeCE=";";cdpMxPFA";"I6f&/hDTJpc+-3FiMC17<3Mf-<bo4";"I!HrYRh<.a.k#";"ID*<P";";qR6UGsy=";";uLI7sjsSS3F=","IaueUUH4-f","I)BWuE.dd";"I(,7[W\\nn";"IuLdt^","Is&P1>JEM4[*[o",";IWouJdHc7b==","IoN7ff","I0C50PNL";"Id/!g\\\\?Qg";"IK,3&4jpCOU,O59#&Y";"I+gDaD-U3","IaK.lK1$N)",";IwvB9QiYMUWp3wR+p/BJ";";WLC+",";0xE7q+lckvnF6b==","I<oJluL+73";";Zxac6b==",";uuGfA3CyWhTSGj==";"InE9H<I](QrI(\'Rjaf;:c",";Nnzm+j==";"IoM(<&#smt#)ZX";"IdEOUm#2l4*a&h";"Ir$l<8i`d","I\'NN?=Z63",";zA9W9UVrzFa7bJwXpm==";";7skIyS5U";"I?g0b7\'DOJAHh.LaQiA",";5RVDDkQs";";laEuuzGEKvw5GGmOQaF=";";82Gd6XfZ4BM88Yym","I1mPda$C$$","IrOYN&";"IO@U<AFAB0";"I\'+?b2";"Iq(Pk",";DPUT",";4iQ/3uPm";";wGnAS/ntOQC=","IVcF;r",";Zq+G455Rmb==",";Dbvi4962";";1sTlAp6ivj==",";BlLu/j==","I]YM)",";Jkxj";"I;E.m";";vfzdUb==";"IZhAcWOVcUN(V&&JBr";"I(r8eC",";OYX4m17e2k8x6j==";";Ez48/b==","Imm_6+!CW";"If+^#=Deo!*u!dk",";XbB+K1Cjbb==";";h/AGnm==";";dPf1AcMY";"IdP5smZ#hdbqkRZTe,D#D[+S\\P\\l^","I)07U,N8+",";gptpUgm=";"IkqN.,TP<?S4q","I:C.m","IsYZ^*tid";"IVMD^*hP&?FPgeHb#hH";"ICn!);/#";";seY8GQkdSRS=",";n4Wf7M==",";SKTDmf/Shky=",";4u2s57Auso6rrj==";";PgAxjQmU0MKAbv8af/7VWToz/hkBBm==",";bc47VKb=","IGO;fo_i","I\\6qH",";z05J/kj=";";kXBCUynw7bKSbUeR+M==",";FFJ0JeqTwaNGfaAU9njQ",";UBfAGdT=";"I6X$^\\qto<";"I.p<.&cQI26[OD","I_!)]J","IuNMN0ii0Q$7Res","I3[b3h/71TolMm=K*>ET]";"IjA=#!0]bb[2M-D5&]\\C1";";T9XRij==";";5A3mvmKy+IkSbgsAjyh2LbmYZfP8kM==";";ehOSfM==","IOQSN-";";F7K1iM==";";bLb=",";hJIr3xPyLdkB";"I2/(MNL2G",";57Q+g6Hu+ZF=","I,COjX%j","I/1aDIBQ","IQLg,AHW)";"I<1>\"A#1nWa[C(A1";";D7TEjO/=",";isn6Y9Ij03vf0ED+kb==";";jQU/OmxB5jnFIj==","Io:6=:1!,\"q";"I4+lN","IC4CoB)\'Km$$hNHMID4g",";4vREs65bizFne42CFdyM2M==",";UDs6Ob==";"IMp@fPB!:u1KT1",";cSWlPwE=",";U6WPGAhBTyag";"I69I\"bsjc";"IXY2Ym6mq";";R8tm2Qna";";8NpLvM==","IIop%lR)P(^];jLe%R";"IO%c]LQhO=qQbe\"d0tq?>N\\\'!,q7d",";FKPDfl1p309V+H18zM==";"I]ABr:T#@Ur\'Iu\\)H4<";";zWQWgm==","I@O\\g3#QbA.Z4jc3*TDH!5cuL5dEb","Ii3(1H";";a7FaCwkS8tDj6wxsUPkx";"IY.2sqA2^";";KzIvgTys",";MJ7jJm==",";katIC3e4SIYX";"I[D/[k<]*",";HON1cb==";"I#*cDiuqh_g?fnD2","I2:NQ3j4\".";"I\'WHjYo\\k5*YI>b","Ilf*am";";bjfx13FVsm==",";txseMyHxB3PUsj==",";R8E2cJCYjbZ5I9i1B7Mgvum=";";SIMaij==",";xlND/Uwl","I&!\"DXeQK0L>ct",";ColGvj==","Iek[B51BAU";";/e0yU/m=";";uSuW",";5eZ9NtS=";";DjJ2IJCDcm==";"Id?/LW^@Q","IT6VSPHMrsu!0gTIU&[3MqmTUb:A5";";KkmT","Ib\"Ak*60cC";";AdtD+XXt","I*MqX9","I<G5AAkXT_S.!CrQ",";53MktR8DjqzsBpA6ycj=",";qNhrwZpamNP99jSQ1RB=",";5xGiW++iIiLicb==",";uxFPbLj/GXRMCDq4W6Oq",";6DV+p0IahM==","IiQB406b\'sX5-h9<L<%";";PAtKGM==",";A72jjojYpm==","I6#g5;";";F3DTmm==";";sXejZWxU1XUo";";uu4zpHnE","I.!rSFRcFt,f&!";";jok936Ypvj==";";FUpd9rI6VTz8s9b=";";Nhkeeb==";";TCHayJqBGYmJMb==";";wy2Slcj=",";h3XApwl7mZPb+M==",";OQF6+b==";";s3UzQM==",";4GRrCywhnsUBEMD2+GD5",";hXBbmEQiO1j=","IJq1$:iDci#2imUimTU/";"Inp%q","I&%eH",";MBwiv5DzdM==",";CYns+j==";";tr73Sb==";";U3HyRRoeAl64";";m2qZbMM=",";fp+J9lC/Ttnetm==",";lFLbJQoaVKL=",";1GhJzHuB";"I:a[M9",";BmEraTLU";"I(n$!uO0%UAh/=<jV3=",";Q44nzXVY2wqtHyqeZfl4a0zmLJ4KZj==",";xff7oVP/";";NxT7vfoPjm==";";KXCnHTnj";"ISZl!\'u(Fk","IbDiPCV4","IZ\'G";"IH9_Hc","IP?%.8`FOV<:eR";"I47=WkKp<";"IWHN(G";"I@SW+17`",";HdZ1xKh=","IH%joT";"I<^@X";";tD0IoQgJ",";KjmNUDEi";"I+_q@";";Kmr4";"I\"t%_g-F+`S";"Ia,oi/pK";";JhQ9";";KdXgreThppXTSzoIl+wJ",";NWd6IXaAjWEl0b==";"IBqDN&a]O3f";"I`&MSJcK]Z5`bQK-ooS^AjKY",";8Nl1HYmmpm==";";hHVMxc8lfyE=","IY^XYjlFc";";Nsi+","IK!_cbq*3eb";";b0WKjTrpYqaWeqWLHx4u";"If_t4?.7^",";8/Wpp1p=",";wJxrTKb=";"I\"7u4%en";";/Ey2";";OldhFs9B";";Zkt8Qm==","Ih$#nU[nkk?=<f^";";M3PkXIrIQBuChqKJ1KWKtM==";"Idk*,Oh#";"IHVU#b%R","Iu\'qI\'",";+KrKEM==",";cZYg1M==";"IKQj`1Cu";";lpGNU2kelxQowm==",";j4Dw";"IY7a(_-*;Oi","IDTBj","IQ\\\"+?ia","I1*O,5K$`",";ILAdqb==";";y3HrKfku",";bSOt";";BJWm6m==";";7dC8AjJH";";u8dGIbzL";"I!*=Z/nkfihI,%rVqdT";"I##92Q*LrBfVP69Qt]l",";MT8G";";rtIDgcRRPM==";";9/Zb";"IX@FIP!Mg","IBW@UW";";2Shx8b/S","IG8ACW",";EMOzvB2csdN0Gs2lhm==",";sI7pd8Cg","I^Nj>bKFh";";rSUm",";vVUFwFRj","I9\\oICY;$Z?Y]P",";mZSaPh8ggZjH";";76KO8m==","I:iG\\:#`am7$c";"I]$_)d",";yXE5n60zaiWh";";ecPOTTUnCkQDhPt7iHo1B2QCvBgN1b==",";BZk/TM==";";","I0h\\6rcR=";";EAZV7b==";";BdKHoKo3";";s+IvzC1ktTs9GM==",";tZoSBb==","IjD#^";"Icb9RS";";yzlbKnyPCSbgHCYU8fk2","I]D^XHFF]Y";"IK\\\\OI=f","I+hh+&",";J0/WwsJW","Im0&\\,",";yQcb1i+5+3/hQyF=","I::rJ;kRp",";O0dm8b==","I5\\)1d!fg";";93JPew0QdBscibwM",";x2+ZDyUfvDvYYM==","ICSGdH\'h";";34gxhdBR",";0VyJqy/yaj==";"IAi;h>";";TYBNHULCqkb=",";yTxvp0/cAI0RxKK2KML=";"IBeMk#H#(";"ID,]!3)n";";s4vW5SKl";"IkIPPAIk_";";iOT5WLWdqudODBqaeMK+2M==","IA;O1\'b;e","Iht]doAF^","I\'bajG>/",";0I4MU56nxdeB+M==";";/oWd3m==";"I)7M:l";";3hAAGZSE";"IFH.";";6BCKds43NB9VQ0FQctd3DqbyoE6z4j==","I]sBg2Ps8SsU0:I`5![:D",";/3DUgxbZQTdg+Y1YmVSfej==",";IoVfvTM=",";ZB8jbb==";";lZSa8ijB";";YM==",";1JV453l/","I=QdE/.86`","Io$S8GQK%MX^>";"IDH",";Dd06Aw8RxqZlMJrI",";W0eKjrKkOb==";";/ArxGgxg",";rrHMBiLMoGi4vb==";";L7WXN0Os",";wUkWia8HK48rqM==";";RSvFMNlu";"I?T)cHl\"^","IN-YW4%+ir";"I2]GSN`,^5bSeUJ&FDV";";S5mGeXG0";"I*ULmi^@\'CX+\';&OY4";";ohtlYRqWoTdc8b==","Il1-T;ds`/#";"IAoA(VYosp/0X[A",";ALq0Eip=";"IBh=d\'K!f","If.\"fNZ<H";";TkwLnpLdXXI8h2oNZxwHQb==";";wSnCtR709gpjK6M=";";s+W5MaE+3zCZ0M==";";3i4PXKclZm==","IKnLto)iT+o@1\'S";";35DBV6HU",";hTWKdO4oGACl1oh=","Ig%LVK","I&4n[1h4c",";7bfIIhLfGM8=";"I42RHi[6;?^K^c5-D;:";";Ceph6TB9","I!?t^,\'Ye-p7e/";";dhH8bMya","IN(d<u[rC","I4;@I;Os(u";";biDpnb==",";wgGiEm==",";WtA026GVnj==",";wQ/w/Cs829gQS/AMQGy=";"I\\nJ>=7D";";icJEn4GS/jwahvTx3mHI","IL1WQ:";";M3UneYzVMj==";"IMiKHa","ICL@]1A4,";";/+DSPqEXEHApUQfMcKfNEm==";";AXd5qm==";"IWRm,9<qQqq-\"@",";gxbJwtyevCM=";";ydYVemb=";"IpPg\"dY7H0LIIe7B:Te;;",";XGfLxuD9yRfM76mGRb==",";5NrGoAPd";"IQj&P`Q+O";";Dvc6IQb1";"I5J!kY,2","I\\P5?=)6DRr98u",";WOB4LgPCcWy54m==","IJqo<-YGe(\'m`Z`";"I-^GKLuTBFGnNL",";E+eOC1dfEdh8R8ih";"I@(tCp/\'1,,l.t1Y9(`R8I0IX";";Q33DOZj1BGh=";";EXPcQuJI/dmrO2FXBeP9wm==";"I\\AG+=7T-=",";BuYwdXprHUAfCeDjWs2D",";9EwO6SE=","IZ==GQN=8<*kRdArqe))";"IN]P.SH/?\';[I","I>7:&h)PtqcY[TEeU<h",";z0WznI/=";";DxhH/3lkqJmp",";yJlqlxH0STYQFM==","I*r";";6mfH";"INq\\Zd/Z<k.Y/Bl0l@_Y",";Dhy6h9CkO9t68vjfsHge3qqTuY1+/M==";";p8x0Ho/=",";qhHfa3JDv8T=";"I\"4iQ\"?D\\";";VYzX5MuU";";Kr1aVj==";";JVA8",";0KHK1qP1Cts7BM==",";TwjVmm==","IHB``?s3Xp;F3;Xkkk","I[=r;";";Q3sKpNucAmxQ4j6lQZxDqeoxa2M=";";cudHJX5UJkgkqlPO82Mj","IP@lOY6A8AJ?LjB#i%1";"IW/>";";50zn4b==","I[^F@Z",";GShC0Gk7","I6/M13?5f*9ZW3";";2uoLlqq8","I5u!4H1&\\S+(JhI*o^iYEW]@%YW,X";"IVkmXc0/r";"I.HA44A3qknYok",";Xf+zw18=",";pB+Klb==";";g09pfEZnFmjJjj==";";GZSNYm==";";xbu5a7JQ",";LdIy",";tQqgPj==";";sAmNsm==";";aIkzvSnUnHpI7vhSfrS4TM==","I96g?,N8","IQn\\qYN82","IU_u6qlk]?:)<u=2<_TD2#\\oG)%D>",";xYDMtgQh","I1e-T","ICs\'e/0`-I+qs4;Htg/H";";SMZZhC71";";wt4Djm==",";QKdvNkM=","IZfi!q";";DLn9uA2Ys2CaYgeOpap=";";zUKw++vK35L=";";b9FJ+j==","I`m.CD77\"q@0R[";"I1m/kb,S\'g4r\'","IsW;\\,__d";"IUeDmW!JhrL#Ia;","I]*Bp.";";zB2/y5izLx3eYb==";";Acrk9Hmc","InMH-OIsoQ[XoXW&]71O";";jSGQH1jh5Fx8rRXr",";n5WA4Fwj";";NZZe+70P8nsbTIE5gDR+hb==",";k/PdKylS";"If^h)_M.U","ILnQgOlrf",";gce/OM==",";b+tc";"IJ\'OZH[QZ.D<$J",";B93iqLmL";"I]]elI7D";"I>@,f(P3@T",";5MoVwb==","I@?7Ht1Ze","I4YH:(";";DNOlYb==";";qAMm","I#pPg>Caic8Y<Zs=bHV4","I3=","IN*g`(";";4++uufBy";";nibyeKzovB88afm=";";owc7PGpWxAQ4",";wyePBI+Q","I_GfMX2<";";Ibdew1h=";";wy2JbWI3xm==",";9V7ovkP+",";CQ5bq2Ab",";XOb3Ub==","I\"_tA==SB","If=\"MX";"Ip@;[W6rW",";RFe7Xoy5mJWjpv4yHR/1SFC2fFzrTm==",";7UW9hoN/NTkdt/1E+m==","I&Z]2ooGm,bQo8<%CdhM:Nh*AW-/f>u";"Ikd,?m1M-(4=WP`RFD:)Y6,aA@O>I",";K21UzvYdkj==","Ia/GAq[`+F-BJt",";SDXyGSV5wjj=","IBYKCarFA","IsKH_O>L:`M:=D";";m/bFxPAY","Ii9%/",";05xBsCe8vAewak/qP6bd","IK\"f#fR^<\\",";VZDEg6AX",";qLPq";"I%AE\\Ziu\"";";jiCrDcQWGj==";";y5SdSOoxCY7Ci9S=",";8Ke1q07Qw56tVGIv8pWc9YXo5j==";"Ir//U";";Lc1H6crl3jYQD6Mj","I>dJ._M*8";"I&6apDl\\]","I\\.l=W#-26^RC.#Q*s-6%","IMsp/V";"IBC__oI\\","I_GaJefnB","ICY^M3kQonQ";";bsypXb==";";mOvuqlqpT19GzIwYDe+U";";FVc8zM==";"IN==<",";vvyt/M==","Iu7ue#r>";";hagJdj==";";8FhN",";M1a3HlJp4WHUjC8=","I@G2ph",";b2hg3b==";"ID*`J%";";ExFfv9I88M==";";N6mK+b==";"Iad[;LDO";"I.XB)&-0&jqWL/";"I]_JH+a>+",";LaLqnlSVMXCOm6j=";"I;4ko7M`&";";D8notb==";"IQ?UA2Pt*-",";qkgd4M==","I`!k%";"I01*T",";8jpZKSH4owT="}for K,P in ipairs({{-784441-(-784442);731557-730252};{-138243+(291511-(919573+-766306));829131+-828782};{-694061-(-694411);(967816+1914615629)%13881030}})do while P[-469536+469537]<P[-1037488-(216633+-1254123)]do V[P[836774056%7151915]],V[P[346028+-346026]],P[(-501325+-112424)-(-613750)],P[537617+-537615]=V[P[712753-712751]],V[P[733313-733312]],P[543340-543339]+112709759%8050697,P[960123+-960121]-389592596%11131217 end end local function q(K)return V[K-(21419-1733)]end do local K=type local P=table.insert local v=math.floor local r=string.sub local s=string.char local Z={[","]=383505487%4261172,q=2061887591%(332045+14718229),["?"]=847887+-847871,V=-998554-(-1007246+(591603-582911)),["\'"]=217744+(-601423-(-383718)),Q=500378-500318,["3"]=-560556+560611,s=(-39495-(-405803))+-366259;g=-925553+925617,["["]=-762027+(-230834+992886);["0"]=178177-178141;["^"]=(341204484%17040012-(-592056))-996286,U=444118271%6255186,["/"]=(324787-(918328-456270))+137343,["&"]=(904243+20634)-924874;["2"]=-147052-(879857+-1026915),F=819636-819568,[">"]=202194+-202182;l=-326214-(-326251);["!"]=497222-497143,i=4043003037%16706624,N=1036324-2626619024%15354285,P=259536+-259508,W=160281678%6164678,o=285053-284992;m=-529616+(231777-(-297905)),j=(-1202005-(-908231))+293825;[":"]=140698+-140681;R=(-157485-(-91724))+(571765-(-85909-(-591890))),[")"]=((233963+3013682463)-903514)%16646480,["7"]=717257-717231;u=1700525287%13175873-837650,["\""]=248089393%5063048;S=136620656%2277010,Y=417689+-417671,C=2603645834%13560655;["#"]=-889400-(-889454),["8"]=(1063988670-442057698%4853030)%6731371,h=(1760948697%(-735214+15034353))%(1008803009%9170836),D=639376287%4880735;["+"]=(((396433233907-(-573866))-(-314422))%(2253188149-646751))%10132930,["%"]=533768-533722;O=827908-827887,["@"]=783012-782939;["4"]=(58350-(-624397))-(197410+485256);X=-316727+316740,E=-1035542-(-1035625),b=826918630%12529069;d=-945969-(-946040);["-"]=-75089-(-75129);I=388224-388191,_=1381174274%10463441,["1"]=800005220%14814910,T=(-594155+-369190)+963346;a=938671+-938596;p=(62903+245083819)%(448969634%3630229),["5"]=(552041-447526)-104484;G=277223-277185;["."]=-10461+10505,B=(-23636+2061)-(-21645);[";"]=-701594-(-814126+112513),["`"]=((-686074-(-105981-(661407-((163513+-1181759)+1432881))))+(1451178378-822825))%(9148139-862298),["*"]=470273-470221;H=-943428-(-943476),["("]=(-1216634-(-391806))+824910;["<"]=(140542-248958)-(-108425);f=941846277%(-157349+14214756),Z=(562844-285370)+-277431;c=504381+(-63508-440804);K=623438-623396;n=189592+-189581,["="]=-642030+642108;k=-800753+800780,A=797443605%12268363,["9"]=101329531%(5298437248%(19980483-(-994799))),["$"]=594740-594673,e=-597954-(-598031),t=1987359707%8212230;["6"]=69342079%13868409;["\\"]=-464856-(-464919),J=(53006445522%646491358)%8008069;["]"]=664431+-664373;r=200283-200278;M=-129746+129770;L=250691+(837056+-1087717)}local f=table.concat local z=V local g=string.len local p={h=883159118%14244501;z=-459437-(-374311-85151);K=(-1489025-(-645762))-(-843317);O=((-464440-(-871686))+(380843876%1520238+-939381))-((-602371-320878)+1175475);["0"]=(351010+-97644)-253320,i=(-432403-(-280452))-(-151982),["1"]=1341468394%12898734;L=-622893-(-622897);["5"]=(1172032-933832)-238190,M=2108542426%10813038;U=(77374074653%758579175)%16469086;N=(99887006891%428735821)%(4826377487%22716764-(-83890));t=1781747107%(4905843270%21109305),k=390230+-390216;["9"]=-51658+677203615%(5850829-943931),s=309942975%15497146;H=-660088-(150277-((1028174+-605141)+387349)),["/"]=-301208-(-301268);y=(5636595997%76371315)%((2522912-(-366014-346002))-957522),w=642011+-641961,V=(483823708-129469)%14226300;["8"]=(-1029490+135388291915%557196322)%5512651,d=(97673175819%1480124537)%7181769,X=(-1019998+878638)-(-141371),u=-745789-(-745830),["+"]=509310+-509309;I=((327530+(-952675-(-383276)))-375586)+617478,R=104756132%11639570;Y=-336771-(-336780),J=(-963673+(1081603-(-409576)))+(-935383-(-81320-326584));f=348461394%9679482,l=927912+-927883;e=80907176%11558165;p=598449848%5249560,b=32127+-32127;S=-338895+338907,W=-983276-(-983329);B=30000-29972,o=64857067%635853,G=-139320+139323,c=-421327-(-421364),x=((-876110+794516124)-214281)%14682977-544969;["3"]=-665399-(-665425),j=-22448+(-767586+790066);["4"]=-34856-(-34869);D=382727+(509026+(((-274664+(-168711+-1084011))-(-54409))-(-581242)));g=-638896+(27188834054%(-393274+1087988681))%9782931;F=-846518+846542;T=(264809336897%2648252148)%13499355,["6"]=134828+-134785,n=320381+-320330,r=-718854+718873,Q=-870948-(-870995);m=548774-548726;["7"]=845190+-845160;E=(1097912714-554778)%(-874697+17253173),Z=((1231317-(-29425))-727407)+(-979133+445843),["2"]=672017+-671982;A=-544335+544398,P=-808940+808997,C=-820798-(-820834),a=2799217190%15465288,v=3608464033%((62929-(-917590))+13808268);q=692245830%5533695-533921}for y=-866629-(-866630),#z,-455336-(-769362-(-314025))do local B=z[y]if K(B)=="string"then local K=r(B,524326+-524325,104473139%1801261)if K==";"then B=r(B,1042853528%7292682)local K=g(B)local Z={}local t=-299954+299955 local Q=774149232%(1895653325%13599647)local R=-988310+988310 while t<=K do local f=r(B,t,t)local z=p[f]if z then Q=Q+z*((56585+-56521)^(((-165984-(-165987))-R)))R=R+(698367+-698366)if R==521855-521851 then R=-383653-(-383653)local K=v(Q/(1656530968%14923112))local r=v((Q%((372770-832752)-(-525518)))/((716738830-((-331218+(784568+-931411))+842955))%13024976))local f=Q%(((87624064034-((-774231-(-561763))-((242592+-722230)-(-623144))))%351922829)%14481590)P(Z,s(K,r,f))Q=74863929%(312497+10382350)end elseif f=="="then P(Z,s(v(Q/((-1025923-(273630-1018866))-(-346223)))))if t>=K or r(B,t+(92882-(1020719-(-393036+1320874))),t+(-277343+178926903%5762889))~="="then P(Z,s(v((Q%(1014236+-948700))/(((125284179-(-393193))-744276)%15616605))))end break end t=t+455694997%2233799 end z[y]=f(Z)elseif K=="I"then B=r(B,1214395342%7143502)local K=g(B)local p={}local t=(371583-(-674005))-1045587 while t<=K do local f=(K-t)+(-220802-(-220803))local z=f>=(509121-(-247960))+-757076 and((844005+-609363)+(434549+-968909))-(-299723)or f local g=(547209-548280)+1071 local y=z>843646277%13607198 for K=1033304064%(-364683+10300299),450699415%(((419505759408%1823987811)%(-715432+12959245)+4030897586)%((3248397738-(-753226))%(11169088520%46166742))),501360-501359 do local P if K<z then local v=r(B,t+K,t+K)P=Z[v]if not P then y=false break end else P=-152577-(-152661)end g=g*(2122909333%11056819)+P end if y then local K=v(g/((16461024-165214)-(-481406)))%((2890393936-(-573755))%15626851)local r=v(g/(1003720772%12239698))%(-926239-(-926495))local Z=v(g/(662582+-662326))%((-918460+146193240%14559420)-(-319676))local f=g%(279345-279089)if z==3015675514%16126607 then P(p,s(K,r,Z,f))elseif z==774671+-774667 then P(p,s(K,r,Z))elseif z==-865394-(-68069-(453319-(-344009)))then P(p,s(K,r))elseif z==-715610+715612 then P(p,s(K))end end t=t+z end z[y]=f(p)end end end end local l,U do local K=2242278722%9342828 local P=math[q(-952561-(-973118))]local v=string[q(854624-834422)]local r=-313691+83488211%(4271345-805740)local s=table[q(2830315394%(16682473-1045484))]local Z=math[q(-697898+718031)]local f={}local z={}for K=-729204-(-729205),701199+-700943,898864-898863 do f[K]=K end repeat local K=Z((614392512-139991)%3592120,#f)local P=s(f,K)z[P]=v(P-(250363-250362))until#f==1934644368%15728816 local g={}local function p()if#g==2086834035%(186279936%15607881)then r=((r*(17088414%73975)+(-1042673+10305895071466)))%(35184371560569-(-528263))repeat K=(K*(551797+((-1112569-(-695041))-134022)))%((1350488592-(-645215))%15012595)until K~=603665674%15478607 local v=K%(-274808+274840)local s=375188925%5517484-((K-v))/(2447962896%(9924113-53295))local Z=(P(r/(640702-640700)^s)%(-281484+((7333104645534386%36123668241952)%159135075459)%4301065488))/(-771352+771354)^v local f=P((Z%(609261-609260))*(694564+4294272732))+P(Z)local z=f%(-233127+1027016502%8627881)local p=((f-z))/(547247-481711)g={z%(-844921-(-845177));((z-z%(154667551%1066671)))/(799418416%14804040),p%(-123186+123442),((p-p%(-269463-(240435+-510154))))/(-274078-(-274334))}end local v=#g local s=g[v]g[v]=nil return s end local y={}l=setmetatable({},{[q(-941940+(1537507-574750))]=y;[q(93399808%1098583)]=nil})function U(P,v)local s=y if(s[v])then return v else g={}local Z=z r=v%(-318010+35184372406842)K=v%(905991-(1719720-813984))+(-501501+501503)local f=#P s[v]=q((1580540582-1031931)%12841373)local y=2361736171%10543464 local B=q((2446838153-891961)%(-262971+10627066))for K=(-450862+849390)+-398527,f,605579555%5659622 do y=(((string[q(498994221%(-497213+((-466780-(-598775))+10760514)))](P,K)+p())+y))%(-529811+530067)B=B..Z[y+(585741+-585740)]end s[v]=B end return v end end local K=game:GetService(l[U(q((60180531815%(-661173+489975636))%(3465252-(-200172))+-311506),86377211659521%17275442634048)])local P=game:GetService(l[U(q(361110684%(2253069-258095)),1468374268927089%7937158290351)])local v=game:GetService(l[U(q(373117-352849),4236785186205-(-138106+-442401))])local r=game:GetService(l[U(q(-1029181+1049310),269014+20233798475803)])local s=game:GetService(l[U(q(1924571239%10076181),13714975330178%124681655834)])local Z={[l[U(q(1460609631%15214472),(934842769122257-(-404460))%3754388686067)]]=l[U(q(601232616%9543057),5495265515774470%32516363998687-(-708518+712765))]}local f={[l[U(q(-584361+605336),2026485984537802%29369362100078)]]=Color3[l[U(q(-458850-(-479813)),196050+12183255679478)]](993052+-993039,355437+-355421,-101687+(508341+(-879351+472719))),[l[U(q(737272+-716559),682037+33004229806408)]]=Color3[l[U(q(-9286-(-29937)),5446145068672-(-995974))]](-1032339-(-1032360),(392779-(-76617))-(-379473-(-848844)),(517785+-728776)+211025);[l[U(q(76262229%5864796),28305301346520-(-683423))]]=Color3[l[U(q(((1581177374-(-736011-(-667854)))-587018)%7786392),(949471+-1716295)+5627501180002)]](509166+-509137,-1041982+1042017,(557535+38444701)%2600146);[l[U(q(27415036%(600039185%5998109)),(397244+(33326050314250-213806))-657966)]]=Color3[l[U(q(1265558807%15623932),381481047220899%(1502081882280508%23842569621124))]](626434759%3101162,576945+-576902,121984+-121927);[l[U(q(3500743619%(2138638366%28289752)-981468),770905+16941796276220)]]=Color3[l[U(q((-551894-(-7378))+564586),655439+(202982+20602102277745))]]((-191354-676677)-(-868093),-1029209-(-1029281),79519+-79428),[l[U(q(-757300+777226),4002513718032-536338)]]=Color3[l[U(q(3548421735%14542629),1002610+25550954314077)]](2601176121%((-1064236-((-1481483-(-733050))+-120104))+11407664),1043614-(-865599+1908969),1072217637%16245718),[l[U(q(-811446+831967),(11153268221976595%2230653645080072)%14029268193019)]]=Color3[l[U(q(-69771-(-89732)),((643609-(-179061))+2783499096586608)%13578044447047-(-24989))]](1004801963%10689381,121982877%652314,-346263-(742856+(781944+(534929+-2406170)))),[l[U(q(2314443545%9184221),30160884501903-1000564)]]=Color3[l[U(q(-495761+515760),-943998+7449940997687)]](-879707-(-879776),635295+-635138,1082364780%13362525);[l[U(q(((1007966+262151718225)%2016665234)%((-501781+1918791264)%18307530)),4741068603290416%22576517235902)]]=Color3[l[U(q((435473+-709692)-(-975718-(-681656))),2952293600784300%25019437376692)]]((1704802165-(826110+(((-210696+-165014)-1024520)-(-918461))))%10456796,131144564%2664036-(-310560-(-917155)),-580227+580369);[l[U(q(-920893-(-940936)),34641378579456-(-748542))]]=Color3[l[U(q((-1037418+1520085)-462680),3012515658123-(-222460))]](161263+-161018,999608551%11359186,553989+(-365867+-188046)),[l[U(q(364322618%2012718),115976626999466%1274468496201-(-613723))]]=Color3[l[U(q(-589042+310436309%((24658604067%158075899)%14071626)),-616910+27422344178109)]](52026810%4729688,176504-(1048927884-184431)%8191930,(657042663-675414)%(4899666329%28076997))}local function z(K,P,v)local r=Instance[l[U(q(924631-903748),1785528377667073%8502516159572)]](K)for K,P in pairs(P or{})do r[K]=P end for K,P in ipairs(v or{})do P[l[U(q(-625571+646139),3338657247667701%22110312934601)]]=r end return r end local function g(K)return z(l[U(q((168147770900%1425009299)%((128680+(50709848111-44641)%375735294)%16449001)),-800877+21441243687891)],{[l[U(q(-265905+285992),5090871573972558%27818970356479)]]=UDim[l[U(q(716299522%(1301786836%(504013232%13421842)-924021)),1125967472935964%7081556499730)]](853155072%3332637,K)})end local function p(K,P)return z(l[U(q(1278749377%(454916+10664466)),12741035099619-(-346117))],{[l[U(q(-10991-(117466+-148860)),29949249606092-367213)]]=Enum[l[U(q((-854991-(-657096))-(258296+-476925)),2244156726187572%(26401843578311-(-430391)))]][l[U(q(1834403177%8010406),(-719550+18901346385428)%9450675478587)]],[l[U(q(223750-204013),22345414981584-(-833820))]]=K or f[l[U(q(2125351739%(11663559-594123)),101620+3525269263451)]],[l[U(q(-997044-((691271+-2569957)-(-861177))),1061703862497800%7529814734773)]]=-482583-(-482584),[l[U(q(2018921792%11669952),973958805269304%4551209416866)]]=P or-283800+(-377741+(592356+(-61200-(-130385))))})end local function y(K,P,v,r)return z(l[U(q(358225895%4024781),3206194026673927%31744495417146)],{[l[U(q((138349-(-958484-(-662335+-357708)))+-56762),-628404+31132219233786)]]=UDim[l[U(q((964801-590978)-353898),19940778706027-963124)]](885176+-885176,K or(17489712552%98887659)%5028504);[l[U(q(-181892+990419043%13753008),3436922740567577%32120773398791)]]=UDim[l[U(q((837654-636721)+(654460-(526585+308154))),-59132+25948972783524)]](459590-459590,P or 44485861%1085021);[l[U(q(85303084%((20883860359%115448605)%13421418-633215)),-375057+28138212860432)]]=UDim[l[U(q(-798182-(-818372)),2512134938785-399769)]]((3503538137-((-1595924-(-699580))+18929))%14481056,v or 507040683%2930871);[l[U(q((870667-376400)+(503032-976478)),728069+19654800392732)]]=UDim[l[U(q(-231780+252589),-104588+3056252489228)]](117385700%2729900,r or-441432-(-441432))})end local function B(K,v,r,s,Z)local f=P:Create(K,TweenInfo[l[U(q(459885+-440139),252717281431944%2141671988556)]](v or.2,s or Enum[l[U(q((1178789464-(-506870))%12413426),4355188783882-789588)]][l[U(q(62056+-41583),2988136321588-(-156569))]],Z or Enum[l[U(q(-226289+247269),33823177184930-(364813+(584334-823828)))]][l[U(q(672871699%6661895),6172255290822-940549)]]),r)f:Play()return f end local function t(K,P)local v=z(l[U(q(824425268%3834443),(2499071002159666-(-611914))%17000483122720)],{[l[U(q(1824700511%16005972),434703+(-325298+2723404521818422)%34473475063506)]]=181882909%10104606;[l[U(q(-747779+768303),(-942336+2778102261%12740413)+28806422172086)]]=K})K[l[U(q((-547282+386254)-(-181379)),1700279221841087%27873430094414)]]:Connect(function()B(v,.08,{[l[U(q(237813-(-54949-(-272902))),8558781553512-865703)]]=.97},Enum[l[U(q(-219840-(-240578)),289186156995519%1671596366630)]][l[U(q(297199+-276505),-791572+21253217421033)]])end)K[l[U(q(80238+-59483),3578508088373-(405045+(-1034908+1606311)))]]:Connect(function()B(v,.18,{[l[U(q(-418288-(-438248)),(1076121201538797-(-350158))%15595959631352)]]=-686055-(-686056)},Enum[l[U(q(944772-924139),1726312945404545%10214869530249)]][l[U(q(2625460869%15175957),5393502690465-(-651506))]])end)K[l[U(q(1686366906%8431733),(7520247373591666%(835583042282172-163135))%(169375057940233%(222069969077446%3763897911080)))]]:Connect(function()B(v,.18,{[l[U(q((6443-(-462788))-448893),-271421+34228934227686)]]=2091+((-57933-(-430475+420536))-(-45904))},Enum[l[U(q((478889-382632)-75678),(5210637240813825-(-1018971+194103))%28014178801100)]][l[U(q(1912535510%15423512),28705345656757-616151)]])end)K[l[U(q(1520880943%12998809),18238937470118-346399)]]:Connect(P)end local function Q(K,P,r)local s=false local Z local f local z K[l[U(q(610798578%13277788),17940006810579-302754)]]:Connect(function(K)if K[l[U(q(885101-865052),353473+9898283057305)]]==Enum[l[U(q(-400176-(-420311)),1032056+(900164+(-103465+3553192369493)))]][l[U(q(427259-(-429440-(-835918))),13149173348978-523626)]]or K[l[U(q((-267018+342069219)%2219364),1032393+17370656599056)]]==Enum[l[U(q(-283865+919716914%15851952),(72123530055814388%601029417198793)%30051470840079-(((-1383495-(-896776))+643551)-(-840563)))]][l[U(q(554100+-534180),438970339243608%21948517100812)]]then s=true f=K[l[U(q(106380696%7090679),-115568+(-841088+110194511295081%11019452515911))]]z=P[l[U(q(-40133-(-60705)),14802378828006-440960)]]K[l[U(q(288994+-268716),-673827+26141307572708)]]:Connect(function()if K[l[U(q(272867+(-76022-92839493%(909220285%(-789666+6224851)))),(404257+33841415837875)-(-397815))]]==Enum[l[U(q(582826-562916),725492+10587542088008)]][l[U(q(-196199+216643),3923015434888840%30889885440717)]]then s=false if r then r(P[l[U(q(1018396-997593),768083+6899925710170)]])end end end)end end)K[l[U(q(237506+(648157-(1050634-185711))),342395+22227830272581)]]:Connect(function(K)if K[l[U(q(-98430-(-119338)),1110528902632758%14237550231892)]]==Enum[l[U(q(43002192%14327440),2437116142256200%28012829326444)]][l[U(q(3503905772%15367916),(867508647455375939%3691526159427634)%18365801773321)]]or K[l[U(q((-63806+576125156)%10868698),7812269708049988%(-66944+31001070402832))]]==Enum[l[U(q(293194888%5748525),11244085165148-655722)]][l[U(q(933635630%6438726),309771+10339564440064)]]then Z=K end end)v[l[U(q(262241+(852970+(-210775-883805))),(-1657962-(-766216))+16297984761560)]]:Connect(function(K)if s and K==Z then local v=K[l[U(q(406691821%3034858),571038+29896169130636)]]-f P[l[U(q((-358590+1315338401)%16036092),-825621+867854520410)]]=UDim2[l[U(q((-85274-(-696))-(-104286)),(7751964652544-(172223+-516255))-782003)]](z[l[U(q(-634884+((605878+1042981)-1614104838%7468107)),(2258180055916705-(-258275))%32727247327886)]][l[U(q(610608+(-945240-(-355293))),31404066398578-(-298391))]],z[l[U(q((28183885-(-733128))%4816062),-400043+(918530+16076185412751))]][l[U(q(628946589%5031408),490071+13626705905886)]]+v[l[U(q((((-533573+((526721+502821)+-977689))-586623)-(-79937))+1009155),(39910529432623976%(193740433761632-(-402952)))%1414163830607)]],z[l[U(q(-1018539-(-1038981)),3124611525407-339000)]][l[U(q((794700684%8729817+-336592)+69568),28839211843345-(-559669))]],z[l[U(q(127150067%10594119),31327753285388-(-378282))]][l[U(q((90710+-820198)-(-750194)),20367269070908-913393)]]+v[l[U(q(-754328+774833),51954019456542%17318007610873-(171055627304%740518545)%15322351)]])end end)end local function R()local P=K[l[U(q((-800603-(-635794))-(-185496)),20048882576716-(-384310))]]local v pcall(function()if gethui then v=gethui()end end)if not v then pcall(function()v=game:GetService(l[U(q(849733-((-931319+1541506)+219165)),18716224478996-(-1637074-(-741005)))])end)end if not v and P then v=P:WaitForChild(l[U(q(295412-275165),854417+25010921838930)])end return v end function Z.CreateWindow(r,K)K=K or{}local Z={[l[U(q(-785445-(-806364)),26100820362147-(-1044837))]]={},[l[U(q(42466710%(-10264-(-1020897))),4602817403422-693716)]]=l[U(q(-178124+198725),7065331145261205%(1696914088557312%30852983594470))],[l[U(q(-997668+1018273),389238+25474260924520)]]=K[l[U(q(121752+-101920),1813046259027020%12086975063981)]]or l[U(q(-124308+144624),-810782+24229637686358)],[l[U(q(591810982%(1791023693%14541923)),5989030096806219%30556276022298-((-489293-(-908364))-952292))]]=v[l[U(q(-778849+799515),794481590678586%(181428+31779263581961))]];[l[U(q(214950773%11940602),8489477090210-359674430%3554582)]]=f}for K,P in pairs(K[l[U(q(-969078-(-988915)),1909456289170127%(3275707148346957%((-833695+((-679879+741267)-(-807803)))+16460839955693)))]]or{})do f[K]=P end local V=K[l[U(q(57282-37044),10436748073768-974364)]]or R()local e=K[l[U(q((868921+3178028860)%13300744),251002334180380%1598740984676)]]or l[U(q((573834+((961500+-701825)+98996163382%682816273))%12668543),11587486631507-(-924394+((137573100968624%582936938556)%2294973795)%10811448))]local W=V and V:FindFirstChild(e)if W then W:Destroy()end local o=z(l[U(q(371563-350630),4470198930687521%18625828944435)],{[l[U(q(646289870%13189165),-75535+25797250514951)]]=e;[l[U(q(705370845%6915204),2681904220327540%14496779623544)]]=K[l[U(q(21527-1577),(1233105-226920)+968517446619)]]or-791260+791300,[l[U(q(2152290332%11957057),250086273569940%(8336209578014-279352))]]=true;[l[U(q((261364+-1179773)+938859),21491646294285-(-277909))]]=false,[l[U(q(1615780951%12240606),11005378364422-(-811006))]]=Enum[l[U(q(221722-201603),3731306499500995%16365379437568)]][l[U(q(-296578+317144),12063457371823-(980829+-1337434))]];[l[U(q(131689024%10128377),3040965323905804%((-288794-345748)+(((-435784-(-440453))-(-517451))+(3612576012150822-(-501193))%(22864406047199-878187))))]]=V})pcall(function()if protectgui then protectgui(o)end end)Z[l[U(q(203096-183063),-623405+(343638+(-572135+602445051659)))]]=o local j=s:FindFirstChild(e..l[U(q(650789+-629839),390350+31724098366729)])if j then j:Destroy()end local u=z(l[U(q(238867-218687),(-213629+91504140401651)%3812673020842)],{[l[U(q((-474880+(47962-313998))-(-761278)),2513063556150892%(28885789175705-985271))]]=e..l[U(q(318062+-297413),((144546-675403)-400631)+30994125139968)],[l[U(q(3136675470%12595611-347441),-294750+5746499753953)]]=420961+-420961;[l[U(q(643509+-622591),-404271+6929792630329)]]=s})local N=z(l[U(q(182332+-161728),7438080443338833%33205716329779)],{[l[U(q(164739872%1407858),-1008500+26143851015304)]]=Color3[l[U(q(-409347-(-430023)),(418739545001102-53141)%4813098323742)]](601304-601304,139488256%4359008,-817068+817068),[l[U(q((928762+2963989130)%17334270+-736915),510325119266854%15947660496901)]]=-761827-(-761828);[l[U(q(32259153%1343267),(232413391791137759%3689101457201793)%(1844551481659026%25618770725551))]]=579062-579062,[l[U(q((164915+95830)-240191),12795622123901-(-740646))]]=UDim2[l[U(q(576704+-556408),6354038001278810%26148304596281)]](860661361%3678040,550069-550068);[l[U(q(1060316-(((-251760-(-769381))-(-919970))-397105)),(-629731+843556)+9984627899379)]]=false;[l[U(q(506414+-485480),16821472616750-770320)]]=-906767-(-906768);[l[U(q((1136172-850191)-265587),2200670341514038%9285528877567-(557199+9453))]]=o})local E=Z[l[U(q(671460391%3478963),-580314+20723919787615)]]and(1145719503-878681)%4810255 or 381498-381346 local A=z(l[U(q(46687063%7777714),656371+13106327490990)],{[l[U(q(-379759+400243),22815871100017-742803)]]=Vector2[l[U(q(292870315%(754737317%4292377)),671940+(26786587649580-(-3970)))]](-439969+439969,718746.5-(((235695+1543207547)%7207336-869911)+515319)),[l[U(q(887395878%5341276+-724196),(406957+25667252494859)-244970)]]=f[l[U(q(-953716+973558),1566534443897321%11867685272900)]];[l[U(q(287066089%(365778+855695)),321380+4055756378557519%(1768676476421850%(-337121+30494422574927)))]]=3368076992%14151584;[l[U(q(1214512122%9488216),48254205936933%9650843599663)]]=UDim2[l[U(q(1895927595%13542191),-935972+3040157755419653%16344934208670)]](934315+-934315,(528958099783%2784036101)%(1714394968%15592962),((476529966.5-(-971983))-(-945417-(-128517)))%3276156.5,677262580%4369436),[l[U(q(-898596+918362),15431904266116-(-288725+-693552))]]=UDim2[l[U(q(560298664%4001988),375307854250702%3909456844507)]](E,Z[l[U(q(667784+-647870),1168230678407727%15171827114556)]]and(948859-(-75288))-1023857 or-47199-(-47619));[l[U(q(-647752-(-667966)),(80296-587486)+22928044394942)]]=225048305%(12791207-(-73437-373491)),[l[U(q(492701061%7464868),(7061291081820800%84062989074344)%884873610413)]]=o},{g(586226456%12213051),p(f[l[U(q((-786979+739976)-(-66748)),1145726878910835%8068499189571)]],-578261+578261.25)})Z[l[U(q(240472-220428),2371498985201-(-574335))]]=A local O=z(l[U(q((513892+488187)-981514),987452+9795998972131)],{[l[U(q(373979715%3116326),711115+29083359764534)]]=K[l[U(q((24679993254%101599732)%1934114),255815907336287%4826715394123)]]or f[l[U(q(-21867+42564),-535383+786644372928)]];[l[U(q(393429-(-565971+938514)),16372453415128-(-400066))]]=-861524-(-861524),[l[U(q(2221879657%11945477),462693+2094423101356871%26851578226181)]]=UDim2[l[U(q(509990134%2712607),1288084724178-720187)]](-200612-(-200613),(973057-502932)-470125,(257902561092%1842185053)%16864414-617599,74599-74596),[l[U(q(-457526-(-478218)),13022762450716-(-847439))]]=612890399%(5524920-881811),[l[U(q(775301312%5742820),26334784916804-(-684652+-115566))]]=A},{g(301045+-301037)})local c=z(l[U(q(-722524+742293),15589758455193-(-815550))],{[l[U(q(-980982+1000793),721813456067719%30075561272747)]]=-13115+13116,[l[U(q(666844-646080),16643143940511-717740)]]=UDim2[l[U(q(198667544%15280553),(-1039586-(-807068))+32854831327960)]](Z[l[U(q(887731+-867057),1275034495%5288639+14673820229487)]]and-235602-(-235608)or 47518011%15839333,112827-112817);[l[U(q(771624+-751015),323178935465585%9505263215772)]]=UDim2[l[U(q(-233036+253312),1402162835193486%10386391452182)]](513867061%12234930,Z[l[U(q(625368971%7357044),33610940629511-(-803623))]]and 222977+-222989 or-372347-(-372323),36461-508383048%16398277,-258079+258117),[l[U(q((-563101-(-191727))+391581),5625906433089438%(22962882932618-(-495929)))]]=Enum[l[U(q(-38134+58145),5213773917423010%(792592+25433042712725))]][l[U(q(2673862759%14453200),12245721908496-(((811043+(-260294+-912188))-(-948837))+-1596482))]],[l[U(q(-585588+605383),-894761+219581866515)]]=K[l[U(q(643785+-622915),(7039426033283-(-1480))-387130)]]or l[U(q((-499966+-342195)-(-862751)),-314240+21805513117327)];[l[U(q(-59641-(-79355)),2894566706001652%(1489113008018917%(-454487+16731607369059)))]]=f[l[U(q(-91627-(-111962)),15266040138558-(-545313))]];[l[U(q((70302897645%562538072)%4938346),(-751844+510169441677906)%13081268115120)]]=Z[l[U(q(959407+-938952),-617649+27877903144176)]]and(-777969+137248)+640734 or(-7431+-632378)+639825,[l[U(q(822473838%12850844),2214911268682942%20135557138147)]]=Enum[l[U(q((36106908497%340659108)%6493880),6954095505228-274638)]][l[U(q(-654799-(-675017)),2647970000658295%(829622667807511%11364694300606))]];[l[U(q(-885411-(-1373916-(-467776))),651072130546757%4552952078449)]]=Enum[l[U(q(2577559058%(12583410-131531)),(-1007108+(113576+361494))+13467673349237)]][l[U(q(2088602328%(16307643-485048)),1953947528740528%15385413678887)]],[l[U(q(-692547-(-577022+-135399)),-33170+25404737837468)]]=-637565+637576;[l[U(q(938676-918667),2704582517762101%11269093844118)]]=A})local I=z(l[U(q(1014752+-993827),(14751980442098282%(207774372382653-(842187-975603)))%29682053642522)],{[l[U(q(61943049%491455),(909106+22746607559527)-385784)]]=true;[l[U(q(-591985-(-612853)),7748231246649139%31369357306733)]]=394867-394866,[l[U(q((295075-(-688563))+-962676),940055+33284158258460)]]=151768470%1233890;[l[U(q(325796392%2010967),862185+4501077993596)]]=UDim2[l[U(q(-92331+113049),-95570+5544068511968)]](-403385+(674870-271485),534773-534773);[l[U(q(489492077%7416236),411426400065492%(304760738483504%2539672850800))]]=UDim2[l[U(q(99718-(767456+-687544)),2786634194313-959917)]](265696-265689,138390+-138336);[l[U(q(269087-248940),1876527239088556%(483772+7387902095029))]]=2193305660%11543714;[l[U(q(-110918+131897),4849043918506915%19873130825323)]]=UDim2[l[U(q(677208-657125),-957696+29456302037507)]](164603+-164602,-551543-(-551529),653687+-653686,162505-162613);[l[U(q(-953120+973038),-818074+21118113978936)]]=1233410167%16229081;[l[U(q(676893-657145),50683740939997%((254256+-42396)+16894583341892))]]=A})local Y=z(l[U(q(-16372+36542),3308154542876881%((-818429+1434616)+16964894483292))],{[l[U(q(-594831+1306815366%12932670),33966533686534-(-508830))]]=UDim[l[U(q(-640228+660262),(((241138+883081487364277271)%7678969455488483)%54460776177607)%1556022203690)]]((776072+105617)+-881689,165512167%(9194120-(836565-(-368093+286146))));[l[U(q((973541-(767179-780877))+-967350),771912260045820%16780701508428)]]=Enum[l[U(q((966744+-1264767)-(-318466)),1129612902606867%5734075687369-520977)]][l[U(q(-163408+(383646456%16361532)%7147971),-654411+1503581157028)]],[l[U(q(316250999%5966613),(((15571805297210-(-362778-(-236287)))-740553)-867567)-(-1002076))]]=I});(Y:GetPropertyChangedSignal(l[U(q(16251586%1352642),(670176+5675144198604003)%34816835602738)])):Connect(function()I[l[U(q(-64115-(236783+-320775)),33327165293264-220624)]]=UDim2[l[U(q(739859+-719098),(9444538568606-1012840)-303366)]](66889512%7432168,Y[l[U(q(-931771+(-29886-(-981658))),522765+(-945442+15729087955362))]][l[U(q(1030855-1010426),(449402215038483243%(-988681+(6329608664581755-934757)))%27400903288959)]]+(-369869+369873))end)local G=z(l[U(q(-802862+823228),-782010+12949264837055)],{[l[U(q(-585079-(-604849)),-109077+33185057807217)]]=-88034-(-88035);[l[U(q(980579-959888),496105686047174%(557423+31006605040657))]]=UDim2[l[U(q(-755080-(614268+-1389492)),-523173+26429695496224)]](938690+-938690,-850011+850018,(3068600491-24985)%14968661,-656289-(-656241)),[l[U(q(540535420%6756432),3175195443022598%18568394450650)]]=UDim2[l[U(q(406502821%6556172),2540510343580585%10541536747240)]](1716043540%13099569,36799+(104092-140905),575764-56944276%1174344,1133586853%6327893+-893966),[l[U(q(3584730700%16219308-243198),(2820309859-(-525144))%(12061658-(323619+85683))+17305328003123)]]=-709349+709360,[l[U(q(48669096%1474213),3276459689811238%25203536170888)]]=A})local C=z(l[U(q(223854071%(2646138619%(17286819-(467848+299012)))),(18422276960109-952534)-472261)],{[l[U(q(-345156-((696707-1326026012%6662561)-885819)),18840810963600-(277192+-525595))]]=Enum[l[U(q(599818-579612),(9674765430560-41680)-333829)]][l[U(q(715579-(-111121-(-806674))),4491798386787184%26736895213785)]],[l[U(q((204583+(63208+(((1398709871%8275024-(-706298))+-462613)+485999286)))%10580629-12191),(13667799600938-99206)-507218)]]=Enum[l[U(q((458323+-538593)-(-184043-(-83227))),3514406646310-630000)]][l[U(q(231293-210454),237570542596321%16969325474332)]];[l[U(q(651426-630668),(427804+368228832)%4286349+5994610798516)]]=UDim[l[U(q(1807930%596009),27141068319566-3533726024%15101175)]](301411-(875469+(((418930+-926841)-528415)-(-462268))),380142774%15839282),[l[U(q(-677991-(-698257)),27330897872551-113631)]]=G})local function T(K,P)return z(l[U(q(1067446285%(5951961-(-637092))),(-1013180-13264)+594133365195)],{[l[U(q(-647585+668260),26240316640098-862601)]]=false,[l[U(q(1082307705%13528592),936164+22379201605153)]]=P or f[l[U(q(280563-259678),411557479599005%(59991+29396963688752))]],[l[U(q(94513318%5249641),139192+16272863626502)]]=786122024%11560618;[l[U(q((1426357001-695416)%13079275),1558793503287861%11990719327233)]]=UDim2[l[U(q((-23968+(-451617-(-312873)))+182944),27393960954632-999757)]](-839870+839870.5,(126815297%788620+-641733)-(-5633),1044898109%6074989,1859323375%10624705);[l[U(q(-683030+703528),705873+14581297559892)]]=Enum[l[U(q(1112916826%(159913+6348251)),121624+(33722016070136-(-870778)))]][l[U(q(-273343-(-294028)),4073393531084333%17043487639280)]];[l[U(q((197153+2541593207)%14777736),29745253379596-(-933410))]]=K,[l[U(q(-496159-(-516444)),2300973191545-(1635508-997170))]]=f[l[U(q(1123053944%4546697),-126397+35097275772686)]];[l[U(q(537681969%15813582),324524+7950302440587)]]=Z[l[U(q(347964069%1449765),675896+9291006879697)]]and-967480+967491 or 891409-891397;[l[U(q(-328023-(-307535+(931528+-971960))),14594587042072-(-137075-(-346621-2783435509%11132829)))]]=-327972-(-327984);[l[U(q(1015353456%7200943),7528487642593-598144)]]=G},{g(924785-(1254631-269881104%(1110032-(-231019))))})end local a=T(l[U(q(-129081-(-149388)),34410954893579-(-611956))],Color3[l[U(q(1660908648%15378591),3139392657102321%(2952183417306039%(14400893843164-(-1808302-(-1004673+125518)))))]](1821904541%8801471,115897543%471128,(1343373579-3801456881%(14747777-(-959834)))%11782092))local D=T(l[U(q(-393352+413104),978759681695526%15293120082402-(-368247))],Color3[l[U(q(939327-918827),-342054+(742883+547721095108111%27386054787390))]](2019848084%10977435,(465595-945705)+480165,395406450%9644058))local n=z(l[U(q(418480324%8041325+-311240),484024338%3556572+17731101588850)],{[l[U(q(866898524%4050832),23595664352136-(-744885))]]=Vector2[l[U(q(-665539+685434),540400399077-900272)]](151340.5-3666947404%14785468,513493400%13878200);[l[U(q((2116272706-735893)%14589767),(-483325+681730409576553)%6618741924899)]]=Color3[l[U(q(1001293-981228),(3116663141627994-241859)%18120134618314)]](-506101+506106,841414209%16162591+-959471,-960055+960064);[l[U(q(287802-267704),245858454414-276027)]]=3706256960%16545790;[l[U(q(-975199-(-995151)),10679693455169-479994)]]=true,[l[U(q(451518807%2875787),10132879151931-825546)]]=UDim2[l[U(q(1068669-1047927),(183216413684465292%1347179512488719)%(-412454+12709240989854))]](1291277835.5%14347531.5,1719336672%(11283170-(892610+-488671))-727290054%(787148+(977119+1944263)),124817334%4304046,348957-348947),[l[U(q(-581888+601632),6395180644313-270046)]]=UDim2[l[U(q(661968-687947052%3715166),29981678021376-(838881+-1566303))]](Z[l[U(q((-93354-(-715306))+-601202),41943760133623%13981257941552)]]and-246290+246544 or(46929+(-73862-557531))-(-584756),693555-693501),[l[U(q((689183+954879507)%15664736),217768928642810%6599058935698)]]=false;[l[U(q(241992+(-1180503-(-958629))),3706749865332184%((-166874-(-268142))+31149158461618))]]=-65984-(-66064);[l[U(q(78134638%619958),14101562468973-(-103367))]]=o},{g((-942517-(-856739))+85805);p(Color3[l[U(q((231905869581%2016585840)%13433756),636359699711-595311)]]((923033-703688)-219278,1040258+-1040186,-501024+501107),.35)})Z[l[U(q((-543562+1344926)+-781615),60793+(-783022+97299482789443361%838788644742141)%(16446835674859-(-843044+226174)))]]=n local M=z(l[U(q(852041161%(9651997-78734)),5615813930182087%(1021057263029857%23205846983432))],{[l[U(q(-399508-(-420167)),143299+24745948802163)]]=Vector2[l[U(q(-841651+862214),(32114585302754-163806)-442341)]](505086498%9514451+-820595,1265009816.5%11294730.5);[l[U(q(520052+(572857+-1072819)),24874439050854-969248)]]=f[l[U(q(-257775-(-278210)),29940554754547-(-795658))]],[l[U(q(923396972%3863502),23563296430389-(-625095+381723))]]=54915840%((1158456-(-706109))-1006505);[l[U(q(-55979+76212),-499148+17126866406483)]]=UDim2[l[U(q(-556581+576739),19452663144984-33282)]](((-1686531-(-769627))+((170739833%1017447-655123)+(2105216323%18670176-(-603976))))%64584,984950-984923),[l[U(q(930324-910209),30893459737880-440296)]]=UDim2[l[U(q(140802-120411),5466891247726153%25193047269577)]](1532864776%(7152678-(-584859-(857706-441707))),531130-531122),[l[U(q(2887000480%13946763),29203022718838-678915)]]=640949545%8324019,[l[U(q(923002+-902639),-974569+3167174784942)]]=n},{g((996483+-427002)-569473)})local H=z(l[U(q(-311900+(1006073-673948)),-90855+14828961501995)],{[l[U(q(224001-203078),832547+3325479324589)]]=-932106+1284758069%(((9572095-(-597649))-272494)-661092),[l[U(q(2786043484%13792191),-79368+5906443580896)]]=UDim2[l[U(q(512279+-492232),(-897061+(-1038189+5358784577124805))%(2679393271239608%(29771037373692-904765)))]](470292604%4236870,-553116-(-553124));[l[U(q((88449587208%627349331)%3266631),3331590621413125%14176981411074)]]=UDim2[l[U(q((-343308-(-166835))-(-196953)),((-391173-(-493646+-47915))+6014790436186)-(-797836))]]((242091673132%2916963771)%12778167,984936-985012,(169647981348%760775078)%3499602,-499218+499236),[l[U(q(-855278+876155),12237640686001-400830)]]=Enum[l[U(q(1475797447%12298147),-322037+(-327158+32914877154837))]][l[U(q(1574234378%8697316),4147620145171424%(23171062218331-(-60967)))]],[l[U(q(425005+-404964),3239970112081846%32726970963694)]]=K[l[U(q(-572276+592604),3487495170303-626370)]]or l[U(q(603549935%10229326),-14190+26353130959769)],[l[U(q(48837878%2712087),992103436787210%5451117863021)]]=f[l[U(q((-167316-(-519086))+-331044),120881+6782829598015)]],[l[U(q(-958651-(-978369)),2111219862793-(-407055))]]=150523706%3500551,[l[U(q(-157748-(-178238)),548444106707355%23845396377919)]]=Enum[l[U(q(-627966-(-83639-564836)),4040220018702848%25733885500095)]][l[U(q((919810+-892396)-7242),416399424%(915454411%12132205)+28977552882017)]],[l[U(q((1980393787%15963279+-915838)-11664),-254708+(34751669668066-110491))]]=-546136+546218;[l[U(q(-673006+693179),-93367+17608591113902)]]=n})local h=z(l[U(q(((228069+84033937048)%407985621)%9927321),-623740+(20121944379987-918521))],{[l[U(q(-685519+705678),-717165+382396360712)]]=963087+-963086;[l[U(q(3688060280%16034959),4713929482011688%23807724727959)]]=UDim2[l[U(q((247378463403%1832454769)%8392218),22924955918335-335948)]]((424982+2019400286)%12468057,244376153%8426763),[l[U(q(-41810+61557),-184021+14172813904709)]]=UDim2[l[U(q(-623284+643594),23919870388056-(-519049))]](119188936%4414405,-719675+(-381785+1101384),-212821-(-212821),1018675-1018659),[l[U(q(27438441%(111299+129212)),-135716+(18024555329019-338504))]]=Enum[l[U(q(-73942-(-94707)),19155277790952-488913)]][l[U(q(49189-28581),(444965820038863-(((-819349+(1700891-764321))-(-665137))-(-11430)))%2431507228619)]],[l[U(q(648705747%6119675),1716206715661483%7180781289187)]]=Z[l[U(q((-642780+1613374)-950314),(-984427+27752794246349)-(-863081))]],[l[U(q(2138852085%14354574),24559033045375-772952)]]=f[l[U(q(2001347472%12743023+(249649+-921603)),623761+29395420510748)]],[l[U(q((298238+-445700)-(-167202)),((237149743233728760-(-884540))%1162498741354226)%((630299+-1104152)+9226181007869))]]=742968199%8438213-405445,[l[U(q(476621+-455854),32573413240165%((-917439+((-740293+1422307)+121495963))%12111569+329024287063))]]=Enum[l[U(q((24412511081%531006139)%10141466),-1036601+9778453300443)]][l[U(q(1045069-1024187),2531994324414781%(1163349733056892%17108084525489))]],[l[U(q((607577+(-484812-(-115695)))-(-111103-((269030-406821)+(-575214-(-383657))))),684327+(19635832446204-(-135172)))]]=Enum[l[U(q(775969+-755557),23798284935486-218504)]][l[U(q((41180+(284+595103))-616537),-502492+7354827264797)]],[l[U(q(538813-518115),33127733686054-624668)]]=759271+-759189;[l[U(q(62351316%15582724),(48136152911329241%501418259629345)%12856878496865)]]=n})local b=z(l[U(q(579158863%4820655+(-56436-603570)),17753256011749-43612)],{[l[U(q(3670971%(2632938540%15946142)),1597513606559466%6216006288070)]]=Vector2[l[U(q(575757-556030),(48516032%519889+259238335275692595%(228004802854218784%1561676731976272-(-960724)))%6453209581410)]](-402227-((-406139+-260154)-(((3927153839-822450)%15580468-1045750)-(-728232))),205043436%1314381);[l[U(q((390249+655109525)%(4747871-(-1315413-(-211789-434310)))),-572158+33195664853968)]]=false;[l[U(q(997700+-977127),29229359476446-(-257509+-739112))]]=1283152696%7776683;[l[U(q(445572-(-102847+(496863+30976))),811732623716924%4460069425057)]]=UDim2[l[U(q((1044225009-797729)%10330768),343093+4771337532386)]](516504001%12912600,(85432-(-627321))+(-199110+-513651),(58982824114%248925059)%5631195,950697+-950690),[l[U(q(901768534%7909783-32877),-912057+25383108138802)]]=UDim2[l[U(q(-287032+306925),23526224783088-(-738729))]](2559323194%14378220,(-1043585+730599)+313022);[l[U(q(-649680+670578),30683160510030-(-385861))]]=Enum[l[U(q((1939900102-(-329731))%(-93785+10993838)),23288781816531-(725379+-344401))]][l[U(q(((55349-(-846268))+(-1574721-(-38951)))+(231613-(-422531))),4040812870404981%20204064385325)]],[l[U(q(-473353-(-493996)),(327855+26160237766440)-(-112978))]]=l[U(q(589274+(-1494330-(-925518))),(21379949722342-(-110481))-(-853145))],[l[U(q(2149450711%9638702),16873326647091-(-1014137))]]=f[l[U(q(915059+-894995),3765182838350-(8536778392%(53933917-(290097-807726)))%8446418)]];[l[U(q(221298+(749107+-950370)),((818671170919096-(-991010))-33508)%17055649727366)]]=902763-902743;[l[U(q((-96064-(-294985))-178133),-360131+16115896013333)]]=2300124123%10177540,[l[U(q(773123-752416),2519923565192712%15651699180761)]]=n})local d=z(l[U(q(-286260-(-305993)),-318003+1738368985319463%9197719499300)],{[l[U(q(679674-659743),23485626339180-(-118761))]]=-859205+(1094927-(-157991-(-393712)));[l[U(q((-941510+622473)-(-905200-(-566063))),(-137256+(9004053992388%(6390290960202%42887935389))%974321306)%7778561+9791161715044)]]=UDim2[l[U(q(-375528+395406),-114507+23593235467948)]](1798236886%13520578,155074+(-326748-(-171735)));[l[U(q(927442-907390),27067174532673-15526)]]=UDim2[l[U(q(622563+-602549),1806379756672438%28224683845102)]](723459+-723458,1195-(-783045-(-784264)),701346+-701346,1873144764%((379978+(-685622-(-144229)))+8449666));[l[U(q(439297072%1877141+-25093),678503+24363478639761)]]=false;[l[U(q(-891157-(-779607-(238061-105674))),836932509%((552495+2692323856)%20823556)+(30562826516656-(-237348-(-80687))))]]=(-32346+60138)-27710,[l[U(q(810101727%6475499-644070),2628011874983525%16222295602778)]]=n})z(l[U(q((638361-380361)+-237042),520426+29860334462286)],{[l[U(q(643309508%3898724),195423008732229%16285252025039)]]=Enum[l[U(q(682433-661883),(-210351+3254759869780)-(-821020+490720))]][l[U(q(198671+-178492),14271936018019-(-187063))]],[l[U(q(-737270-((-956104+579927)+-381642)),815796712094908%7032730295206)]]=Enum[l[U(q(-130445+151073),(-757687+555103)+5733811620892)]][l[U(q(1362998079%((-325635-(-428618))+15385401)),12021068032827-657330)]];[l[U(q(1403027327%6047442),(760624+6890892780968)-(-723154))]]=UDim[l[U(q(650693324%14459413),2942306378326647%12520452698396)]](723082-(-750720+1473802),((226166+377663)+2852776114)%16212386),[l[U(q(-583761+603504),21718429826720%868737537272)]]=d})local function m(K,P)return z(l[U(q(((1154567-(-268621))-658772)-744380),294899+(-177443+10337014708799))],{[l[U(q(373302973%3078713-((2205959-680726)-767325)),976943+17974625216702)]]=false,[l[U(q(37638+-17339),811223292002397%4247242445338)]]=P or f[l[U(q(150608148%13689774),25749196022644-40987)]];[l[U(q((349291796557%1755277209)%10460412),61107+1409430162779340%25168395965280)]]=((-1026915-(-699532))+-238332)-(-565715);[l[U(q(-476406+497163),(3863785567534441-307916)%24300538260502)]]=UDim2[l[U(q(956846704%((-791515+10019774)-201592)),(-860172+28480305353005)-1028493)]](.333,(913436+-1826872)-(-996522+83091),841483621%6233212,930494+-930494),[l[U(q(88949+-69037),-716103+12634606815842)]]=Enum[l[U(q(487736+-467291),590753827242498%3836063891081)]][l[U(q(994823+-974398),1333054227007587%34180878041729)]];[l[U(q(-913781-(-934357)),534839343934600%6522431206059)]]=K,[l[U(q(166524367%(473831+3907838)),-297566+20535474480634)]]=f[l[U(q((1205286-764538)-420242),2985605676081686%26421289256937)]],[l[U(q(425299706%(8242051-63598)),(800964+19762016474084)-912256)]]=1019614+-1019603,[l[U(q((380505+-1042337)-((368186+-1289780)-(-239277))),22831538561984-(-417255))]]=-957566+957649;[l[U(q(796230850%(2537092618%30034221)),41653694500205%5206713451088)]]=d},{g((-205433+620456)-415014)})end local X=m(l[U(q((71014+381949)+-432965),497361665726366%(8021961904422-(-596421)))])local J=m(l[U(q(1385909761%11845211),2151419396373355%20106723465034)])local k=m(l[U(q((-1573214-(-631601))-(-962482)),9605730361344-879161)],Color3[l[U(q((486434503-191156)%9706446+-900525),28184089175661-929315)]](446350958%2507589,(-697913+15386582)%100607,454538-454483))local F=z(l[U(q(-949411-(-969369)),519919+21362708822554)],{[l[U(q((-712977+75556)+657938),25170857109877-435380)]]=Vector2[l[U(q(369265-349099),483461+15244710524326)]](1005460-1005459,958850910.5%(4886440533.5%26760767.5)),[l[U(q((44538468-51366)%7411146),1013479+14076724186314)]]=false;[l[U(q(415471-394558),31226978415403-(-610965))]]=Color3[l[U(q((55406+-1025509)+990945),(-164683-(-38380))+(4689528117440729%32341573279552-(-1014416)))]](-205557+205575,3267412602%13017580,472179075%7264293),[l[U(q((196214276-(-231116))%(4356542-(-812550))),-642374+7779502410472)]]=-498359+498359,[l[U(q(105022571%(485911957%9674488)),9357836665299-(-123045))]]=UDim2[l[U(q(1533855419%6338161),790704975318994%11801566809245)]](891136-891135,-739768-((242575-553384)+-428941),.55,-3189-(-3189)),[l[U(q((-733984+-53543)-(-807859)),(-738477+2580383016976693%31856580478149)-(-956911))]]=UDim2[l[U(q(-1008199+1028636),(1376495210216944449%7733119158527539-897089)%30686980826507)]](-1039277-(-1039329),(-968435-(-991688))-23201);[l[U(q(979429637%((240033580838%(664005+(964195+1084560085)))%(200364202%26319076))),264985+29707754266653)]]=Enum[l[U(q(-875635-(-896040)),631696486707484%3509424975360)]][l[U(q(76405073%8487208),155971772042667%31194356833027)]],[l[U(q(227593+-207206),494624+2224763346307)]]=K[l[U(q(444041-424195),20058531123699-(-658224))]]or l[U(q(-706983-(-726680)),798886+21996626483167)],[l[U(q(688901+-668220),200876591965484%((188233+-999963)+5021915865825))]]=f[l[U(q((51910109-(-1013106+1991793))%((-90988-7918)+5190062)),-46565+16469820021341)]];[l[U(q(-951188+(((-263570-((-113912+(-1486887-(-871685)))+950810))+(1595573850%7122872-(526567+-894747)))-(-1037818))),2419035181223261%19666952729979)]]=286758+(688561-975305),[l[U(q(651226-630375),-21392+6130871701559)]]=false,[l[U(q(-28513+49465),757901+21867646879133)]]=((668118+(-2423801-((248443+-391820)-(-824335+1371528))))-(-708362))-(-356841),[l[U(q(((544218-920116)+-406581)+448567224%(372436991%(-1001197+9360762))),719995202703867%(-953267+9350588144523))]]=o},{g(582121-582095);p(K[l[U(q(470546-450080),(-649970-(-135311))+30256069429515)]]or f[l[U(q(-844826+(2854923935-114469)%14711055),(833000+5303597967389027)%22762223075968)]],.1)})Z[l[U(q(-232466-(-253139)),27482133797595-(799857+-1584272))]]=F Q(c,A)Q(H,n)Q(F,F)local S=false local L=false local function i(P)if P then N[l[U(q(402021+-381962),978697+6875078810793)]]=true B(N,.3,{[l[U(q(((-207951+159156)+2982348652)%13871068),12354+10911966762246)]]=.78},Enum[l[U(q(49020+-28872),29951958416148-(-515154))]][l[U(q(-978252+(1395+997388)),1157490855677675%28231484307908)]])B(u,.38,{[l[U(q(161016-140529),137061+19048691030403)]]=K[l[U(q(24668+-4610),194437036114538%4419023597615)]]or 1022185-(-665041+1687214)},Enum[l[U(q(477517-456771),1757562231645810%8369343985397)]][l[U(q(431062-410953),(985854-107185)+8516393134222)]])else B(N,.24,{[l[U(q(178637213%4153889),874117712974284%(1637989498139760%7874949583365))]]=1911032474%10614425-435973})B(u,.28,{[l[U(q(-118776+((-250123-445553)+834472)),25825971628902-(-591437))]]=1524603760%6628712})task[l[U(q(655229+-634818),20128984567648-(-627136))]](.29,function()if Z[l[U(q(((361056+-667857)-327172)-(-654576)),31852444091021-879120)]]~=l[U(q(2519046152%13470729),-256649+11595992899523)]and N[l[U(q(822063-802218),843001+21247387327674)]]then N[l[U(q((-698196+3047608183)%16381127),(-355571+854912)+26339052880193)]]=false end end)end end local function x(K)for P,v in ipairs(Z[l[U(q(195283+-175383),19909819938677-(-620164-(-665847)))]])do v[l[U(q(973021929%9446615),(-472315-549248)+8686717413693)]][l[U(q(-6081-(-26969)),82707176854801%586575789223)]]=K and v[l[U(q(4039209202%16486485),5594822205424380%28988716109438)]]end end function Z.SetMode(P,K)if L or(K~=l[U(q(694110+-673400),773472+3270721036166158%17490486867382)]and(K~=l[U(q(-610453-(-1500751-(-870374))),((-1327224-(-711108))+257448)+26374723489998)]and K~=l[U(q((((44432-904466)+(420417036-(-254805)))-(-969059))%4623748),752619243861128%25087308452379)]))then return end L=true P[l[U(q(641213519%((843497+3646111508)%16124740)),124627429890-547524)]]=K S=false d[l[U(q(-872942-(-892827)),(-1047517-(-520511))+(397759+6965009575611))]]=false b[l[U(q(144262-124306),32045936609696-(-937588))]]=l[U(q(-679667-((126694+492073)+(8041+-1326970))),27211251978382-(1568269-1001006))]if K==l[U(q(1057278-51512548%3365080),25261+8342817928371)]then F[l[U(q(-892844+912839),989661+4254823761910308%31991156131276)]]=false n[l[U(q(799956-779239),2332735138560-2440332122%12322827)]]=false A[l[U(q(-340338+360055),(-504232+1307181449032609)%16339768268453)]]=true x(true)i(true)A[l[U(q(-904520-(-925365)),28758411158987%(5751685830365-898252))]]=UDim2[l[U(q(-202199+(-320140-(-542997))),226591515258582%((281372468510035-(-105896))%2490021891272))]](E,-194974+(-69466+264440))B(A,.34,{[l[U(q(-762746-(-782792)),(462349+3483891675272928)%33824191073083)]]=UDim2[l[U(q(3350843772%14505729),-716615+(1003181+33913413489679))]](E,Z[l[U(q(509327133%2723176+-73268),32353851454579-748096)]]and 511992+-511702 or 518639+-518219)},Enum[l[U(q(-36272+56704),4927241554632201%28814278161967)]][l[U(q(2562737736%10502940),6802941155835-(-530409))]])elseif K==l[U(q(877067-856166),34625473332962-(-686009-(-229615)))]then F[l[U(q((-729123-307114)+(956367-(-99728))),2966700333790461%25575002950363)]]=false x(false)A[l[U(q(-930055+950193),32612835442979-(-953535))]]=false n[l[U(q((-368356+-555593)+944101),-348662+8728467471163)]]=true i(false)n[l[U(q(33885+(643670+-657698)),31531775797237-(-896775))]]=UDim2[l[U(q(4181515759%(16811917-18761)),227813+22306322219825)]](Z[l[U(q(((-556957+80690544899)%384250010)%7340693),1534903374041-341052)]]and(-558840-(-788241))-229191 or 1521582738%(474257+12872958),(563129-166088)+-396997)B(n,.34,{[l[U(q(200517-179686),286606+33630913704976)]]=UDim2[l[U(q(((-306836-218824)+(-326379-(270075-531348)))-(-611308)),6112170744147-(-509972))]](Z[l[U(q(-939155+960125),5546721768382283%31877711347582)]]and-333286+333540 or-343183-(-343475),119063+-119009)},Enum[l[U(q((11456+-514476)-(-523134)),-108767+518858841037700%11792246630373)]][l[U(q(((-503307-207365)+1731148)-999920),414159680740418%(120668+3480333375850))]])else x(false)A[l[U(q(167164+-146899),664856448247584%16216011141607)]]=false n[l[U(q(350451-329969),5411560636163594%32797337286547)]]=false i(false)F[l[U(q(2851804975%11882437),((-6914+(772709-172365))+26130542253455)-323697)]]=true F[l[U(q(128181802%5825512),662229892920382%15400695551787)]]=UDim2[l[U(q(2201114174%(8558792-(-650805))),2060+26601954782358)]](((512856359-(-856188-121500))-926385)%(985127391%(761451+15438175))+-64253,(-573055+138189)+434866)B(F,.32,{[l[U(q((-648231+1072446251)%9160494),5010180506085-(-954102))]]=UDim2[l[U(q(821742+-801065),30457300528173-511925)]](209117-209065,(-850454-(-1018701))+-168195)},Enum[l[U(q((1761183-(215816-(-630661)))+-894268),-770960+9188734417042)]][l[U(q(849723+(-1076347-(-246551))),1559820664109118%6445539983400)]])end task[l[U(q(-20865-(-40590)),(40357791154855936%524127157960112)%23823961804913)]](.36,function()L=false end)end function Z.SetStatus(v,K,P)v[l[U(q(1038058-(1335947886%5470903+-29296)),28223979944002-(184276-601974))]]=tostring(K or l[U(q((-1002052-(-403938))+617886),5792197520098-(-586982+-63380))])h[l[U(q(-970192-(-990443)),26235898908333-(-172484))]]=v[l[U(q(498690-478742),988255+23251773468470)]]M[l[U(q(761891-742007),5441111680316331%(-913344+32777782217724))]]=P or f[l[U(q(-627496-(-632373-15466)),166401453770230%33280292715828)]]B(M,.12,{[l[U(q((653167-(-295289))+-927641),372034+16704868950923)]]=UDim2[l[U(q(-710797+730622),-427939+14963651012326)]](295067125%3041929,636003120%5435924)},Enum[l[U(q(-1022042-(-1042571)),8403710182268350%34161423519609)]][l[U(q(-980826+1000693),((-1471995-(-855908))-(-215903))+(-160534+10341739636648))]])task[l[U(q(-499329-(-519121)),(7409485609186-183835)-952902)]](.13,function()if M[l[U(q(125830618%4838847),3337624376%(-118153+16969820)+5674338591460)]]then B(M,.2,{[l[U(q(-33878-(-54799)),(749437-458612)+13396210602146)]]=UDim2[l[U(q(-128143-(-148959)),6131613093939776%28786915982640-750454)]]((355870838-(-399347-(-525181+519836)))%1542272,-293162-(-293170))})end end)end function Z.Notify(s,P,v,r)s:SetStatus(((P and(P..l[U(q(1043172+((((-471555+209847)+-565882)-(-321403))+-517074)),2448958119229264%(950392+14405635089835))])or l[U(q(1039522+-1019750),6373659013824638%28840086059750)]))..tostring(v or l[U(q(-436816-(-456588)),417160673396301%18961848935104)]))pcall(function()(game:GetService(l[U(q(-924224-(-944212)),7649510115152%(((-943512+164921)+1329989)+364262226825))])):SetCore(l[U(q((12045665741%48827891)%3089523),8055184560584728%34132137986968)],{[l[U(q(746678715%(2453109110%(-148285+24556973))),69302964144941%5330997909597)]]=P or(K[l[U(q(-487946+508159),2773095741807-(-937712))]]or l[U(q((-155138+30024)+145217),17951499993044-(-291482))]),[l[U(q(541965368%(952560+2071067766%8275694)),-552041+24645870782078)]]=tostring(v or l[U(q(17148-(-2624)),544372509197408%2835273495970)]),[l[U(q(577982+(724714110%13159812+-1482268)),-393793+33963438406246)]]=r or 1133772476%9293217})end)end local function w()if Z[l[U(q(676550+-656771),-214809+8115025321588)]]~=l[U(q((-779865+75163)-(-725000)),3420163376711993%15406141382830)]then return end S=not S d[l[U(q(572747257%(7636559-(-428924))-77753),-167018+((-96710-540667)+23871151919644))]]=S b[l[U(q((602683+234056592690%2229138252)%9201639),(712387+(26681676048383-152128))-(-173536))]]=S and l[U(q(360021008%1440002),(868379952404966704%6202713945808313)%27940152882520)]or l[U(q((769290+-487938)-261531),((108249-(-433849))+-1013169)+2664365328946)]B(n,.3,{[l[U(q(582734871%15334591),1892765779261576%10633515660434)]]=UDim2[l[U(q(-327011-(-348001)),5608026124437648%28759108394224)]](Z[l[U(q(-486355-(-506899)),31675071035977-824701)]]and 2464363692%10311144 or(759220407-(-570283+384954))%3360201,S and 69341-69229 or 710989-710935)},Enum[l[U(q((753744+(-180651+(-675783-(-220743))))-97572),(-193275+-174607)+18461036816448)]][l[U(q(681472707%(195656+8540909)),7491670800129-(-388877))]])end t(a,function()Z:SetMode(l[U(q(452049-431895),522339941934083%17411331701592)])end)t(D,function()Z:SetMode(l[U(q(799541357%3537702),34339529303952-(-497300-(-574531-203149)))])end)t(b,w)t(X,function()Z:SetMode(l[U(q(817755-797020),1118231579%7705133+3033146710715)])end)t(J,function()Z:SetMode(l[U(q(897755+-877759),-1045510+14715279815825)])end)t(k,function()o:Destroy()end)F[l[U(q(-812210-(-832779)),(411555-549399)+32625111089957)]]:Connect(function()Z:SetMode(l[U(q((-892615+897614757)%7290258),2386294570%12894774+30498664947890)])end)function Z.Destroy(K)if u then u:Destroy()end o:Destroy()end function Z.Show(K)K:SetMode(l[U(q(-414003+434517),(-874327+2548011597%10564989)+(-828131+11551746579086))])end function Z.Minimize(P,K)P:SetMode(K and l[U(q(446700239%11453345),(-208652+1444853776598)-837733)]or l[U(q(325633+-305118),11833761584939-(405494-(-129398)))])end function Z.CreatePanel(s,r)r=r or{}local R={[l[U(q(-26222-(-46200)),1316763406703463%18288380877596)]]=s;[l[U(q(2443645924%16076481),3219260982918235%27752249919597)]]=r[l[U(q(356807-336597),1002633100089-(454339+-295180))]]~=false;[l[U(q(6473472%72504),20946437223137-(-896297))]]=false,[l[U(q(-113116+((649118-963733)+448635)),-127349+26947624689208)]]={};[l[U(q(((-9286+69595113351)%270820489)%(6959268-795583)),492382676%2601911+6936106421137)]]=r[l[U(q(468649-((-1036004+1064793)-(-19728-400231))),(1015108+(2601232873448035-440341))%19856739497423)]]or K[l[U(q(663967+-644244),(-862869+1175618)+8873139645030)]]or f[l[U(q(786480+(13882+-779779)),19101655472813-1020379)]]}local V=#s[l[U(q(517142+-496882),-82389+13863291078016)]]+593703190%(835825269%18117001)local e=workspace[l[U(q((360951+3449199251)%13580867),(1043562+-294258)+23631490149963)]]local W=e and e[l[U(q(582388+-561821),-50234+6263063044804)]]or Vector2[l[U(q(41110817%2739338),(1301059998386623-(501970-(-36827)))%6920531924090)]]((((406255+-726083)-(-454623))-(2219080129%(-837558+5703990388%29627408)-204958))+477062,(680546-(85585+211702))-382539)local j=Z[l[U(q(1684910042%(-656149+8997190)),16081355828458-847103)]]and math[l[U(q(-229914+250389),(-621338-(-597198))+27725238405151)]]((W[l[U(q(16937140%96116),209333094367447%20933311061893)]]-E)-(1021673+-1021631),-966848+967058,-813922-(-296175-518077))or(r[l[U(q(3140572658%12871117),33551588150239-(-341272))]]or-27963+(-617739-(-645996)))local u=Z[l[U(q(-547245-(-567110)),-452223+2413507411697)]]and math[l[U(q(831832+-811945),6547835625706966%34644632949272)]](W[l[U(q((487520+590524315)%4963259-363605),31940158998236-(-676839))]]-(396353+-396243),-309524+309804,2791518461%15677197+-976925)or(r[l[U(q(193346151%16110478),1801439109588-88267)]]or 805778+-805298)local N=math[l[U(q(550979299%2946302),-106756+7444773732750)]](-508287+(42973320-(142154+-769442))%5386540,math[l[U(q(345779+(-1355792-(-1030143))),12954926205499-500769)]]((((W[l[U(q(-136398+157005),470734626708517%5958666257992)]]-E)-(465401-(-214258+679617))))/((j+(-940242-(-940254))))))local A=(((V-(582773+-582772)))%N)+(2731437015-576854)%14223230 R[l[U(q(595-(-19897)),-521099+15260083248799)]]=A local O=86354820%1439247 local c=(E+3783888136%15015429)+((A-((-920446+874065)-(-46382))))*((j+(-408090+1984488)%1576386))local Y=Z[l[U(q((-746311+209277)+557759),88635+15163112285808)]]and 946393.5-(896178-(-50215))or-934902+934902 local G=Z[l[U(q(1403095588%8157418),1015256+((-1016729-(-258435))+27751831628760))]]and 984655+-984655 or 234580+-234552 local C=z(l[U(q(576642+-556268),(930141+578298254549716)%(212436134675789%11802007613849))],{[l[U(q(32883434%597510),831523276736491%6496275657200)]]=Z[l[U(q(167756252%7624389),-1349+21284614839869)]]and Vector2[l[U(q(938635+-918449),32060832673104-(-691949))]](258625+-258625,192525.5-(680388-487863))or Vector2[l[U(q(-476283-(-497267)),869850302385348%29994838180901)]]((-293987+-418183)+712170,537940+-537940),[l[U(q((510252+1459331305)%13643190),4220825149568248%32719574809004)]]=f[l[U(q((317650648-(-542495))%(3116924456%(1199714113%(495766+12547176)))),228747+(33188377073533-(-302912)))]],[l[U(q(((1027767+(-1410054-575102))+1853956)+-875783),3529881594025874%(-599314+16572214713127))]]=(1570852380-(-909592))%9138151;[l[U(q((-1463991-(-812697))+671926),7871463103298678%30990012243624)]]=true;[l[U(q(205302-185506),1529854275715744%(6739445179656-(-994029)))]]=UDim2[l[U(q(356619-(-484553+820855)),2274068444661728%20304182666434)]](O,c,Y,G);[l[U(q(2733025039%(758802+13856193)),1380524682980869%28760931023503)]]=UDim2[l[U(q((66109155786%2066356566)%((-700565+11460040)-(-966704))),11813795653059-(-224339))]](j,u),[l[U(q(-590050+610430),1760556877385662%11976577477326)]]=R[l[U(q(775158+(-1249847-(-494773))),-536325+14887166022157)]];[l[U(q(-383003+((159614-(-265688))-((41948734396%313140261)%(949190-(-304222))-239448))),3395281370501639%(863712+29269666180619))]]=1271827616%5754876+V;[l[U(q(640029-620226),-543370+11133298488222)]]=o},{g(-707138+707146),p(f[l[U(q(839958-820140),3346908451613496%18697812582024)]],.2)})R[l[U(q(753042+(933799+-1667027)),18374043872601-(-313926))]]=C R[l[U(q(-608992+629126),-646855+12602173896592)]]=UDim2[l[U(q(129425212%2875666),6965543743723088%((5291423820401426-298738)%29895049900993))]](j,u)local T=z(l[U(q(-859638+(862862-(-17595))),-683953+35026127837738)],{[l[U(q(80564+(73489-134241)),8390606353954488%(5113027922872148%32775820108121))]]=f[l[U(q(82645-(-20936-((1881474-670055408%5817576)-931064))),(2437767303325447-(-324264))%(13177121170991-570197))]];[l[U(q(-509614+(2223614002-(1623671521%12020599+-1429962))%(4392175712%25765240)),((((-860487-(-666662))+-673886)-(-347234))+12315101526568)-(-110912+670505))]]=-391836+391836,[l[U(q(1691565300%7867653),11836713864426-29436)]]=UDim2[l[U(q(578248+-557800),-336866+15689221382587)]](-1026032-(-1026033),-103124+103124,564894030%4912122,-259824+(-484762+744634));[l[U(q(2929178038%13076596),-516043+34409265697363)]]=C[l[U(q(1329688247%14607004+-430794),32524108489611-545816)]]+1857523993%8329704;[l[U(q(998977333%6362780),-65444+(14552993532635-226783))]]=C})local a=z(l[U(q(2769094048%14887493),1622347325970143%(2672102152379108%(795268877259247%15905377699613)))],{[l[U(q(849919+-829382),588202966467421%11311595553761)]]=R[l[U(q(3281895249%13019550-948451),(515040+-838163)+23161844353970)]];[l[U(q(634194586%2620553),(582531+-1181778)+27605711980003)]]=-222779-(-222779),[l[U(q(-230209+249897),6003418202291-(-1019920-(-215703)))]]=UDim2[l[U(q(744234-724443),95110+19814904995503)]](-968260+968264,(918593+-1823155)-(-904610)),[l[U(q((-43274+-976589)+1040469),-500109+15469945044727)]]=T[l[U(q(1043526-1023070),4324104744070381%22174896138668)]]+560356313%16481068,[l[U(q((-234392-284087)+680042401%3754162),923362+2083412503703)]]=T},{g(2141333024%9073445)});(P:Create(a,TweenInfo[l[U(q((-352947-58147)-(-431352)),403531280647164%6725521389909)]]((383910.25-1038472)-(139869+-794432),Enum[l[U(q(20050-105),13188609680836-(-144401))]][l[U(q(1310741989%5957824),-677632+22132313981583)]],Enum[l[U(q(852360-(509911-(-321729))),(-35676+890720)+34468578967498)]][l[U(q(2921367037%(4455861533%21568738)),5111753132765180%26485767531653-(-713814))]],-443886+(-266608-(((343341+-770852)-1016679)-(-733697))),true),{[l[U(q(653693284%(14523709-(-677989))),235363+2816717374354813%28742014159273)]]=.48})):Play()local D=z(l[U(q(-113253+133389),26489154242779-239153)],{[l[U(q(836781130%16407083),1573138636578333%18727840958319)]]=912259-912258;[l[U(q(971106+((-189744-661344)-99140)),4685678043182-(-944270))]]=UDim2[l[U(q(244372-223401),(-310263+20620229825655)-1038432)]](-966303-(-966317),1024301+-1024295),[l[U(q((-875052+1120039)+-224916),10282152708254-919719)]]=UDim2[l[U(q(250546+-230063),7858176443542-(-559767))]](85415329%4745296,((-209964+((-574937+79636)+112365))+1020681)-427867,-719294+719294,-220335+220355),[l[U(q(706810-686195),(-617634+1025702)+21836288214737)]]=Enum[l[U(q(-146571-(-167433)),16005863966064-488118)]][l[U(q(318606-298687),(5220972739260-(-915051))-429024)]];[l[U(q(-77587-(-98217)),9685326858336-((-52443-(-840878))+-692923))]]=r[l[U(q((990191+((1053087145-264095)%12385377-416744))-619561),7690872810395-(-324660))]]or(l[U(q(738322519%(4785397350%(26539064-((144719+-718955)+1033147)))),2760221534312651%13870460041855)]..V);[l[U(q(190597+-170258),5372787863934945%33579924189923)]]=f[l[U(q(-824719-(-844856)),876184517165507%25770133006977)]];[l[U(q(249996+-229804),(3536943790075549-298346)%18713988324684)]]=436438-971442540%5920769,[l[U(q(-195603-(405666-621911)),(-117003-761797)+11762899576937)]]=Enum[l[U(q(1051586329%6828351),1720105516996-(-207486))]][l[U(q(1193280887%4888032+-580269),(-1359591-(-1008344))+34192087535242)]];[l[U(q((-746675+1017131712)%6730891),34458789331560-(1011172+-1859041))]]=Enum[l[U(q(824309921%13294997),(1785475491741897-954728)%(3703913334925710%18994427395766))]][l[U(q(279133-258205),(3512497632010625-(-286048+(-1007555+916378)))%16887007861391)]],[l[U(q(1236285360%(-729464+14465746)),378227791537313%14008436858614)]]=T[l[U(q(96238558%(5690627910%26912799)),-367967+23552128812530)]]+(((309237+((382750+-958396)+-71809))+-370165)+(1040403+-332019));[l[U(q((435270+498599)-913896),4800331937683585%25132627999556)]]=T})local n=z(l[U(q(835216-815022),(46139+((-911818+595004)-(-232963)))+269518297997)],{[l[U(q((987876680-964934)%(-728967+13381414)),-670696+((-603823-((226691021%7814599+-1422985)-((-83525+611435230)%7825426+-1420553)))+24233057397723))]]=465389-465388;[l[U(q(-157105+27730309%324146),(8361627294530640%34268964347740)%(328933+3426895649985))]]=UDim2[l[U(q(244565186%12227239),(((196676256083187834-(-551527))%((-424430+5619321603286809)-185578)-1030443)%1873107201808489)%(2919845318811382%27545710705812-578780))]](1015751-1015737,((54095+23514585)-(642889+-1014498))%2992533);[l[U(q((617297+197511)+-794659),1095219536554471%13863538524372)]]=UDim2[l[U(q((1254478727%96623392)%6331883),245726+13170076584411)]](303527+(343536-647062),(-560406+-439937)+1000257,-388591-(-388591),(140136+((707932-(727956+(12422-(-270918-(-916670)))))+2088843286))%(11834378-(-753554))),[l[U(q(38744-18023),654598446015034%3991454002123)]]=Enum[l[U(q(-135145-(-155841)),821773+15308406404135)]][l[U(q(-879762-(-900533)),-692861+13082286417792)]];[l[U(q(-693693-(-713606)),9014213812527-(-27564-(-3699-(-5150-346500))))]]=r[l[U(q(471061+-450557),-385690+1022700686960005%4261252913818)]]or l[U(q(((708902+-2386047)-(629494+-1497736))-(-829700)),2035060224981804%10436206306551)],[l[U(q(-454405-(-474859)),30202698143138-(-822249))]]=f[l[U(q(775680+-755173),(16339857392049-(-386470))-1013862)]],[l[U(q(((200547-664700)+962854684)%6724908+-708017),((419305-(28663+-250952))-286876)+3279860354800)]]=(937607+-876863)+-60734;[l[U(q(-424100-(-444540)),-489589+(-105023+16538535915035))]]=Enum[l[U(q((795723+(395226193-(-749595-(-112369))))%2813045),-599107+29849904026035)]][l[U(q(-430653+((618929-709077)+540575)),88838+(-665794+(594056949807205-(-868173))%2869840416801))]];[l[U(q(454974-434766),761278040079175%25375934844608)]]=T[l[U(q(238422-217711),1984614278%(-137577+8011922)+16459430819412)]]+((107390-270034)+81738207%13595927);[l[U(q(265729+-246022),3580710967264758%15367858244539)]]=T})R[l[U(q((72852329793%509467279)%2180067),4666275234396573%19442813508422)]]=n local M=z(l[U(q(769564+(992588+(-787405-954983))),705166+26134113853175)],{[l[U(q(3831597669%16659032),-931611+6880254195758)]]=Vector2[l[U(q(688502-(780029+1616510280)%17017082),403024+33158538086852)]]((147496570985%760322653)%13233315,978408+-978407.5),[l[U(q(2459925466%(13879185-(-258198))),2354912849402743%11431615818981)]]=false;[l[U(q((70597+(((-884084-591913)-(158854-653369))+1177699))-246010),-609438+31195293708345)]]=f[l[U(q(-712966+(977664-244106)),1095507293839082%6369228546825)]],[l[U(q(2043787612%9595152),-172985+26046706277103)]]=1057830280%8137156;[l[U(q(2771207630%13855937),32918208921411-24427)]]=UDim2[l[U(q(1299628084%6308773),23181084863620-482644)]](616775+-616774,(-650684-(-168153))-(-482521),538780.5-538780,-304655+(-579311+883966)),[l[U(q(-1001251+1021880),31439563408904-467146)]]=UDim2[l[U(q(986362+-966122),7966440848141-983660)]](-554926+(290294+264662),612889-612861);[l[U(q(564654-543715),21774410609087-(-350796))]]=Enum[l[U(q(-776122-(-796464)),587198323360773%(-312351+14321910892479))]][l[U(q(119751-99035),(-1403500-(-780361))+(3321160006897-615790))]],[l[U(q(578372004%15219770),((224568400595701-885010)-185862)%(442583+6238010702860))]]=l[U(q(-858280+186180396%(3704251727%17381976)),-319394+8578454036492)];[l[U(q(133827456%(763495666%3283896)),23925150218383-(-528323))]]=f[l[U(q(1304343238%10190027),32655545226733-909107)]],[l[U(q(510704+-490300),(47445+1467011180448407)%18807835785073)]]=578221+-578203,[l[U(q(531372349%14360872),133259870111857%5330394963750)]]=T[l[U(q(-865331-(-885919)),-961315+26135054235811)]]+(874715-874713);[l[U(q(963892506%13198103-(-65655-(-475927))),921461+3822046022840)]]=T},{g(-883989-(-883996))})local H=z(l[U(q((575188321%8976996+1888642223)%8911711),-709723+2793559768139)],{[l[U(q(-863356+883705),-1030656+18336731146621)]]=f[l[U(q(214248+(401140-(1535836-940850))),-344314+34201061768979)]],[l[U(q(970908+-949979),1936888791352254%9448238011176)]]=-669029-(-669029);[l[U(q(150840-130472),15679521621456-(-447801+(-990682+920583)))]]=false,[l[U(q(753483+-733459),1217012802371536%(-932342+24836997105281))]]=Enum[l[U(q((227072845-(-314051))%11368300),-164102+18204632017210)]][l[U(q(2007268923%16057988),4096192470415794%(170032+26427048115141))]];[l[U(q(748184808%12899383),444044605828266%2643122723829)]]=f[l[U(q(-664138-(-685054)),15532159660657-(-6805))]],[l[U(q(77479+-57020),5317500500303-85111)]]=r[l[U(q(-433471-(-454240)),(21921899426962-(-634452))-(-341256))]]or l[U(q(385546-(500968-135407)),1091823293691122%6032172931381)],[l[U(q(2873332676%12175050),26304090672400-802890)]]=UDim2[l[U(q(232284+(243901-455407)),12745540847608-246526)]](((-696135-(-478099+-242448))-613620)-(-589216),1254734786%13207734);[l[U(q(58837-38891),1727205430730130%23340614051746)]]=UDim2[l[U(q(-879841+900688),224775824667590%944436294243-1047931)]](1147005766%8496339,-498535+498519,514646-514646,(-9563+203103)+((867023+-1245992)+1888528755%11375562));[l[U(q(622583-602338),26095862393031-(-531414))]]=l[U(q(796586-283535766%1683089),16144996713042-265229)],[l[U(q((-979557+2698593024)%((-247235+432909848)%14062408)),9339573744768-367692)]]=f[l[U(q(1665585590%11896891),243490+15746582496691)]],[l[U(q(223931-203461),647568308670312%9811641155908)]]=-889585+889597,[l[U(q(98756-77796),7248351961941233%(145236+28203703998431))]]=Enum[l[U(q(-790698-(-937527+127078)),-603707+15214920269752)]][l[U(q(18504902%710934),-811782+17307563423700)]];[l[U(q((1262265-1043887)-198402),(-870336+28733619302893)-(-173753))]]=r[l[U(q(377481+(-162023-195031)),-714204+12807332747868)]]~=false,[l[U(q(-228518+249131),148110+6881526055044)]]=C[l[U(q(789061233%(721139+9660985)),(-25484+981242)+18477200140578)]]+(((546741+34976)+-947590)+365874),[l[U(q((-1567327-(-769016))+(1460066-(-518222+909784428)%7447741)),(963+4189607515681893%33787157448372)-(-561011))]]=C},{g(791825+-791818);p(f[l[U(q(162033+-142158),317114+10196378037380)]],.45);y(-418494-(-418505),364415+-364404)})R[l[U(q(73437-41616343%5937668),(2187937236726-(-389515))-524088)]]=H local h=r[l[U(q(493922+-473088),955704+21304834370393)]]==false and 2216111156%14774074 or 447777+-447679 local b=z(l[U(q(-681459+1088935115%((505429+1478379835)%21659896)),-442641+13588421879067)],{[l[U(q(-728246-(-748793)),-323423+35100927215252)]]=true;[l[U(q(-500363+520982),1600353752853803%(2960655103818333%26672568556905))]]=-954975+954976,[l[U(q(1441813610%15671659),12287984702177-977039)]]=-199460-(-199460),[l[U(q(-57569-(682093-760623)),9591476230546-(-274160))]]=UDim2[l[U(q(((-1623191-(-691081))+1584992)-(-135231-(-767703))),28054171254044-415418)]](-79999-(-804425-(-724426)),-1047319-(-1047319)),[l[U(q(-589512-(545732+-1155733)),8012544044388-418175)]]=UDim2[l[U(q(-180615-(-200896)),1963848736200280%33859461102271)]]((239318267576%1150572346)%(5121020510%22819967),h);[l[U(q(44714940%14898344),2200720807405235%9246726108009)]]=R[l[U(q(862005709%11960467-831988),15465+26388297248960)]];[l[U(q(((585628+98792604)-((82850+-688518)-36130))%16666719),28054866719896-(-306015))]]=Z[l[U(q(270198746%3554974),539157163711708%5338189781995)]]and 1204512723%((90211021311%(746739+2909610032))%20907694)or 598709575%3271637,[l[U(q(-918279+(1590426-(508284+1109272741)%((257589107-62981)%7024595))),(541803+-1301389)+26262682846777)]]=UDim2[l[U(q(-17439-(-38036)),(-241870+8206899276313)-969402)]](832866805%3605484,931050+-931066,950540-950539,-h-(386704733-(-1036715))%2423384);[l[U(q(-486250+(929551+-423366)),((-280998-325455)+68150)+8133324012825)]]=C[l[U(q((1145834137-1048255)%10313205),1032150885095122%6371301861447)]]+(-1012870-(-758942+-253929));[l[U(q(1326586093%6733836),1105344646168-560959)]]=C})local d=z(l[U(q(-481207+263584807%5369053),684246+20450721438104)],{[l[U(q(1048074-1028012),582708399966500%30668863936420)]]=UDim[l[U(q(-520833-(-540826)),(9159065803402-(-804716))-523401)]](1267807690%11848670,535336-535329);[l[U(q(-410246+430577),8321993698039-(-831564))]]=Enum[l[U(q(623669+-603618),33470736514656-(-308101))]][l[U(q(1424761702%(4043390240%(16693282-801652))),32543026138748-(-276274))]];[l[U(q((-304156+-720815)-(-1045393)),(-4184+4618228802024)-(-174956))]]=b})z(l[U(q(741779-721442),22038384732896-(359687+-934755))],{[l[U(q(133080481%((-686543+132510)+5306168)),25463117598522-(-577286-220612))]]=UDim[l[U(q(2021489729%12326034),989225+8748026025011)]](-717903+717903,309453194%14066054),[l[U(q(459077-438431),(-735522+(264044+34692392624495))%17346204066693)]]=b})local function m()b[l[U(q((650660-314234)-315650),689917522244934%21559922640103)]]=UDim2[l[U(q(1445099551%13894993),((-291756+778266)-265437)+29241826447991)]](640629+(-31426+-609203),d[l[U(q(-955385-(-976117)),(641730+-1319755)+30188400184150)]][l[U(q(986336457%10959065),17791618844460-(-40019))]]+(407871-407863))end;(d:GetPropertyChangedSignal(l[U(q(1311408062%5352603),29013785390698-1024552)])):Connect(m)local function X()local K=119919366%5710446 for P,v in ipairs(R[l[U(q(878941+-859217),439801194965121%2443339974485)]])do if v[l[U(q(169298+(-1122109-(-973548))),22190728173864-578227)]][l[U(q(-491597+512569),(793632+202001718515891)%(2943453846490437%28857390663565))]]then K=K+(238245+(539497+-777741))end end n[l[U(q(511968-(259633+486300065)%6152762),9257972547092-330575)]]=tostring(K)..(l[U(q((332043611313%1509332795)%14148198),705284+25072207681920)]..(tostring(#R[l[U(q(3529047328%15823192-455116),163518644071052%9084369175385)]])..l[U(q(228711611%5197530),-569657+17950424701080)]))end function R.Filter(P,K)K=(tostring(K or l[U(q(-923365-(-943137)),(742408+620703182679471)%7302390531312)])):lower()for P,v in ipairs(P[l[U(q(655160840%2787830),841115+8781905034204)]])do v[l[U(q(-989278-(-1010121)),22231051738290-((-766999+(1155114-(-424996)))-608345))]][l[U(q(635745+-615331),321826+19326773673452)]]=K==l[U(q(150231+-130459),199683+13753813171233)]or v[l[U(q(1433433520%(325737+12472597)),-426850+33160462061342)]]:find(K,-539095-(-539096),true)~=nil if v[l[U(q(-934126-(-953941)),929510+1505471814082090%25516471495845)]][l[U(q(((713901+(180277+-1388127))+366312)-(-148199)),13070619404699-1002392)]]then v[l[U(q(-759816-(-779823)),(76696565599807633%337870333047776)%19874725934345)]][l[U(q(105583564%11729179),(634955+305280822589414467%1944463838161989)%9086279668796)]]=.2 B(v[l[U(q(1321941421%15923618-260791),34141070678845-(-858621))]],.18,{[l[U(q(678322-658631),(18031292291151-(-402106))-450429)]]=v[l[U(q((2380723453-(-539019-354732))%(-788274+11564730)),-88973+34920317182382)]]or(490122-15888)-474234})end end X()m()end;(H:GetPropertyChangedSignal(l[U(q((68858181363%918198786)%10598270),25487686353835-(-782814))])):Connect(function()R:Filter(H[l[U(q(939473-918765),4708654345610-(-396399))]])end)function R.SetCollapsed(P,K)P[l[U(q(959285+-938316),26681518030563-((-531577+(1964149469%15339290-297265))+794773))]]=K M[l[U(q(1056815-1036489),21828691637555-593881)]]=K and l[U(q((-921419+1285918)-343769),7103475352501-2340979143%9876236)]or l[U(q(53098881%2793618),-584675+3850690014119)]H[l[U(q((-259312-507668)-(-787757)),-550311+15575146177648)]]=not K and r[l[U(q(111968-91769),(559389+4050051104327158%26470922324448)-97187)]]~=false b[l[U(q(1064877-1044556),1677508452523880%(8472264483041-(-458465))-(-238867))]]=not K B(C,.3,{[l[U(q(-291239-(-312105)),360848+7794928448741)]]=K and UDim2[l[U(q(417635+-397257),5965642330874037%(26050839082998-(-808176))-(-654219))]](j,21745956%176796)or P[l[U(q(1033248+-1012312),518919+16920020761216)]]},Enum[l[U(q(2158160664%9809731),275635226924578%3205060911758)]][l[U(q(((-574842-(-570193))+-1000025)-(-1024728)),2135784320564074%30081469496902)]])end function R.SetVisible(P,K)P[l[U(q(3770385531%(1486453484%(32118723-815523))),30276707113637-54037)]]=K if K then if Z[l[U(q((-1262555-(-228573))+((-164482+-645688)+440634865)%4523403),-474217+34206416053552)]]or P[l[U(q(1304195525%(2985117699%27758198)),9851277395131-((-687660-(-618531))+79687))]]then for K,v in ipairs(Z[l[U(q(-661245-(-682093)),1112486496633890%10300801036664)]])do if v~=P and((Z[l[U(q(570118-550329),4666398169772-(-509474))]]or v[l[U(q((-1269979-((-339183+-906801)-(-686525)))-(-731101)),-361004+9290060248550)]]==P[l[U(q(-537264+557964),5949247588079903%((3807519826672204-(497033-580906))%33995712849086))]]))then v[l[U(q(503869505%3250640),30525720653586-827254)]]=false v[l[U(q(823272-802324),485142+5578230691408)]][l[U(q(330499+-309983),821520+31086927009387)]]=false B(v[l[U(q(815844-(-1047715+(1009236003-(-983356+30747))%8923410)),447376+(529637+30608175541470))]],.18,{[l[U(q(563623716%(12452847-(-71686))),-712141+4929761518003)]]=f[l[U(q(((48083+(1735266880-(-1008358)))-691478)%10090761),(621319+3717778772499)-(-826035))]],[l[U(q(((-433449-386418)+37671)+(-199121-(-1001763))),25980193163407-533136)]]=f[l[U(q(159370866%7588090),362113+7463529576064)]]})end end end C[l[U(q(139140-118519),30703371146735-(1096349-523265))]]=true C[l[U(q(967127-947144),-360172+4723586867476)]]=-183730+183731 C[l[U(q(-1000933+1020871),3048848730958-(-697156))]]=UDim2[l[U(q(-603836-(-624662)),1165895942915024%7670368093455)]](j,-480159+480207)B(C,.28,{[l[U(q(282212922%4479240),2845726522145008%(71529+35132426232249))]]=270295650%(430418832%8380697);[l[U(q((88305539392%((1243708627-521804)-(-562639)))%7062823),912678+((-689790+((1002948+(-1036267-(-490697)))+32225141064506))-286490))]]=P[l[U(q(-545906-(-566777)),(1019097+8759052063524)-(-468130))]]and UDim2[l[U(q(-369428+389723),374010+5671579155995)]](j,-952416+952464)or P[l[U(q(-11946+32852),995202817611103%(34317338846567-(-88108)))]]},Enum[l[U(q(32586096%10855359),-257133+17545615334884)]][l[U(q(2735906936%14552590),-266215+(((482891+(-2298276-(-873339)))+2550202828511)-(570815+(-2121020-(-821196)))))]])else B(C,.18,{[l[U(q(1669272737%11838671),8016294727318186%35005653881284)]]=-877159-(-877160),[l[U(q((-814654-(-845834))-10237),-940817+(-187190+6294870846154))]]=UDim2[l[U(q((128750051478%869988052)%4308938),(-1813549-(-809068))+(26111244346758-582717))]](j,454735+((969356+-843836)-(-377594-(-957801))))})task[l[U(q(751294+-731598),-262950+34649640611615)]](.19,function()if not P[l[U(q(-700395-(-721222)),7895743915055278%34630455801984)]]and C[l[U(q(-631679+652072),8283017235459-176236)]]then C[l[U(q(-233905-(-254149)),(845105+10895265858414)-592096)]]=false end end)end end t(M,function()R:SetCollapsed(not R[l[U(q(649351-628564),205849353643380%923091342467)]])end)Q(T,C)local J=z(l[U(q(225039-204265),371030976806572%4756807471401)],{[l[U(q((5486691464%69597675)%471974),1719977934473-(-745054))]]=false;[l[U(q(626944-606728),1388444730470382%(7555724197831531%32289419679424))]]=R[l[U(q(-1001062+1021303),1015510+21517343655042)]]and R[l[U(q(313870896%1453013),-242091+(5875899431204-(-762106)))]]or f[l[U(q((433625289475%2168146197)%(689514228%15429671)),15459663454503-23527)]],[l[U(q(335432+-315382),((4078900625184609-599243)-375626)%29344608817739)]]=(-1027293+1597399)-(1385451-815345),[l[U(q(467258+-447472),((1652955-896256)+10253383105130)-973396)]]=V,[l[U(q(-867234-(-887215)),9361737238498-1022777)]]=UDim2[l[U(q(694703-674448),613534+24655444675156)]](1103474989%13623148,-311275-((108160-622727)+203292),676635800%(4393580-1010401),Z[l[U(q(-383972-(-403735)),67589+11016433262427)]]and 499455+-499413 or 1399814025%8282923),[l[U(q(2152598354%13887604),-294838+32047204592692)]]=Enum[l[U(q(-516389-(-537315)),94336+533972768632)]][l[U(q(104902794%(560421084%5282346)),2846801258115904%18017729583948)]];[l[U(q(-636043+(27492782888%327310850)%8133157),23937189130383-21291)]]=r[l[U(q(440079+(-776208+357013)),24120190185147-1028453)]]or(l[U(q(304751-(33710+250634)),27609161673029-(433969-((-1008872-109162)-(-710608))))]..V);[l[U(q(-155614+176304),376296+(-1011881+19643100278121))]]=R[l[U(q(-300490-(-320773)),507444+835546375102)]]and Color3[l[U(q(299194+-279441),30722715482108-(-126968))]](132104903%16513081,533794243%(250299110%5153462),618810+(-640649+22094))or f[l[U(q(624487-603984),(1909782386553877-243768)%7731912537677-(-705928))]];[l[U(q((507547754-(447263+32523))%8178194),1328283834284884%18448386694585-1007852)]]=173464+(219125-392577),[l[U(q(39300957%13093617),77259+764335560529)]]=Enum[l[U(q(467148-(405445+40862)),2314952042456045%34551523143143)]][l[U(q(-153441+173969),3309020477878-90625)]];[l[U(q(608233815%4751664),(574563478942771942%(-388315+4046221683107331))%17824765177762-(-474535))]]=r[l[U(q((952945-1491594821%16755082)-539753),-717660+(33568021645232-((970500+-1887023)+353269)))]]~=false,[l[U(q(1418233430%13769064),-255199+34519671478121)]]=-519120+519132;[l[U(q((573326+103994196)%14935347),994230+16410031918497)]]=I},{g(801529767%5009561);y(-445340-(-445346),-433060+762095794%((127221+221267071)%(-453634+19669308)))})R[l[U(q(609810041%4355637),723960+12553611194997)]]=J t(J,function()local K=not R[l[U(q((1755676-1949189293%15221498)+(-822990+-74614)),-664734+13338568441988)]]if Z[l[U(q(944934-925095),11560505268515-(-327246))]]then K=true end R:SetVisible(K)B(J,.2,{[l[U(q(663900-643606),-836379+32077797552175)]]=K and R[l[U(q(1115048407%12119870),27549740909848-(999341340%17211855-150585))]]or f[l[U(q(2054404145%11104774),10814104246449-873692)]];[l[U(q((229119374-613345)%3626765),16692454817818-393770)]]=K and Color3[l[U(q(782814-761961),627434+24751398530026)]](418758807%1938697,(-1084798-(-500393))+(474867-(-109793)),-747139-(-20103+-727291))or f[l[U(q(4489807%135422),461092+769520421325067%4159569912932)]]})end)local function k(K,P,v)local r={[l[U(q(2878357952%(-126151+12020109)),343417224672011%28618102835347)]]=K;[l[U(q(662185686%3466834),5491981199902-728849)]]=(tostring(P or l[U(q(560391692%(2342942-8059)),(((-546891+254122)-1226093282%7340739)+1156700517384467)%8505150900710)])):lower(),[l[U(q((-25495-486742)+533033),1937240085250111%7657075500968-(-107172))]]=v or 523043-523043}R[l[U(q(604638+-584630),1031436+4494727994939)]][#R[l[U(q(2443166612%12277120),-529414+(((-997630+765222)+534516)+28279782797935))]]+(((644922-131190)-679467)+165736)]=r K[l[U(q(483806-317795287%11333299),416618244559681%10161420994154)]]=#R[l[U(q(1759151382%14659427),1479191706790382%27909277706563)]]X()m()return r end function R.AddButton(P,K)K=K or{}local v=z(l[U(q(-373641+394473),4120710550078730%28816157776843)],{[l[U(q((410364-(-390133))-779972),-599168+(22996795397655-(1550783-1012347)))]]=false;[l[U(q(2148791894%14922027),1099749393517671%10574513529774)]]=f[l[U(q(-681909-(-702602)),(203048+-286317)+3060349319370)]],[l[U(q(-469249-(-1183677-(-694365))),1816877323509784%28839322778564)]]=786819-786819,[l[U(q(701696-681324),-949229+15050556854218)]]=UDim2[l[U(q(437041-416767),3007098206879619%19914557722684-523737)]](186981703%1050459,302207745%4507443+-209069,((-1318276-(-826283))+1070124)+-578131,K[l[U(q(919435+-899705),479724997723452%(782471+2317511287808))]]and 721933+-721877 or(1294059812-(-707774))%7892092+-464456);[l[U(q((1242945-325646)+(-1222243-(-324642))),(861232+237091193874154378%3039630690696476)%25979749596518)]]=l[U(q(890446-870674),-771875+16853446056578)];[l[U(q(3730912975%15416913),15185962075968-(-195955))]]=b[l[U(q(240841-221080),-859778+2224663361450)]]+(139089-139088),[l[U(q(763127420%7199122),((646762+1022401423494702)-(-464594))%5189855015718)]]=b},{g(-282733+282740);p(f[l[U(q(-967828+988307),-105150+10205193038352)]],.55)})local r=z(l[U(q((560202579519%2593566512)%14608811),46490389304478%23245196030933)],{[l[U(q(-106373-(494760+-621869)),21968970261338-(-160023))]]=1038870+-1038869;[l[U(q(268894+-248812),4946668584978735%20356660895263)]]=UDim2[l[U(q(-590633+610501),949913926754947%20650302957038)]](2760112599%(391334+11154677)+(232028+-847987),K[l[U(q((888252-750440)+-117188),12563969105661-503880)]]and 90024591%((304203481388%2953542368)%14631718)or 160741737%1373861),[l[U(q(-822009-(-842026)),2144557673642935%33508713829189)]]=UDim2[l[U(q(585873939%(16881961-156350)+-457813),42543+25369040097261)]](2044395617%16481454+-695320,779479-779527,-123104+(1346044110-(118339-(451917-(-135859))))%8916493,K[l[U(q((647095+1534776699)%(843545540%19280479)),5883097549608085%27750460166093)]]and 481553-481533 or-970971-(-971013));[l[U(q(-985958+1006816),979342+29246421671728)]]=Enum[l[U(q(221635+-200956),800551706213539%3114987215513)]][l[U(q(-303160+323560),12236142826044-966163)]];[l[U(q(2655146622%11346696),32285483213780-763556)]]=K[l[U(q(1708546441%((1596517-1000080)+7276958)),-362343+16383971794207)]]or l[U(q(410660-(391480-671)),3804592020088537%20565362306706)],[l[U(q(-283566+1020023002%13073328),-173782+25872571929436)]]=f[l[U(q(571887535%(-588133+3692343)-692959),(503735+((-934514-(-580838))+6105936999365))-(-487180))]],[l[U(q(327084+-306499),12001925664684-199417)]]=390632268%6975576;[l[U(q(2691181627%(748535840%14144905)),((-443189+(3362602597419171-637181))%560433766319431)%11924122907200)]]=Enum[l[U(q(609574+((989302+-591105)+-987600)),(318220740489093318%2121471603367648)%(30745966003485-944906))]][l[U(q(2316530626%15652099),8066370894146465%33609878753223)]],[l[U(q(-687753+707503),-113896+5193820617308)]]=Enum[l[U(q(1735832709%(1893812452%(4688049368%27013368))),(662516+-727614)+12180676892099)]][l[U(q(885077+(-182520+(-881839-(-199184)))),-422759+11396846211530)]],[l[U(q(966328-945625),399811792798271%(3624961227442121%26654126717209))]]=v[l[U(q(-584380-(-604067)),32871747106967-(841917+-1653629))]]+(619004-(-951904+1570907)),[l[U(q(882418-862317),170808+16706332341055)]]=v})if K[l[U(q(95970+-75853),(((((523197-(-378510))-817519)+1753215421899)-911986)-((-952035+-80351)+1162680))-965060983%4463463)]]then z(l[U(q(255346517%2042614),4217553332373177%19894119557541)],{[l[U(q(((-885574-77359)+323067)+660282),32845025727437-(-974741))]]=1369708913%15564874,[l[U(q(953814-933741),(-454148+3866793796398659)%24947056765367)]]=UDim2[l[U(q(-141552+162247),115051+(22823253590293-(-596528-(-213079+130286))))]](524320+-524309,-520492+520520);[l[U(q(608340+-588263),(-864800-(852576-945135))+22093638640792)]]=UDim2[l[U(q(709699+-689733),59959484265975%(3997300187090-217769))]](578808973%11812428,-545901+545853,304770165%(6059222335%30215909),38509643%3500875);[l[U(q(-98871+1200222090%5240623),355043+14342947152635)]]=Enum[l[U(q(288656+(495441+(-699479+(429031+-493266)))),-521491+33273563025566)]][l[U(q(416415+-395752),28913108644746-232332)]];[l[U(q(174880-154659),(1046744781507108-(-332050))%(6886478964948-128467))]]=K[l[U(q(1465654464%7149437),944686+13331864646640)]],[l[U(q(1330575710%9176242),21178619694237-64551)]]=f[l[U(q((-3507+2689846901)%11397554),5605501625038-(-248166))]];[l[U(q(1332871257%10836189),4845966727059-884802)]]=806924950%3788380;[l[U(q(((549219-(-492665))+1283159878)%10791443),2781724868168284%(-265687+31610510181639))]]=Enum[l[U(q(799771399%15089653),31693945008440-(-399761))]][l[U(q(2809561895%11374660),23391002857894-248366)]],[l[U(q(465406+-444568),590961+21933872656301)]]=Enum[l[U(q((284344+-408034)+144235),76345+(-661009+27963565366362))]][l[U(q(2348816386%(16423156-659428)),371030+2203489236119)]],[l[U(q((56503014409%((269741+(2172896718-(-1843436-(-1012425))))-(185856886415%1206895027)%5068345)-526963)%12336750),3200677481172487%15689595522181)]]=v[l[U(q(-152937-(-173536)),17734687793707-689271)]]+(2797491929-1694275748%7429314)%14198476,[l[U(q((-1001777+1720525)+-698605),(533596+(-326959-443741))+3277885082399160%17435558980222)]]=v})end z(l[U(q(-927144-(-948044)),693352880%3164329+23547537173834)],{[l[U(q(-602195-(-622812)),351593+24357412084687)]]=Vector2[l[U(q(144423-124214),4859037717377261%21034795317022)]](426853+-426852,(417873395980.0%1698707356.0)%10629520.5);[l[U(q(826663128%((-432311-340060)+4546995)),11229384408881-706700)]]=(418326+2129064620)%16255595;[l[U(q(855267-834605),3018662127411620%14443359504282-(-457348-(-617899)))]]=UDim2[l[U(q(817230-797510),-1025307+5071131057243)]](3842121%480265,302751+-302762,-825093.5-(-331519+-493575),1800206628%8911914);[l[U(q(978780557%5657577),-641899+9361585725441)]]=UDim2[l[U(q(1335083190%7542728),(78456122017474726%598901694852870)%(568188871386732%15356456047585))]](-413615+413639,802168-802144);[l[U(q(229561+-209208),21822740693814-(-897134))]]=Enum[l[U(q(3229542882%13128143),886235748870475%10186617919804)]][l[U(q(1661034298%13078852),(8183834001520680%((-1019049-(-643986))+160467333884077))%(678900369076374%(-439854+12343643538417)))]],[l[U(q(397660-376695),(-1142911-(-334831))+9649438835957)]]=K[l[U(q(-191481-(-211308)),(7276892362649724%(77498906193497454%363844630071192))%2362627386984)]]or l[U(q(-805635+825721),-117421+(6079183975825-241411))];[l[U(q(75389+-54677),29970539092871-37190)]]=K[l[U(q(790792-771035),-955822+28086568485788)]]or R[l[U(q((289489736%(10779134-(-296021))-912660)+-603042),6010758382210830%(71961+(-416782+2025015765306497)%(493578+32143107118548)))]];[l[U(q(294248713%(447487+908407)),(2401055978173722-(-338173))%23311223125656)]]=-484115-(-484130),[l[U(q(-376780-(-397586)),(-563552+((231208+-340533)+22976822342011))-(-321115))]]=v[l[U(q((-815573+-171377)-(-432357+-574293)),-889128+(26485920074790-(-997791)))]]+(-1031916+1031917),[l[U(q(792888-772224),143572+28457276582816)]]=v})v[l[U(q(365677+-344700),(4781269221222716-1137697648%11150414)%24902443916454)]]:Connect(function()B(v,.16,{[l[U(q(685444267%16319610),3639071596640-(-1369222-(-616998-((((-483401+275816)-518839)+167999)-(-280290)))))]]=f[l[U(q((537999145-449743)%3607576),-198926+18794896747755)]]})end)v[l[U(q(-804061+574206445%2838526),948259+504541178210187%3682782338567)]]:Connect(function()B(v,.16,{[l[U(q(258244677%(-452109+5417951)),-354980+22924746706162)]]=f[l[U(q(333665+-313232),1410209818854609%14102098221139)]]})end)t(v,function()Z:SetStatus(l[U(q(-802744+822875),6650414162266-132017)]..((K[l[U(q(1086125504%8485194),5269221292712-352968)]]or l[U(q(((25726-(228831+-1202109))+3486048106)%(759753416%(25056072-192205))),(12691915774070-(((817112-(-801850+1754978))+666404253)-971898)%17046456)-(-586481+((-301665+831175)-234983)))])),R[l[U(q(509451-488807),-148827+11619870667883)]])local P,v=pcall(K[l[U(q(523252+-502716),(981430+((606758-902151)-702269))+11968423684980)]]or function() end)if not P then Z:SetStatus(l[U(q(-411075-(-1064243-((777831-684138)+(-61053+(-353240-311793))))),(170832+2154942140068449)%31231045573823)]..tostring(v),f[l[U(q(2091719828%(415972+8156569)),-226225+9645014999485)]])end end)k(v,((K[l[U(q(3017017%428174),-810494+25216342824241)]]or l[U(q(-224288-(-244060)),966003413170198%4274351448724)]))..(l[U(q(1035781002%(1611052025%24595716)),14732250386206-638927)]..(((K[l[U(q(320031261%11852270),1244397996446556%((246848-(-1329793-(-919021)))+8523273365388))]]or l[U(q(743344273%3735299),1495747505243880%8747061483354)]))..(l[U(q(-369335+389303),326617+23379245877163)]..((K[l[U(q(362223354%10975866),-820999+32450755619904)]]or l[U(q(90134+(280223+-350585)),(20311997896634-((-486321-(-254204))+321760))-1043003)]))))))return v end function R.AddToggle(P,K)K=K or{}local v=K[l[U(q(-1037525+(1674889-617262)),730373+(28533215088924-(-520147)))]]==true local r=z(l[U(q(64923-44137),2787137233110672%(26799397225457-647161))],{[l[U(q(280069651%16473500),15315496108632-(-819003))]]=false;[l[U(q(790809631%3483652),2488850701411285%30351837982748)]]=f[l[U(q(227422-((1777856-902845)+-667452)),817769+3990526662720)]],[l[U(q(-355349-(-375696)),5716668834909580%30246925060121)]]=(770657-(-115226))+-885883,[l[U(q(-674955-(-695942)),123755756339668%2379918571530)]]=UDim2[l[U(q((353013343-310544)%3424096),83995248710642%666629062672)]](394949-394948,(260710795222%((1207751674-411739)-10979873%(377980406%13603249)))%6060796+(-717358+239118),3169772166%14278253,-880877+880921),[l[U(q(943493-922840),348600715089106%18347406765589)]]=l[U(q((-196662+-348474)-(-564908)),1313736231626647%7962037769836)];[l[U(q(-889110-(-230316-678595)),(170352-699910)+5132300483581)]]=b[l[U(q(-734322+754785),(-688155-(-424061))+30674254394886)]]+(2369324301-317452)%(46287877%18516972);[l[U(q(571276+-550413),-257063+32416345241989)]]=b},{g(608024183%8941532)})z(l[U(q(377436+(661697-1018325)),-997211+(29543416522667-((-621421+(1050243-283083))+447031)))],{[l[U(q(((-1127988-(-368997+-106961))+(255903+330205))-(-86475)),13418921680763-379495)]]=988704+-988703;[l[U(q((41401+149716)+(632120+-803002)),(698462526839471-(-425573-(-458261)))%3492312672315)]]=UDim2[l[U(q(734102-(669850+44090)),116456090390609%3327316907194)]](386233-386222,839880-839880),[l[U(q(812253+-792406),1837497716342946%17013867771915)]]=UDim2[l[U(q(2314499779%9933388),3350890947439580%23270076055618)]](2299011142%(11177798-868331),28696-28761,-1024211-(-1024212),-702092-(-702092)),[l[U(q(129979-(((-182029-85223)+((-913704-(-878886))-((-332313+-631222)+1482424)))-(-930616))),-1046572+28053128047557)]]=Enum[l[U(q(1919827577%16400143-989900),21682501737956-(-1027855))]][l[U(q(159682191%3991559),641802+3698284530160)]];[l[U(q(110291+-90183),134528+96106834995169%1716193652165)]]=K[l[U(q(519350+-499608),5208983950457648%30641082083160)]]or l[U(q(445424284%((-735011+-64622)+(774318+5457073))),(-942827-((460713+-188603)+-442452))+1879253265648464%19373745014140)];[l[U(q(312394990%((6975712927%537489641)%5577314)),3337526021795250%16604607150954)]]=f[l[U(q(429086-(752954+(906340+-1250961))),16608318731974-566511)]];[l[U(q(-850029-(-869878)),-227877+30869920883748)]]=-437146+437158;[l[U(q(882709+-862770),(-439861+11268657498061)-513717)]]=Enum[l[U(q((2686829115-((-1452498-(-598335))-(-238090)))%14219180),25806776398057-418239)]][l[U(q((1709551119-((18955-(-794784))+-1421279))%8769940),853226+5025597632836)]];[l[U(q(713949-((-23233-(-1526629-(-568728)))+(655094+-896400))),-285508+29220418161719)]]=r[l[U(q(1084247948%5617761),-412093+10895728306589)]]+(((37056766911720%165432038387)%(904163981-183769))%4337898-7948);[l[U(q(-16805-(-36598)),1479692000647-(-493346))]]=r})local s=z(l[U(q(838850502%16776616),((162912755078056570-473842)%1645583384638829)%24933081590989)],{[l[U(q(-200928-(-221069)),62357+10802215371872)]]=Vector2[l[U(q((-889982-(-960191))-(226811-177556)),2290919218628395%(19383+26332404877868))]](2134057974%(8932394-430171),1246296895.0%(8169732.5-428758));[l[U(q(463711754%7478895),825907869785504%(3609524862048443%30589193858071)-102464)]]=v and R[l[U(q(1263157579%11278009),943424+16931279490004)]]or Color3[l[U(q(-158653-(-179593)),(340419+324147974013159)%2593183840834)]](450214-(-586409+1036569),((473082+-1438455)+85726)-(-54628+-825080),612075-612001);[l[U(q(-47469-(836248-3515308187%(778392+14240431))),10706783882809-(-847617))]]=827301144%5867384;[l[U(q((-609995+824888654)%4338204),(-425146+452890)+20626336711140)]]=UDim2[l[U(q(-303070-(-323181)),1968123877577169%27720054828163)]](2002282021%9672860,-499803-(-499793),78358.5-78358,146375575%5855023);[l[U(q(2181213252%((405334297501%5404503502)%29598213)),(229154-851439)+23392944279798)]]=UDim2[l[U(q(161272-140529),(353595+14150495912725)-169263)]](-318615-(-318655),(-402122+(548866+1431274019))%11637567),[l[U(q(976400-956468),931214+20907305322558)]]=r[l[U(q(482193477%2551178),5292799506744536%29404441776065)]]+(-689436+689437),[l[U(q(77486004%1091071),17923599514047-108247)]]=r},{g(-970619-(-970630))})local p=z(l[U(q(215113+(-269529+74840)),1524996974771634%(1247005268526433%(-762217+(7942710529349-(574916+372486)))))],{[l[U(q(870937-850856),4463536034037906%22889928464486)]]=Vector2[l[U(q(-733371-(-1128990-(-375686))),(4431039005025945-5738)%27868169887995-(1541816-962723))]](-142671.5-(-142672),1138338533.0%5837633.5),[l[U(q(-9392+29891),((-77000+863317)+11216521523647)-257034)]]=Color3[l[U(q(196813734%1741530),((1832797-918381)+(149152+99980350752927818)%694307991372786)%(813642545523234%5424283652632))]](37353+-37103,-693735+(727141-33155),931531+-931278),[l[U(q(1025135-1005186),702147332163834%8358896929198)]]=663832130%(5414837-569347);[l[U(q(2375806769%13812711),33377704376336-(-362842))]]=v and UDim2[l[U(q(823346973%16466534),-240422+16576551621919)]](-993992+993993,(614886+-91417)-523480,907618+-907617.5,94063392%7838616)or UDim2[l[U(q(-180199+200196),10149380611181-483635)]](141594384%11799532,731799+-731788,-948527+948527.5,(65702390779%966256854)%7352531);[l[U(q(890779353%4046881-445309),24675951002313-(-438573))]]=UDim2[l[U(q(533218-512540),19581573810505-(-627009))]](108284855%8329603,(-273938+(-231897-(-410839)))+95012);[l[U(q(439541+-419313),8230425706153-717666)]]=r[l[U(q((363658+3642813455)%16484874),24893527529005-168325)]]+55850202%340550;[l[U(q(678150+-658444),(-234244+3615435690325311)%(-864170+23476856004108))]]=s},{g(-434340+(413476-(-20872)))})local function y(P,r)v=P==true B(s,.2,{[l[U(q(2054096561%11475287),(-385809-(-331774+((762619-(565310+-221274))-203965)))+31144831675535)]]=v and R[l[U(q((10888-1005494)-(-2025068-(-1009682))),-678015+2023901665519049%14353912554148)]]or Color3[l[U(q(730857-710815),-370600+11996455603058)]]((999156829-293172)%7624913,583022053%4383624,326156-326082)})B(p,.22,{[l[U(q(577217984%10494509),4218231296915292%25720922625798)]]=v and UDim2[l[U(q(135278817%781841),(541148+2195612190423610)%17850505716343)]]((-248904+1148890)-899985,(994206-964590)-29627,439125.5-(334378-(-104747)),(-721516-320396)+1041912)or UDim2[l[U(q(-135945+132219299%2641272),698091+15419340801487)]]((98493+-482656)+384163,(159028074-(-413038))%5497969,754732.5-754732,534341028%7030803)},Enum[l[U(q(-40186-(-61159)),26262162602953-(-155840))]][l[U(q(-166442-(-186406)),-114239+30261616651835)]])if r and K[l[U(q(-113696-(-134687)),-278090+2270885548992)]]then local P,r=pcall(K[l[U(q(-879933+899990),(28802468542016-(-1017305))-(-315170))]],v)if not P then Z:SetStatus(l[U(q(933892890%15564533),1266928586056586%12300277676287)]..tostring(r),f[l[U(q(168381-148389),7894971895223085%34779611904700)]])end end end t(r,function()y(not v,true)end)k(r,((K[l[U(q(-125967+146150),120267012620075%733335476382)]]or l[U(q(-621883+641655),21834380490266-(-713002))]))..(l[U(q(970424+(((969459+(-894924+556637))-155294)+-1425807)),-265256+675438534329)]..((K[l[U(q(792898186%10861339),19402676737549-((-371018+(-554231+888632))+633930))]]or l[U(q(-155950-(-175722)),2955832259320238%20107702546248)]))))return{[l[U(q(943898-(2058082460%11756061+151164)),-1003745+26008964181574)]]=function(K,P)y(P,true)end;[l[U(q(3307601780%15034462),30336777450910-((13150008104399%(31728842287830%208742462068))%1710881898)%(11153197-(502935-3086658655%13776034)))]]=function()return v end}end function R.AddSlider(P,K)K=K or{}local r=K[l[U(q(-259763+280321),438869173251105%((98109+731449430423202)%8127215994499))]]or(122631819482%(2121112361%1063841349)-((837615720-(-414237))%4651786+-181329))%12012942 local s=K[l[U(q((1330064236-355596)%(116873+8928623)),548370223643102%28861591385175)]]or 204684610%13645634 local Z=K[l[U(q(304990783%3111937),2393512990162-409548)]]or 968363-968362 local p=math[l[U(q(11971+630065934%14652507),374389+2248865062477493%34597924207715)]](K[l[U(q((620344-338438)-261355),27772104198826-(-608283))]]or r,r,s)local y=z(l[U(q(-423048+443351),11767906786087-691801)],{[l[U(q(86336-66136),608297+5708614242555)]]=f[l[U(q(182758899%3807051),27871773699766-19711)]];[l[U(q(635865602%3116889),(30054012904083125%283528423728216)%2180987848915)]]=-163393-(-163393),[l[U(q(541832-(1560906-1039813)),245672294605594%24567230073008)]]=UDim2[l[U(q(1689683629%12800478),35091502672262-(-997210))]](515085+-515084,-311021-(-311016),-847534-(-847534),-878322-(-878384)),[l[U(q(((-418906-(-251637))+1321876897)%(1434047777%(-300503+12510834))),2890056549659634%23120452493257)]]=b[l[U(q(-818582-(-839434)),976876+16363744360297)]]+(-765216+765217);[l[U(q(482744-462828),4245451344112510%(4225427175093675%20025721243838))]]=b},{g(639108-639101)})local t=z(l[U(q(-297584+(104037185-101585284%552349)%3559116),208212091592621%3928530318887)],{[l[U(q(690375-669448),23697617172756-(-918496))]]=228428-228427;[l[U(q(1607095930%9131110),32893846295904-594604)]]=UDim2[l[U(q(-574491+594438),618733304476924%6066012812485)]](1013321+-1013310,593765153%12907938),[l[U(q((511239+(990005460-(-1243364-(-1024191))))%11936339),2035010064672438%(7683919199122598%35086389075498))]]=UDim2[l[U(q(-429612-(-450468)),571190+16533802704149)]](1298670493%15460363,856803-856825,-955548-(-955548),(887114-511015)-((964413+(648490+-1801958))-(-565132))),[l[U(q((78875238-314182)%(2510170-(-510604))),754346599324895%4744318301692)]]=Enum[l[U(q((2073257180-619055)%12485647),7881986570190349%(-631989+33683703976565))]][l[U(q((3108081760-499100)%((15336191-(-725738))-(((1331884-1014249)+1008819930)%15760791-328533677%(1025887+5536719)))),11509575515841-(-959422))]],[l[U(q(881366+-860854),2355757399157-(-254582))]]=((K[l[U(q(2404480416%(871900764%11958623)),26100597465628%6525152384588)]]or l[U(q(233752294%2385023),1552707919943906%6041665104701)]))..(l[U(q(13220749%3300031),11073173819389-(-754970))]..tostring(p)),[l[U(q(-318684-(-339214)),3409419554156-(-770221-(-150547)))]]=f[l[U(q(673457-652694),33164711152986-674927)]],[l[U(q((201085+396883389)%2612264),(-593789+74025)+20670681886070)]]=11428184%(271206188%(3636770213%20704073)),[l[U(q(321693+-301339),-691128+4582572613915)]]=Enum[l[U(q(108004+(-259059-(-172019))),(-937526+10343951158028)-(-960499))]][l[U(q(-463869-(-817497+333037)),31648120270876-(-744838))]];[l[U(q(2301091801%9668365),1435333281098-(-910664))]]=y[l[U(q(1342876080%12550055),4360290590746360%29661840813916)]]+(-962406+962407);[l[U(q(1795568992%8627500-1029015),(-466710-((-594890+((-957434+(-866695+1821055))-375618))-2428))+32879060463815)]]=y})local Q=z(l[U(q(-594543+614799),4937706321971401%19594072763186)],{[l[U(q(1051977920%8026552+-479316),844398+32546763861738)]]=false,[l[U(q(926977-907164),422165107984371%3015465102137)]]=Color3[l[U(q(-962899-(-983865)),(564417-188395)+1737528283242275%17912662758358)]](-764850-(-764897),-235755-(-235808),-935357-(-935422));[l[U(q(-377678+398405),28978029012411-(-367301))]]=-859847+(-524423+1384270),[l[U(q(1575716493%13583582),6432253543153-((-413845-744944)-(-676404)))]]=UDim2[l[U(q((-490729-(-94974))-(-415948)),4307869297343578%33920230740630)]](538623+-538612,-44917+44955),[l[U(q(27470+-7714),10453137251238-(-71119+(1047077+-410767)))]]=UDim2[l[U(q(386757209%7161792),(-650837-82322)+(17585163162378-301885))]](-21180+21181,-335289+335267,-962686-(-962686),616135+-616127);[l[U(q(763994+(-817696-(-73431))),(-1724057-(-975216))+((823746+-1615154)+3669396921305))]]=l[U(q(1728956024%16008669),(904205+985556987682214)%18251055526711)];[l[U(q(-654117+674072),32705416744971-(-380028))]]=y[l[U(q(139221284%5353892),(1142131833220267-571881660%(1470999493%5938336))%10289476093160)]]+747129681%4245055;[l[U(q(-53226+73739),520903355270048%5541525173671)]]=y},{g(-416978-(88228-505210))})local V=z(l[U(q(-895582-(-916249)),101865057%2987905+16112493162375)],{[l[U(q(536756-515926),26239121729410-951167)]]=R[l[U(q(623421+-603573),4095342637662-(-570805))]],[l[U(q(((38913+180677)-(-317894))-516891),(3112363918928204%(146933+43227276601678))%800505086314)]]=(1479296-1020381)-458915,[l[U(q(-140694-(-161661)),20102454271158-662743)]]=UDim2[l[U(q(297559+-276571),5950506675860468%32516429979438)]](((p-r))/((s-r)),-382321+382322),[l[U(q(-890409+910693),3867577130885-(-8222))]]=Q[l[U(q(2827880806%(-34464+13126409)),19169225235172-77781)]]+((3661510802-226684)-124617)%14644638,[l[U(q(27031+-6374),506504+2037745021096800%10291641572824)]]=Q},{g(1031600+((1036065+-1740669)-(353345-26353)))})local e=false local function W(P,v)local f=math[l[U(q(17628102%352149),1627309253942622%10431469637012)]](((P-Q[l[U(q(210092+(967104+-1157268)),(209415+860716182813361)%10246621281335)]][l[U(q(2442988477%13205236),16753071658843-705999)]]))/Q[l[U(q((806935+-321752)-464390),2293071951077326%11943083081464-(851664-360781))]][l[U(q(904818-884498),31947883898515-803921)]],-715396-(-715396),-292105-(-292106))p=math[l[U(q(-215900-(-236319)),312912+35153864013372)]](((r+((s-r))*f))/Z+((295488+-1343322.5)-(-1047835)))*Z p=math[l[U(q(-924034-(-943963)),842515+31883736102697)]](p,r,s)t[l[U(q(461888842%2833548),567098390049226%8860912578524)]]=((K[l[U(q(-458644-(-478542)),(118525901614103889%(466637407134824-(-858784)))%33331242614638)]]or l[U(q((2813572159-216330)%15289867),623136+34323730796170)]))..(l[U(q(-261464-(-120618+-161745)),(-302243-(-455868))+10352507944422)]..tostring(p))B(V,.08,{[l[U(q(244562211%5094631),-701554+213275989268)]]=UDim2[l[U(q(-1036246+1056011),33251861806773-(-408165))]](((p-r))/((s-r)),(635471+-641178)+5708)},Enum[l[U(q(-980821-(-1425665-(222580+-647424))),1020534+28435003901210)]][l[U(q(2783722831%13712819),-807300+1924334607619)]])if v and K[l[U(q(784442640%16008631),2942049028465066%17306170829180)]]then pcall(K[l[U(q(910259+-889795),2603374674942790%29251400988002)]],p)end end Q[l[U(q((9146874-(-150494))%9277488),(-73255+-172504)+(22435669658595-713595))]]:Connect(function(K)if K[l[U(q(-271831-(-292753)),(-1166402-(-1020779))+11589921495371)]]==Enum[l[U(q(277260+-257008),12701511901546-(748829-(((-355399+1260463)-(-634839))-695495)))]][l[U(q((((-138109+355662)+404793703)-232776)%1806955),(-948109+1378848)+19327158488020)]]or K[l[U(q(1249112005%((-641003+3325632741)%14813733)),1627645816118099%11967984063537)]]==Enum[l[U(q((-172033+-332504)+524296),27859550449627-852230)]][l[U(q(3017088795%15472146),26289978568719-899537)]]then e=true W(K[l[U(q(303412+(-416126-(873450+-1006562))),16823966191649-(-242643))]][l[U(q((107563499-(-314084))%1477499),5879642273032-451485)]],true)end end)v[l[U(q(1031730652%4466277),26918521674820-15925)]]:Connect(function(K)if e and((K[l[U(q(139254803%8702165),(-440379-(-30839))+(28510067091502-357777))]]==Enum[l[U(q(800126621%13324898+-612835),(-901792+1386242)+12861696544672)]][l[U(q(42165+-21604),2314612876479965%10815948096557)]]or K[l[U(q(-830086+850945),3787132536633926%19030816845294)]]==Enum[l[U(q(-117438-(-137899)),3689397753380850%(-895783+(14698797385209-((-768295-((488767+-1445076)-(-140371)))-(-590501)))))]][l[U(q(1460614798%(401880+10337782)),775849+25662975455793)]]))then W(K[l[U(q(-589731-(-55692-554357)),20051134700882-(-341688))]][l[U(q((200955-259463)-(-244529-(-165688))),2487858507100380%18027960249716)]],true)end end)v[l[U(q(-427979+448320),-683671+19365974746183)]]:Connect(function(K)if K[l[U(q(-596226+616605),1431435885223650%10448437221592)]]==Enum[l[U(q((-756588+519534)+257785),-727211+13670839747870)]][l[U(q(-549814-(-570026)),(106137-(-654172))+13442374216610)]]or K[l[U(q(83860-63781),3150905887897334%19817018206577)]]==Enum[l[U(q(-512293+532938),-409656+10557048513862)]][l[U(q(185813179%9289623),22594158530526-548031)]]then e=false end end)k(y,K[l[U(q(1664974387%(-620418+7500396)),33021724633447-(-919151))]]or l[U(q(303573644%10467339),11502689424106-5013)])return{[l[U(q(731856-711174),728148347739-(-546474))]]=function()return p end}end function R.AddInput(P,K)K=K or{}local v=z(l[U(q(66145-45902),18592294248937-(-69696))],{[l[U(q(-234012+253852),(317716+21961513956659)-20623)]]=f[l[U(q(2588532864%14542206),1790281019781949%7817821101402)]],[l[U(q((-684912-90627)+795862),(831821+(928845463%9473698+(-791888-(-189854))))+26363042854396)]]=2538809250%10155237;[l[U(q(-748338+768624),1029712+19401800677442)]]=UDim2[l[U(q((-974473-(-1037241))-42398),13013261721668-335096)]]((-727210+-62279)+789490,335355-335360,421448-421448,-962047+962115),[l[U(q(2753345181%13301085),3212235802649650%23794339320527)]]=b[l[U(q(2676437216%11948288),-74922+16776001772643)]]+(-769995+769996),[l[U(q(-808529+829449),1653937314210-4047732069%(4237690037%21318700))]]=b},{g(-513768-(-513775))})z(l[U(q(852299253%16389968),32282937693243-347152)],{[l[U(q(-673125+693205),2085617164359771%15920741779195)]]=207974401%1624800;[l[U(q(504314429%((-757110+2211110229)%(17889999-1271229150%15689478))),12547895279823-1038488)]]=UDim2[l[U(q(848566-2413953487%13556884),5329260582006059%24223911767174)]]((-90332-(-942668))-852325,959088+-959084);[l[U(q(689149+-669208),5248144791932-(-565040))]]=UDim2[l[U(q(-1005730+196883071%(10332678-24442)),414210933105483%6091337426520)]](543753+-543752,756885+-756907,874193+-874193,237079+-237059),[l[U(q(96578+-76214),3200166310732477%21193154441562)]]=Enum[l[U(q(982418548%7859184),-760143+2639605326767)]][l[U(q(-353165+373927),((-984941-(-298203))+6306664639482)-(-647730))]],[l[U(q(764348182%6066089),288344+(12585+(563876+25460846101144%5092172215158)))]]=K[l[U(q(968293-(570727-(-377266))),(-882451+(640736523483610053-556931)%3746997213423202)%(26387303888842-(-263757-88266)))]]or l[U(q(528582+-508280),(-1317077-(-859065))+5088099219267)];[l[U(q(1295360939%8303464),1120309571870174%(360099759456222%(((20005542282502-(-798174+947194))-(32401-797717))-(-117815))))]]=f[l[U(q(-98951-(-119012)),31293688363362-(-699807+-215433))]],[l[U(q(-714543-(-734831)),-292679+19612159511832)]]=(73032+659544)+-732564;[l[U(q(705843-685455),103800989310646%752181196219)]]=Enum[l[U(q(592932254%3487714),18565990754349-879915)]][l[U(q(408090+-388226),9540872538419-(-579465))]];[l[U(q(1014519214%7858611-738567),583172164273147%(1070294483256288%6860862155976))]]=v[l[U(q(-791159-(-187819+-623068)),(121296+-558876)+30121830113055)]]+(192232+-192231),[l[U(q(927189+-907402),11369393002617-(-471618))]]=v})local r=z(l[U(q((-381752-(-1467458-(-647778)))-417470),503277042805071%7293870391782)],{[l[U(q(644379-624258),(301728+-385710)+20998212913051)]]=f[l[U(q(-972541-(-992994)),-283531+12118662171015)]],[l[U(q(2044184012%9734110),331972362979154%11065745805715)]]=970221+(-210637-(1523476-763892));[l[U(q(2021094383%(10122580-851596)),5458506792596-(-162008))]]=false,[l[U(q(-103488-(-123544)),(-461094+28774450461197)-172466)]]=Enum[l[U(q(-440336+460688),((-944121+284262279%1562662)+-1223876)+(16451566292483-(-96682)))]][l[U(q(2348968403%14589740),-842613+25140347281590)]];[l[U(q(-52058+72025),763411397873191%17753753722137)]]=K[l[U(q(243253+(-100032+-123044)),17701825243130-(-788770))]]or l[U(q(248881438%1096304),831566111386273%(-1825+18077524432986))],[l[U(q(722840+-701898),4787219956225195%30687307412671)]]=f[l[U(q(1042636-1022343),-74931+24303447072203)]],[l[U(q((-147063+314946)+-147072),22156910063235-(-432525))]]=UDim2[l[U(q(265271+-244635),-436348+10727795890563)]](2775318009%11661000,(382723269633%2319585736)%9550450);[l[U(q(-111521+132176),703778819759587%13799584817767)]]=UDim2[l[U(q(-216175+236464),-514446+8302917474025)]](340516203%13096777,55330+-55348,(307191+-997210)-(-690019),728655+(-1332788-(-604163)));[l[U(q(470989184%9419370),1041619+24867283276912)]]=K[l[U(q(948325-928630),26132010767848-241545)]]or l[U(q((14241153638%(654181+(90965527-(-260746))))%6102930),330540+8791701281836)],[l[U(q(((435038-933750)+1149035)+-630401),893674108532711%4195653103318)]]=f[l[U(q(875779-855817),1842668913220908%8733028062829)]],[l[U(q(32942+(-962152+949730)),502221632685064%9847483044269)]]=-688621-(-688632);[l[U(q(-920497-(-940688)),23134016968238-259201)]]=Enum[l[U(q(103769281%3346746),229344+17610694506891)]][l[U(q(597941-577765),457849+12346723585263)]];[l[U(q(-769383-(-789187)),110456+27983660340026)]]=v[l[U(q(-264409+284767),(8661062629754-849577)-1038297)]]+876839161%(4083335473%(281759+23416081));[l[U(q(739198-719193),18202461302936-(-657444))]]=v},{g(559860394%6085439);y(93977089%9397708,111330-111321)})r[l[U(q(2062642121%(75084+11987034)),4209131520494014%32883840099078)]]:Connect(function(P)if K[l[U(q(2302957655%16332892),(1618618022646504179%8174838498280319)%((653195+7123306482560789)%33920507136699))]]then pcall(K[l[U(q(789075-769206),33961605505679-(-907464))]],r[l[U(q(646589942%4041059),1160447980351991%24690382828829)]],P)end end)k(v,((K[l[U(q(2197569428%12345784),265008+28934523468282)]]or l[U(q(132639-256238659%4925496),2766154766962955%21278113636344-714264)]))..(l[U(q(378316297%1960082),3867460558385628%26131490305327)]..((K[l[U(q(-267068+288006),2752186288014-(159646+-71526))]]or l[U(q(871592327%3557439),30005093186865-133332)]))))return r end function R.AddDropdown(P,K)K=K or{}local v=K[l[U(q(1433261568%13649918),-803164+18204198534982)]]or{}local r=K[l[U(q(469056-449237),-963062+4106259350005)]]or v[(-682709+1570713)+-888003]or l[U(q((714485+1401633204)%8989275),(-919869+29191031271921)-105827)]local s={}for K,P in ipairs(v)do s[#s+((43701-220509)-((-1666816-(-653406))+836601))]=tostring(P)end local Z=false local p=z(l[U(q(888927-868558),-377791+34257301954060)],{[l[U(q(((1051095-(-399173))-577166)+-852642),(2731983248513990-(-289255))%11527355521284)]]=f[l[U(q(506910-487129),(((-979246-(-107836))+882658628363928725)%(4183216247980009-(-249390)))%(20208774741737-626413))]];[l[U(q(189298-169576),7801460239912832%32779244761561)]]=-809403+809403;[l[U(q(-174722-(-194868)),-506821+22279589147680)]]=true;[l[U(q(-825720+846156),468187+30203012977324)]]=UDim2[l[U(q(-560117+580074),-494574+34488506564012)]](119841-(-889967-(-1009807)),-199960+199955,-650514+650514,-87284-(94774-182102));[l[U(q(1349646105%(242282+15824689)),(68305-1034282)+13827717427893)]]=b[l[U(q(207566294%4323864),2496480570789008%15315831805350)]]+67675034%2819793;[l[U(q(2546527625%(5650824663%(10058794185%42147698))),4041412341919764%27871809349740)]]=b},{g(-172705+172712)})local Q=z(l[U(q(-665269-(-685389)),26115105590461-(-322540))],{[l[U(q(-508450-(-528359)),11979042619812-(-361428))]]=false;[l[U(q(-556309-(-576949)),-164021+17384595490360)]]=-787728+787729;[l[U(q(-558635-(-578418)),2144920282006632%8790656912201)]]=UDim2[l[U(q(155543036%((22669664883%647746318)%16861466)),31500578385752-981471)]](532615-532614,68113944%(31570838%(-67368+979766)),-551408-(-551408),683991629%15199813),[l[U(q(938733+-918122),((-1611493-(-1040466))+127532)+6108725320669)]]=Enum[l[U(q(-226627-(-247395)),7002980604846630%27679765263182)]][l[U(q((-716630+1012481)+-276161),(338522-1038143)+23360778077390)]];[l[U(q(567769910%(836290171%6833962-(-978149))+-231744),31291738965782-(-899309))]]=((K[l[U(q((1030508+-1264778)-(-254475)),497089+18102796020939)]]or l[U(q(((135157+-1147691)+887750)-(-145366)),(3299564304090093-(-346138))%(17739592468427-(-620747)))]))..(l[U(q(-288518+308328),13414708941768-(-43641))]..tostring(r)),[l[U(q(1274423049%12372836),(33795108353005-862148)-(-1588290-(-924382)))]]=f[l[U(q(489665+(-772032+303108)),(655464+(15313966210324-158459))-(-553180))]];[l[U(q(-218236+238314),((-340893+889090)-957159)+29437799932982)]]=-504127-(-978445-(-474306));[l[U(q(-784025-(-804826)),938708685216326%6705062045925)]]=Enum[l[U(q(-882442-(-902301)),59878859430380%5987887618587-(-753575))]][l[U(q(639287-619479),-149066+7406708416146479%32485563276662)]],[l[U(q(288383035%14418163),89660+25565724389169)]]=p[l[U(q((348868+(-545670+-456102))-(-673677)),1891141265213598%13042353573498)]]+(1033208-1033207);[l[U(q(597430+-577012),1111673585704274%6388928658005)]]=p},{y(685119-685108,-849285+849296)})local R=z(l[U(q(323970+(-1131271-(-827171))),560081+11173915524508)],{[l[U(q(139279427%(-803812+2946266)),(1049036142475248-914849)%(-403525+28352328578364))]]=-52034-(-52035),[l[U(q(-497384+518179),-887278+13895416262469)]]=UDim2[l[U(q(-836466-((-2631348-(-342667+-517283))-(-914103))),24525595118697-144315166%15980121)]](1503026684%(736391+(13339764-(-516337))),((597887+(407651-(((350261-(-683599))+-707981)+70302)))-759601)-(-150288));[l[U(q(2203461058%((212597+(209435+-1260684))+16922165)),27793092236769-10339)]]=UDim2[l[U(q(-388721+408944),(-67584+(-291757+1184365877660))-(466308+113403))]](979206+-979205,(159961-397348)+237371,203306-203306,#v*(955009-954977)),[l[U(q(-113380-(-133502)),(313810856335564995%2024586169962109)%13232589338159)]]=p[l[U(q(508181+-487225),7722778819225874%(-508244+33723925544609))]]+(-598929+598930),[l[U(q(87642627%755360),294776+26364193864583)]]=p})z(l[U(q(949060+-928541),10830277287946-43690)],{[l[U(q(2023489427%(1154998130%13296525)),20023074631795-303573)]]=UDim[l[U(q(1900062833%7982834-127844),17218250795745-841584)]]((-384862+30762)-(-197723+-156377),(595460+3475060262)%14665214);[l[U(q(-603555+623509),2804536655232-(-66529))]]=R})local function V(K)Z=K B(p,611505334.5%14914764.25,{[l[U(q(1563310867%14342109),5282040514507546%(469731+26542916707620))]]=UDim2[l[U(q(-653740+((-870082-(-900159+73579))+717149)),-49238+19483882221393)]](594879+-594878,-360806-(-360801),-982566+982566,Z and((-239665+(-455180+(1685499-990606)))+#v*(-786227-(-786259)))or(1022623+334665180)%2774279)},Enum[l[U(q(-355103+375172),-112438+(21400828571047-(-176281)))]][l[U(q((1579+-820582)-(-945193+105833)),(528910991853577-(-1028272))%11753577837555)]])task[l[U(q(2066723908%8104721),-654464+13150974429716)]](.26,m)end t(Q,function()V(not Z)end)for P,v in ipairs(v)do local s=z(l[U(q(-771588-(-791807)),4986932037293151%25973604372266)],{[l[U(q((197896762828%(-559950+1337753347))%10550108),14134057603657-345118)]]=false;[l[U(q(48157182%4813629),866552076305068%23420326809167)]]=f[l[U(q(-764493+785141),20637770525310-(-949770-(-89363)))]],[l[U(q(-106348+126061),334946+7426503523167)]]=-881906-(-881906);[l[U(q(254932-(2967439479-665350)%(-851081+16382700)),-224989+3609679580158)]]=UDim2[l[U(q(2262443488%13230543),(381220198447996-524362)%34656382549831)]](34999472%2692267,657085-657085,554403-554403,1068779208%(14428797-(-839477)));[l[U(q(256500+-236271),(621772-243517)+20825587746788)]]=Enum[l[U(q(3290486734%((757813591045%4233677631)%17234210)),785567013028049%23805061052358)]][l[U(q(43455412%789722),686626+15219506582380)]],[l[U(q(457989+-437717),363243243102376%(590410+15793184396289))]]=tostring(v),[l[U(q(721023942%6324593),67853321362331%(431553+106833021441255%(1443688603474-(-904183))))]]=f[l[U(q(631101+-610112),(-1107149-(-2006477-(-980139)))+22070786824854)]];[l[U(q(-274454-((749116+-388003)+(-158238+-498134))),16609944930623-(-726666+44889))]]=284624-284613;[l[U(q(924504+-904631),((602687+-789909)-((861106+(-1471569-(319301-865338)))+562105))+25157773114694)]]=p[l[U(q(115991710%14496362),-291415+((-18320+(-980411-(-667593)))+(2994242615107-(-1119482-(-620052)))))]]+(-1048366+1048368);[l[U(q(314344-294219),4528406998661066%20868235036010-(-436291))]]=R},{g(((319325+-624212)+417239)-112346)})t(s,function()r=v Q[l[U(q(876209-856438),1655697544362627%14783013812580)]]=((K[l[U(q(11854066%((1138075921%4883893-395118)-(-889099))),5236311870455-984646)]]or l[U(q((890338+596286294)%(569577803%((617370-((343824+450024)+-1044290))+(((((159425+-1086350)-(-1180827-(-778019)))+-1136462)-((-683672-(-205076))+-272793))+12635169)))),4765573308892404%28536367181694)]))..(l[U(q(1049151-1028882),901227+201062905872)]..tostring(r))V(false)if K[l[U(q(812520028%8376283),(637707+(91683+(-1201411-((523796+-852838)+394997))))+10731407188795)]]then pcall(K[l[U(q((820463+(-849247-141353))+190554),142370+(27778040033023-(-718323)))]],r)end end)end k(p,((K[l[U(q((654376-1003294)-(-369821)),5975550013680765%23251167382967)]]or l[U(q(254156-550529766%7055069),(-1718471-((-1353319-(-3485))-(-322817)))+9348742403148)]))..(l[U(q(-977794+997688),-434892+7278266712038)]..table[l[U(q(354156-333981),(-465443+((738094423-(-420247))-369975)%11001832)+18008493950913)]](s,l[U(q(169571-149472),(828894576363-(-2499))-324659)])))return{[l[U(q(408230605%2958050),16755601765798-(-237133+-635268))]]=function()return r end}end function R.AddLabel(P,K)local v=z(l[U(q(3067846300%16231882),30176989024499-(-71678))],{[l[U(q(-162508+183403),33485206710099-29900)]]=178593301%793748,[l[U(q(728638+-708024),1682898305240-759874)]]=UDim2[l[U(q(1743480477%(899457571%8573791)),(-365457-78115)+32833550003705)]](964609295%10261801,(-591987-(-337574))-(-254408),-271540-(625817+-897357),2792957933%14544021-505873);[l[U(q(874901-1802671168%15945276),-964165+10171500932034)]]=Enum[l[U(q(606024-(83986+502069)),(62990367574938%(-1007384+828821839121)-(-421784))-(-562964))]][l[U(q((1259392-553264)+-685593),(2992548135943775-839926)%12898914447550)]],[l[U(q(152408+-131511),(-422408+-597961)+5662242525925)]]=tostring(K or l[U(q(-795610-(-815382)),(72695+441426088714797)%(10032411765158-308625))]),[l[U(q(-904750-(-925639)),1048338+9664277947598)]]=f[l[U(q(213115273%4020666),27032409523472-(-171310))]],[l[U(q(-954565-(-975188)),27302365274951-(-1474641-(-925164)))]]=959169-959158;[l[U(q(2002882087%9229778),(-87170+176946)+32457555278974)]]=true;[l[U(q(747286+-726553),(113434252-641482)%16008995+26939172703913)]]=Enum[l[U(q(104816218%6549744),1677736298323995%(6625640302886769%28436224544502))]][l[U(q(998534+-978008),(-843483+((46363720201845208%256153150287056)%(22153908535079%1384619790426)-910201))-(-384608))]],[l[U(q(935133-914444),13244672207965-(-442794))]]=b[l[U(q(367825+-347651),752665869478763%6780773616240)]]+(-972505-(-555216-417290));[l[U(q(76899187%(-42124+438408)),776137+12213363526620)]]=b})k(v,K or l[U(q((22970227542%120324826)%1549542-1393898990%7336190),21233578761213-(184692-32043))],917193+-917192)return v end s[l[U(q(89735+-69980),196111+(7739250259816-(-199157)))]][#s[l[U(q((1265050-518802)+-725754),897534590242135%18317032571149)]]+1242032441%5645602]=R if Z[l[U(q(-542480-(-562334)),2434208227651-((2890041566%(-157041+12099263)-(-1021986))-606764))]]and V>-687346+(648843-(429079+(-284051-183532)))then R[l[U(q(-560461+(-269226+849380)),(-64296+23430)+26376605946760)]]=false C[l[U(q(930785-(1594719-(986051+-301403))),(560728-837721)+3947911410540)]]=false J[l[U(q(-226926+247002),((-426895-(-488473))+(1032298+-1753228))+((420455+25003127529571)-885023))]]=f[l[U(q(298633316%3078480),2217898230419552%13280827816390-(-54811))]]J[l[U(q(-659338+680217),-578810+(583990+1519693058848))]]=f[l[U(q(-162149-(-187592-(142563-147951))),16322205159923-788911)]]end return R end i(true)o[l[U(q(1502002471%(393372599%20312476)),(361481614129517830%2962964050242777-(-417560))%11574078343070)]]:Connect(function(K,P)if not P and(u and u[l[U(q((161628+-160755)-(-19810)),713052214028189%(588682893313897%4145654190518))]])then u:Destroy()end end)A[l[U(q(697527+-676755),26036003804115-(-881275+(775207+(962645-852501))))]]=UDim2[l[U(q(3038993696%13747767+-717247),-397355+28346694250355)]](E,-688763+688763)B(A,.42,{[l[U(q(504705-483906),-879048+10683387087411)]]=UDim2[l[U(q(-43701-((-804051-(-498296))+241366)),(714075+-1336917)+4913225824574)]](E,Z[l[U(q(576005-(600290+-45190)),31893344211074-938922)]]and 883025-882735 or-632752-(-633172))},Enum[l[U(q(-986789-(-1007043)),416041+9680106503396)]][l[U(q(536314591%5528810),17034473364179-1004318)]])return Z end return Z end)(...)
+-- CreateWindow -> CreatePanel -> AddButton/AddToggle/AddSlider/AddInput/AddDropdown.
+-- Window modes: normal, island, and button.
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local Lighting = game:GetService("Lighting")
+
+local Library = {
+    Version = "1.0.0",
+}
+
+local Theme = {
+    Background = Color3.fromRGB(13, 16, 22),
+    Surface = Color3.fromRGB(21, 25, 34),
+    SurfaceHover = Color3.fromRGB(29, 35, 46),
+    SurfaceActive = Color3.fromRGB(35, 43, 57),
+    Border = Color3.fromRGB(62, 72, 91),
+    Text = Color3.fromRGB(241, 244, 249),
+    Muted = Color3.fromRGB(149, 159, 178),
+    Accent = Color3.fromRGB(69, 157, 255),
+    Success = Color3.fromRGB(76, 205, 142),
+    Warning = Color3.fromRGB(245, 183, 76),
+    Danger = Color3.fromRGB(242, 91, 103),
+}
+
+local function create(className, properties, children)
+    local object = Instance.new(className)
+    for key, value in pairs(properties or {}) do
+        object[key] = value
+    end
+    for _, child in ipairs(children or {}) do
+        child.Parent = object
+    end
+    return object
+end
+
+local function corner(radius)
+    return create("UICorner", { CornerRadius = UDim.new(0, radius) })
+end
+
+local function stroke(color, transparency)
+    return create("UIStroke", {
+        ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+        Color = color or Theme.Border,
+        Thickness = 1,
+        Transparency = transparency or 0,
+    })
+end
+
+local function padding(left, right, top, bottom)
+    return create("UIPadding", {
+        PaddingLeft = UDim.new(0, left or 0),
+        PaddingRight = UDim.new(0, right or 0),
+        PaddingTop = UDim.new(0, top or 0),
+        PaddingBottom = UDim.new(0, bottom or 0),
+    })
+end
+
+local function tween(object, duration, goal, style, direction)
+    local animation = TweenService:Create(object, TweenInfo.new(
+        duration or 0.2,
+        style or Enum.EasingStyle.Quart,
+        direction or Enum.EasingDirection.Out
+    ), goal)
+    animation:Play()
+    return animation
+end
+
+local function bindPress(button, callback)
+    local scale = create("UIScale", { Scale = 1, Parent = button })
+    button.MouseButton1Down:Connect(function()
+        tween(scale, 0.08, { Scale = 0.97 }, Enum.EasingStyle.Quad)
+    end)
+    button.MouseButton1Up:Connect(function()
+        tween(scale, 0.18, { Scale = 1 }, Enum.EasingStyle.Back)
+    end)
+    button.MouseLeave:Connect(function()
+        tween(scale, 0.18, { Scale = 1 }, Enum.EasingStyle.Back)
+    end)
+    button.MouseButton1Click:Connect(callback)
+end
+
+local function makeDraggable(handle, target, onMoved)
+    local dragging = false
+    local dragInput
+    local dragStart
+    local startPosition
+
+    handle.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1
+            or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPosition = target.Position
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                    if onMoved then
+                        onMoved(target.Position)
+                    end
+                end
+            end)
+        end
+    end)
+
+    handle.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement
+            or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if dragging and input == dragInput then
+            local delta = input.Position - dragStart
+            target.Position = UDim2.new(
+                startPosition.X.Scale,
+                startPosition.X.Offset + delta.X,
+                startPosition.Y.Scale,
+                startPosition.Y.Offset + delta.Y
+            )
+        end
+    end)
+end
+
+local function safeParent()
+    local player = Players.LocalPlayer
+    local parent
+    pcall(function()
+        if gethui then
+            parent = gethui()
+        end
+    end)
+    if not parent then
+        pcall(function()
+            parent = game:GetService("CoreGui")
+        end)
+    end
+    if not parent and player then
+        parent = player:WaitForChild("PlayerGui")
+    end
+    return parent
+end
+
+function Library:CreateWindow(options)
+    options = options or {}
+    local window = {
+        Panels = {},
+        Mode = "normal",
+        Status = options.Status or "准备就绪",
+        Mobile = UserInputService.TouchEnabled,
+        Theme = Theme,
+    }
+
+    for key, value in pairs(options.Theme or {}) do
+        Theme[key] = value
+    end
+
+    local parent = options.Parent or safeParent()
+    local guiName = options.Name or "UGIK_UI"
+    local old = parent and parent:FindFirstChild(guiName)
+    if old then
+        old:Destroy()
+    end
+
+    local gui = create("ScreenGui", {
+        Name = guiName,
+        DisplayOrder = options.DisplayOrder or 40,
+        IgnoreGuiInset = true,
+        ResetOnSpawn = false,
+        ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+        Parent = parent,
+    })
+    pcall(function()
+        if protectgui then
+            protectgui(gui)
+        end
+    end)
+    window.Gui = gui
+
+    local oldBlur = Lighting:FindFirstChild(guiName .. "_Blur")
+    if oldBlur then
+        oldBlur:Destroy()
+    end
+    local blur = create("BlurEffect", {
+        Name = guiName .. "_Blur",
+        Size = 0,
+        Parent = Lighting,
+    })
+
+    local shade = create("Frame", {
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        Size = UDim2.fromScale(1, 1),
+        Visible = false,
+        ZIndex = 1,
+        Parent = gui,
+    })
+
+    local dockWidth = window.Mobile and 132 or 152
+    local dock = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        BackgroundColor3 = Theme.Background,
+        BorderSizePixel = 0,
+        Position = UDim2.new(0, 14, 0.5, 0),
+        Size = UDim2.fromOffset(dockWidth, window.Mobile and 290 or 420),
+        ZIndex = 10,
+        Parent = gui,
+    }, {
+        corner(8),
+        stroke(Theme.Border, 0.25),
+    })
+    window.Dock = dock
+
+    local dockAccent = create("Frame", {
+        BackgroundColor3 = options.Accent or Theme.Accent,
+        BorderSizePixel = 0,
+        Size = UDim2.new(1, 0, 0, 3),
+        ZIndex = 11,
+        Parent = dock,
+    }, { corner(8) })
+
+    local dockTitle = create("TextLabel", {
+        BackgroundTransparency = 1,
+        Position = UDim2.fromOffset(window.Mobile and 6 or 12, 10),
+        Size = UDim2.new(1, window.Mobile and -12 or -24, 0, 38),
+        Font = Enum.Font.GothamBold,
+        Text = options.Title or "UGIK UI",
+        TextColor3 = Theme.Text,
+        TextSize = window.Mobile and 13 or 16,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ZIndex = 11,
+        Parent = dock,
+    })
+
+    local dockList = create("ScrollingFrame", {
+        Active = true,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        CanvasSize = UDim2.fromOffset(0, 0),
+        Position = UDim2.fromOffset(7, 54),
+        ScrollBarThickness = 0,
+        Size = UDim2.new(1, -14, 1, -108),
+        ZIndex = 11,
+        Parent = dock,
+    })
+    local dockLayout = create("UIListLayout", {
+        Padding = UDim.new(0, 7),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = dockList,
+    })
+    dockLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        dockList.CanvasSize = UDim2.fromOffset(0, dockLayout.AbsoluteContentSize.Y + 4)
+    end)
+
+    local dockActions = create("Frame", {
+        BackgroundTransparency = 1,
+        Position = UDim2.new(0, 7, 1, -48),
+        Size = UDim2.new(1, -14, 0, 40),
+        ZIndex = 11,
+        Parent = dock,
+    })
+    local actionLayout = create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        HorizontalAlignment = Enum.HorizontalAlignment.Center,
+        Padding = UDim.new(0, 6),
+        Parent = dockActions,
+    })
+
+    local function actionButton(text, color)
+        return create("TextButton", {
+            AutoButtonColor = false,
+            BackgroundColor3 = color or Theme.SurfaceActive,
+            BorderSizePixel = 0,
+            Size = UDim2.new(0.5, -3, 1, 0),
+            Font = Enum.Font.GothamBold,
+            Text = text,
+            TextColor3 = Theme.Text,
+            TextSize = window.Mobile and 11 or 12,
+            ZIndex = 12,
+            Parent = dockActions,
+        }, { corner(7) })
+    end
+
+    local islandAction = actionButton("DI", Color3.fromRGB(44, 55, 72))
+    local minimizeAction = actionButton("MIN", Color3.fromRGB(44, 55, 72))
+
+    local island = create("Frame", {
+        AnchorPoint = Vector2.new(0.5, 0),
+        BackgroundColor3 = Color3.fromRGB(5, 6, 9),
+        BorderSizePixel = 0,
+        ClipsDescendants = true,
+        Position = UDim2.new(0.5, 0, 0, 10),
+        Size = UDim2.fromOffset(window.Mobile and 254 or 292, 54),
+        Visible = false,
+        ZIndex = 80,
+        Parent = gui,
+    }, {
+        corner(27),
+        stroke(Color3.fromRGB(67, 72, 83), 0.35),
+    })
+    window.Island = island
+
+    local statusDot = create("Frame", {
+        AnchorPoint = Vector2.new(0, 0.5),
+        BackgroundColor3 = Theme.Success,
+        BorderSizePixel = 0,
+        Position = UDim2.fromOffset(16, 27),
+        Size = UDim2.fromOffset(8, 8),
+        ZIndex = 82,
+        Parent = island,
+    }, { corner(8) })
+
+    local islandTitle = create("TextLabel", {
+        BackgroundTransparency = 1,
+        Position = UDim2.fromOffset(34, 8),
+        Size = UDim2.new(1, -76, 0, 18),
+        Font = Enum.Font.GothamBold,
+        Text = options.ShortTitle or "UGIK",
+        TextColor3 = Theme.Text,
+        TextSize = 13,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ZIndex = 82,
+        Parent = island,
+    })
+
+    local islandStatus = create("TextLabel", {
+        BackgroundTransparency = 1,
+        Position = UDim2.fromOffset(34, 26),
+        Size = UDim2.new(1, -76, 0, 16),
+        Font = Enum.Font.GothamMedium,
+        Text = window.Status,
+        TextColor3 = Theme.Muted,
+        TextSize = 10,
+        TextTruncate = Enum.TextTruncate.AtEnd,
+        TextXAlignment = Enum.TextXAlignment.Left,
+        ZIndex = 82,
+        Parent = island,
+    })
+
+    local islandToggle = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0),
+        AutoButtonColor = false,
+        BackgroundTransparency = 1,
+        Position = UDim2.new(1, -8, 0, 7),
+        Size = UDim2.fromOffset(34, 36),
+        Font = Enum.Font.GothamBold,
+        Text = "+",
+        TextColor3 = Theme.Muted,
+        TextSize = 20,
+        ZIndex = 83,
+        Parent = island,
+    })
+
+    local islandMenu = create("Frame", {
+        BackgroundTransparency = 1,
+        Position = UDim2.fromOffset(12, 61),
+        Size = UDim2.new(1, -24, 0, 38),
+        Visible = false,
+        ZIndex = 82,
+        Parent = island,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Horizontal,
+        HorizontalAlignment = Enum.HorizontalAlignment.Center,
+        Padding = UDim.new(0, 7),
+        Parent = islandMenu,
+    })
+
+    local function islandMenuButton(text, color)
+        return create("TextButton", {
+            AutoButtonColor = false,
+            BackgroundColor3 = color or Theme.SurfaceActive,
+            BorderSizePixel = 0,
+            Size = UDim2.new(0.333, -5, 1, 0),
+            Font = Enum.Font.GothamBold,
+            Text = text,
+            TextColor3 = Theme.Text,
+            TextSize = 11,
+            ZIndex = 83,
+            Parent = islandMenu,
+        }, { corner(9) })
+    end
+
+    local restoreButton = islandMenuButton("恢复")
+    local floatButton = islandMenuButton("悬浮")
+    local closeButton = islandMenuButton("关闭", Color3.fromRGB(116, 47, 55))
+
+    local restore = create("TextButton", {
+        AnchorPoint = Vector2.new(1, 0.5),
+        AutoButtonColor = false,
+        BackgroundColor3 = Color3.fromRGB(18, 22, 30),
+        BorderSizePixel = 0,
+        Position = UDim2.new(1, -18, 0.55, 0),
+        Size = UDim2.fromOffset(52, 52),
+        Font = Enum.Font.GothamBold,
+        Text = options.RestoreText or "UG",
+        TextColor3 = Theme.Text,
+        TextSize = 14,
+        Visible = false,
+        ZIndex = 90,
+        Parent = gui,
+    }, {
+        corner(26),
+        stroke(options.Accent or Theme.Accent, 0.1),
+    })
+    window.RestoreButton = restore
+
+    makeDraggable(dockTitle, dock)
+    makeDraggable(islandTitle, island)
+    makeDraggable(restore, restore)
+
+    local islandExpanded = false
+    local changingMode = false
+
+    local function setBackdrop(visible)
+        if visible then
+            shade.Visible = true
+            tween(shade, 0.3, { BackgroundTransparency = 0.78 }, Enum.EasingStyle.Quint)
+            tween(blur, 0.38, { Size = options.BlurSize or 12 }, Enum.EasingStyle.Quint)
+        else
+            tween(shade, 0.24, { BackgroundTransparency = 1 })
+            tween(blur, 0.28, { Size = 0 })
+            task.delay(0.29, function()
+                if window.Mode ~= "normal" and shade.Parent then
+                    shade.Visible = false
+                end
+            end)
+        end
+    end
+
+    local function setPanelsVisible(visible)
+        for _, panel in ipairs(window.Panels) do
+            panel.Frame.Visible = visible and panel.Visible
+        end
+    end
+
+    function window:SetMode(mode)
+        if changingMode or (mode ~= "normal" and mode ~= "island" and mode ~= "button") then
+            return
+        end
+        changingMode = true
+        self.Mode = mode
+        islandExpanded = false
+        islandMenu.Visible = false
+        islandToggle.Text = "+"
+
+        if mode == "normal" then
+            restore.Visible = false
+            island.Visible = false
+            dock.Visible = true
+            setPanelsVisible(true)
+            setBackdrop(true)
+            dock.Size = UDim2.fromOffset(dockWidth, 0)
+            tween(dock, 0.34, { Size = UDim2.fromOffset(dockWidth, window.Mobile and 290 or 420) }, Enum.EasingStyle.Quint)
+        elseif mode == "island" then
+            restore.Visible = false
+            setPanelsVisible(false)
+            dock.Visible = false
+            island.Visible = true
+            setBackdrop(false)
+            island.Size = UDim2.fromOffset(window.Mobile and 210 or 228, 44)
+            tween(island, 0.34, { Size = UDim2.fromOffset(window.Mobile and 254 or 292, 54) }, Enum.EasingStyle.Back)
+        else
+            setPanelsVisible(false)
+            dock.Visible = false
+            island.Visible = false
+            setBackdrop(false)
+            restore.Visible = true
+            restore.Size = UDim2.fromOffset(0, 0)
+            tween(restore, 0.32, { Size = UDim2.fromOffset(52, 52) }, Enum.EasingStyle.Back)
+        end
+
+        task.delay(0.36, function()
+            changingMode = false
+        end)
+    end
+
+    function window:SetStatus(text, color)
+        self.Status = tostring(text or "")
+        islandStatus.Text = self.Status
+        statusDot.BackgroundColor3 = color or Theme.Success
+        tween(statusDot, 0.12, { Size = UDim2.fromOffset(12, 12) }, Enum.EasingStyle.Back)
+        task.delay(0.13, function()
+            if statusDot.Parent then
+                tween(statusDot, 0.2, { Size = UDim2.fromOffset(8, 8) })
+            end
+        end)
+    end
+
+    function window:Notify(title, text, duration)
+        self:SetStatus((title and (title .. ": ") or "") .. tostring(text or ""))
+        pcall(function()
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = title or (options.Title or "UGIK"),
+                Text = tostring(text or ""),
+                Duration = duration or 2,
+            })
+        end)
+    end
+
+    local function expandIsland()
+        if window.Mode ~= "island" then
+            return
+        end
+        islandExpanded = not islandExpanded
+        islandMenu.Visible = islandExpanded
+        islandToggle.Text = islandExpanded and "-" or "+"
+        tween(island, 0.3, {
+            Size = UDim2.fromOffset(window.Mobile and 276 or 310, islandExpanded and 112 or 54),
+        }, Enum.EasingStyle.Quint)
+    end
+
+    bindPress(islandAction, function()
+        window:SetMode("island")
+    end)
+    bindPress(minimizeAction, function()
+        window:SetMode("button")
+    end)
+    bindPress(islandToggle, expandIsland)
+    bindPress(restoreButton, function()
+        window:SetMode("normal")
+    end)
+    bindPress(floatButton, function()
+        window:SetMode("button")
+    end)
+    bindPress(closeButton, function()
+        gui:Destroy()
+    end)
+
+    restore.Activated:Connect(function()
+        window:SetMode("normal")
+    end)
+
+    function window:Destroy()
+        if blur then
+            blur:Destroy()
+        end
+        gui:Destroy()
+    end
+
+    function window:Show()
+        self:SetMode("normal")
+    end
+
+    function window:Minimize(useIsland)
+        self:SetMode(useIsland and "island" or "button")
+    end
+
+    function window:CreatePanel(panelOptions)
+        panelOptions = panelOptions or {}
+        local panel = {
+            Window = self,
+            Visible = panelOptions.Visible ~= false,
+            Collapsed = false,
+            Items = {},
+            Accent = panelOptions.Accent or options.Accent or Theme.Accent,
+        }
+        local index = #self.Panels + 1
+        local camera = workspace.CurrentCamera
+        local viewport = camera and camera.ViewportSize or Vector2.new(1280, 720)
+        local width = window.Mobile and math.clamp(viewport.X - dockWidth - 42, 210, 330) or (panelOptions.Width or 294)
+        local height = window.Mobile and math.clamp(viewport.Y - 110, 280, 470) or (panelOptions.Height or 480)
+        local availableColumns = math.max(1, math.floor((viewport.X - dockWidth - 42) / (width + 12)))
+        local column = ((index - 1) % availableColumns) + 1
+        panel.Slot = column
+        local startX = 0
+        local startXOffset = dockWidth + 28 + (column - 1) * (width + 12)
+        local startY = window.Mobile and 0.5 or 0
+        local startYOffset = window.Mobile and 0 or 28
+
+        local frame = create("Frame", {
+            AnchorPoint = window.Mobile and Vector2.new(0, 0.5) or Vector2.new(0, 0),
+            BackgroundColor3 = Theme.Background,
+            BorderSizePixel = 0,
+            ClipsDescendants = true,
+            Position = UDim2.new(startX, startXOffset, startY, startYOffset),
+            Size = UDim2.fromOffset(width, height),
+            Visible = panel.Visible,
+            ZIndex = 20 + index,
+            Parent = gui,
+        }, {
+            corner(8),
+            stroke(Theme.Border, 0.2),
+        })
+        panel.Frame = frame
+        panel.ExpandedSize = UDim2.fromOffset(width, height)
+
+        local header = create("Frame", {
+            BackgroundColor3 = Theme.Surface,
+            BorderSizePixel = 0,
+            Size = UDim2.new(1, 0, 0, 48),
+            ZIndex = frame.ZIndex + 1,
+            Parent = frame,
+        })
+        local accentLine = create("Frame", {
+            BackgroundColor3 = panel.Accent,
+            BorderSizePixel = 0,
+            Size = UDim2.fromOffset(4, 48),
+            ZIndex = header.ZIndex + 1,
+            Parent = header,
+        }, { corner(4) })
+        TweenService:Create(accentLine, TweenInfo.new(1.25, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+            BackgroundTransparency = 0.48,
+        }):Play()
+
+        local panelTitle = create("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(14, 6),
+            Size = UDim2.new(1, -86, 0, 20),
+            Font = Enum.Font.GothamBold,
+            Text = panelOptions.Title or ("Panel " .. index),
+            TextColor3 = Theme.Text,
+            TextSize = 14,
+            TextTruncate = Enum.TextTruncate.AtEnd,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            ZIndex = header.ZIndex + 1,
+            Parent = header,
+        })
+
+        local panelSubtitle = create("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(14, 25),
+            Size = UDim2.new(1, -86, 0, 16),
+            Font = Enum.Font.GothamMedium,
+            Text = panelOptions.Subtitle or "0 items",
+            TextColor3 = Theme.Muted,
+            TextSize = 10,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            ZIndex = header.ZIndex + 1,
+            Parent = header,
+        })
+        panel.Subtitle = panelSubtitle
+
+        local collapse = create("TextButton", {
+            AnchorPoint = Vector2.new(1, 0.5),
+            AutoButtonColor = false,
+            BackgroundColor3 = Theme.SurfaceActive,
+            BorderSizePixel = 0,
+            Position = UDim2.new(1, -10, 0.5, 0),
+            Size = UDim2.fromOffset(30, 28),
+            Font = Enum.Font.GothamBold,
+            Text = "-",
+            TextColor3 = Theme.Muted,
+            TextSize = 18,
+            ZIndex = header.ZIndex + 2,
+            Parent = header,
+        }, { corner(7) })
+
+        local search = create("TextBox", {
+            BackgroundColor3 = Theme.Surface,
+            BorderSizePixel = 0,
+            ClearTextOnFocus = false,
+            Font = Enum.Font.GothamMedium,
+            PlaceholderColor3 = Theme.Muted,
+            PlaceholderText = panelOptions.SearchPlaceholder or "搜索名称或作用...",
+            Position = UDim2.fromOffset(8, 56),
+            Size = UDim2.new(1, -16, 0, 34),
+            Text = "",
+            TextColor3 = Theme.Text,
+            TextSize = 12,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            Visible = panelOptions.Search ~= false,
+            ZIndex = frame.ZIndex + 1,
+            Parent = frame,
+        }, {
+            corner(7),
+            stroke(Theme.Border, 0.45),
+            padding(11, 11),
+        })
+        panel.SearchBox = search
+
+        local contentTop = panelOptions.Search == false and 56 or 98
+        local content = create("ScrollingFrame", {
+            Active = true,
+            BackgroundTransparency = 1,
+            BorderSizePixel = 0,
+            CanvasSize = UDim2.fromOffset(0, 0),
+            Position = UDim2.fromOffset(8, contentTop),
+            ScrollBarImageColor3 = panel.Accent,
+            ScrollBarThickness = window.Mobile and 3 or 4,
+            Size = UDim2.new(1, -16, 1, -contentTop - 8),
+            ZIndex = frame.ZIndex + 1,
+            Parent = frame,
+        })
+        local contentLayout = create("UIListLayout", {
+            Padding = UDim.new(0, 7),
+            SortOrder = Enum.SortOrder.LayoutOrder,
+            Parent = content,
+        })
+        create("UIPadding", {
+            PaddingBottom = UDim.new(0, 6),
+            Parent = content,
+        })
+
+        local function refreshContent()
+            content.CanvasSize = UDim2.fromOffset(0, contentLayout.AbsoluteContentSize.Y + 8)
+        end
+        contentLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(refreshContent)
+
+        local function updateCount()
+            local shown = 0
+            for _, item in ipairs(panel.Items) do
+                if item.Root.Visible then
+                    shown = shown + 1
+                end
+            end
+            panelSubtitle.Text = tostring(shown) .. "/" .. tostring(#panel.Items) .. " items"
+        end
+
+        function panel:Filter(query)
+            query = tostring(query or ""):lower()
+            for _, item in ipairs(self.Items) do
+                item.Root.Visible = query == "" or item.SearchText:find(query, 1, true) ~= nil
+                if item.Root.Visible then
+                    item.Root.BackgroundTransparency = 0.2
+                    tween(item.Root, 0.18, { BackgroundTransparency = item.BaseTransparency or 0 })
+                end
+            end
+            updateCount()
+            refreshContent()
+        end
+        search:GetPropertyChangedSignal("Text"):Connect(function()
+            panel:Filter(search.Text)
+        end)
+
+        function panel:SetCollapsed(collapsed)
+            self.Collapsed = collapsed
+            collapse.Text = collapsed and "+" or "-"
+            search.Visible = not collapsed and panelOptions.Search ~= false
+            content.Visible = not collapsed
+            tween(frame, 0.3, {
+                Size = collapsed and UDim2.fromOffset(width, 48) or self.ExpandedSize,
+            }, Enum.EasingStyle.Quint)
+        end
+
+        function panel:SetVisible(visible)
+            self.Visible = visible
+            if visible then
+                if window.Mobile or self.Slot then
+                    for _, other in ipairs(window.Panels) do
+                        if other ~= self and (window.Mobile or other.Slot == self.Slot) then
+                            other.Visible = false
+                            other.Frame.Visible = false
+                            tween(other.DockButton, 0.18, {
+                                BackgroundColor3 = Theme.Surface,
+                                TextColor3 = Theme.Muted,
+                            })
+                        end
+                    end
+                end
+                frame.Visible = true
+                frame.BackgroundTransparency = 1
+                frame.Size = UDim2.fromOffset(width, 48)
+                tween(frame, 0.28, {
+                    BackgroundTransparency = 0,
+                    Size = self.Collapsed and UDim2.fromOffset(width, 48) or self.ExpandedSize,
+                }, Enum.EasingStyle.Quint)
+            else
+                tween(frame, 0.18, { BackgroundTransparency = 1, Size = UDim2.fromOffset(width, 48) })
+                task.delay(0.19, function()
+                    if not self.Visible and frame.Parent then
+                        frame.Visible = false
+                    end
+                end)
+            end
+        end
+
+        bindPress(collapse, function()
+            panel:SetCollapsed(not panel.Collapsed)
+        end)
+        makeDraggable(header, frame)
+
+        local dockButton = create("TextButton", {
+            AutoButtonColor = false,
+            BackgroundColor3 = panel.Visible and panel.Accent or Theme.Surface,
+            BorderSizePixel = 0,
+            LayoutOrder = index,
+            Size = UDim2.new(1, 0, 0, window.Mobile and 42 or 38),
+            Font = Enum.Font.GothamSemibold,
+            Text = panelOptions.Title or ("Panel " .. index),
+            TextColor3 = panel.Visible and Color3.fromRGB(255, 255, 255) or Theme.Muted,
+            TextSize = 12,
+            TextTruncate = Enum.TextTruncate.AtEnd,
+            Visible = panelOptions.ShowInDock ~= false,
+            ZIndex = 12,
+            Parent = dockList,
+        }, { corner(7), padding(6, 6) })
+        panel.DockButton = dockButton
+
+        bindPress(dockButton, function()
+            local nextVisible = not panel.Visible
+            if window.Mobile then
+                nextVisible = true
+            end
+            panel:SetVisible(nextVisible)
+            tween(dockButton, 0.2, {
+                BackgroundColor3 = nextVisible and panel.Accent or Theme.Surface,
+                TextColor3 = nextVisible and Color3.fromRGB(255, 255, 255) or Theme.Muted,
+            })
+        end)
+
+        local function addItem(root, searchText, baseTransparency)
+            local item = {
+                Root = root,
+                SearchText = tostring(searchText or ""):lower(),
+                BaseTransparency = baseTransparency or 0,
+            }
+            panel.Items[#panel.Items + 1] = item
+            root.LayoutOrder = #panel.Items
+            updateCount()
+            refreshContent()
+            return item
+        end
+
+        function panel:AddButton(itemOptions)
+            itemOptions = itemOptions or {}
+            local root = create("TextButton", {
+                AutoButtonColor = false,
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                Size = UDim2.new(1, -5, 0, itemOptions.Description and 56 or 42),
+                Text = "",
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            }, { corner(7), stroke(Theme.Border, 0.55) })
+            local label = create("TextLabel", {
+                BackgroundTransparency = 1,
+                Position = UDim2.fromOffset(11, itemOptions.Description and 7 or 0),
+                Size = UDim2.new(1, -48, 0, itemOptions.Description and 20 or 42),
+                Font = Enum.Font.GothamSemibold,
+                Text = itemOptions.Title or "Button",
+                TextColor3 = Theme.Text,
+                TextSize = 12,
+                TextTruncate = Enum.TextTruncate.AtEnd,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+            if itemOptions.Description then
+                create("TextLabel", {
+                    BackgroundTransparency = 1,
+                    Position = UDim2.fromOffset(11, 28),
+                    Size = UDim2.new(1, -48, 0, 18),
+                    Font = Enum.Font.GothamMedium,
+                    Text = itemOptions.Description,
+                    TextColor3 = Theme.Muted,
+                    TextSize = 10,
+                    TextTruncate = Enum.TextTruncate.AtEnd,
+                    TextXAlignment = Enum.TextXAlignment.Left,
+                    ZIndex = root.ZIndex + 1,
+                    Parent = root,
+                })
+            end
+            create("TextLabel", {
+                AnchorPoint = Vector2.new(1, 0.5),
+                BackgroundTransparency = 1,
+                Position = UDim2.new(1, -11, 0.5, 0),
+                Size = UDim2.fromOffset(24, 24),
+                Font = Enum.Font.GothamBold,
+                Text = itemOptions.ActionText or ">",
+                TextColor3 = itemOptions.Accent or panel.Accent,
+                TextSize = 15,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+
+            root.MouseEnter:Connect(function()
+                tween(root, 0.16, { BackgroundColor3 = Theme.SurfaceHover })
+            end)
+            root.MouseLeave:Connect(function()
+                tween(root, 0.16, { BackgroundColor3 = Theme.Surface })
+            end)
+            bindPress(root, function()
+                window:SetStatus("运行: " .. (itemOptions.Title or "Button"), panel.Accent)
+                local ok, result = pcall(itemOptions.Callback or function() end)
+                if not ok then
+                    window:SetStatus("错误: " .. tostring(result), Theme.Danger)
+                end
+            end)
+            addItem(root, (itemOptions.Title or "") .. " " .. (itemOptions.Description or "") .. " " .. (itemOptions.SearchText or ""))
+            return root
+        end
+
+        function panel:AddToggle(itemOptions)
+            itemOptions = itemOptions or {}
+            local state = itemOptions.Default == true
+            local root = create("TextButton", {
+                AutoButtonColor = false,
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                Size = UDim2.new(1, -5, 0, 44),
+                Text = "",
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            }, { corner(7) })
+            create("TextLabel", {
+                BackgroundTransparency = 1,
+                Position = UDim2.fromOffset(11, 0),
+                Size = UDim2.new(1, -65, 1, 0),
+                Font = Enum.Font.GothamSemibold,
+                Text = itemOptions.Title or "Toggle",
+                TextColor3 = Theme.Text,
+                TextSize = 12,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+            local track = create("Frame", {
+                AnchorPoint = Vector2.new(1, 0.5),
+                BackgroundColor3 = state and panel.Accent or Color3.fromRGB(54, 61, 74),
+                BorderSizePixel = 0,
+                Position = UDim2.new(1, -10, 0.5, 0),
+                Size = UDim2.fromOffset(40, 22),
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            }, { corner(11) })
+            local knob = create("Frame", {
+                AnchorPoint = Vector2.new(0.5, 0.5),
+                BackgroundColor3 = Color3.fromRGB(250, 251, 253),
+                BorderSizePixel = 0,
+                Position = state and UDim2.new(1, -11, 0.5, 0) or UDim2.new(0, 11, 0.5, 0),
+                Size = UDim2.fromOffset(16, 16),
+                ZIndex = root.ZIndex + 2,
+                Parent = track,
+            }, { corner(8) })
+
+            local function setState(value, fire)
+                state = value == true
+                tween(track, 0.2, { BackgroundColor3 = state and panel.Accent or Color3.fromRGB(54, 61, 74) })
+                tween(knob, 0.22, { Position = state and UDim2.new(1, -11, 0.5, 0) or UDim2.new(0, 11, 0.5, 0) }, Enum.EasingStyle.Back)
+                if fire and itemOptions.Callback then
+                    local ok, result = pcall(itemOptions.Callback, state)
+                    if not ok then
+                        window:SetStatus("错误: " .. tostring(result), Theme.Danger)
+                    end
+                end
+            end
+            bindPress(root, function()
+                setState(not state, true)
+            end)
+            addItem(root, (itemOptions.Title or "") .. " " .. (itemOptions.Description or ""))
+            return { Set = function(_, value) setState(value, true) end, Get = function() return state end }
+        end
+
+        function panel:AddSlider(itemOptions)
+            itemOptions = itemOptions or {}
+            local minimum = itemOptions.Min or 0
+            local maximum = itemOptions.Max or 100
+            local step = itemOptions.Step or 1
+            local value = math.clamp(itemOptions.Default or minimum, minimum, maximum)
+            local root = create("Frame", {
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                Size = UDim2.new(1, -5, 0, 62),
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            }, { corner(7) })
+            local valueLabel = create("TextLabel", {
+                BackgroundTransparency = 1,
+                Position = UDim2.fromOffset(11, 5),
+                Size = UDim2.new(1, -22, 0, 22),
+                Font = Enum.Font.GothamSemibold,
+                Text = (itemOptions.Title or "Slider") .. ": " .. tostring(value),
+                TextColor3 = Theme.Text,
+                TextSize = 12,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+            local track = create("TextButton", {
+                AutoButtonColor = false,
+                BackgroundColor3 = Color3.fromRGB(47, 53, 65),
+                BorderSizePixel = 0,
+                Position = UDim2.fromOffset(11, 38),
+                Size = UDim2.new(1, -22, 0, 8),
+                Text = "",
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            }, { corner(4) })
+            local fill = create("Frame", {
+                BackgroundColor3 = panel.Accent,
+                BorderSizePixel = 0,
+                Size = UDim2.fromScale((value - minimum) / (maximum - minimum), 1),
+                ZIndex = track.ZIndex + 1,
+                Parent = track,
+            }, { corner(4) })
+
+            local sliding = false
+            local function update(inputX, fire)
+                local ratio = math.clamp((inputX - track.AbsolutePosition.X) / track.AbsoluteSize.X, 0, 1)
+                value = math.floor((minimum + (maximum - minimum) * ratio) / step + 0.5) * step
+                value = math.clamp(value, minimum, maximum)
+                valueLabel.Text = (itemOptions.Title or "Slider") .. ": " .. tostring(value)
+                tween(fill, 0.08, { Size = UDim2.fromScale((value - minimum) / (maximum - minimum), 1) }, Enum.EasingStyle.Linear)
+                if fire and itemOptions.Callback then
+                    pcall(itemOptions.Callback, value)
+                end
+            end
+            track.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                    sliding = true
+                    update(input.Position.X, true)
+                end
+            end)
+            UserInputService.InputChanged:Connect(function(input)
+                if sliding and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+                    update(input.Position.X, true)
+                end
+            end)
+            UserInputService.InputEnded:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                    sliding = false
+                end
+            end)
+            addItem(root, itemOptions.Title or "Slider")
+            return { Get = function() return value end }
+        end
+
+        function panel:AddInput(itemOptions)
+            itemOptions = itemOptions or {}
+            local root = create("Frame", {
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                Size = UDim2.new(1, -5, 0, 68),
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            }, { corner(7) })
+            create("TextLabel", {
+                BackgroundTransparency = 1,
+                Position = UDim2.fromOffset(11, 4),
+                Size = UDim2.new(1, -22, 0, 20),
+                Font = Enum.Font.GothamSemibold,
+                Text = itemOptions.Title or "Input",
+                TextColor3 = Theme.Text,
+                TextSize = 12,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+            local box = create("TextBox", {
+                BackgroundColor3 = Theme.Background,
+                BorderSizePixel = 0,
+                ClearTextOnFocus = false,
+                Font = Enum.Font.GothamMedium,
+                PlaceholderText = itemOptions.Placeholder or "输入内容",
+                PlaceholderColor3 = Theme.Muted,
+                Position = UDim2.fromOffset(9, 29),
+                Size = UDim2.new(1, -18, 0, 30),
+                Text = itemOptions.Default or "",
+                TextColor3 = Theme.Text,
+                TextSize = 11,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            }, { corner(6), padding(9, 9) })
+            box.FocusLost:Connect(function(enterPressed)
+                if itemOptions.Callback then
+                    pcall(itemOptions.Callback, box.Text, enterPressed)
+                end
+            end)
+            addItem(root, (itemOptions.Title or "") .. " " .. (itemOptions.Placeholder or ""))
+            return box
+        end
+
+        function panel:AddDropdown(itemOptions)
+            itemOptions = itemOptions or {}
+            local values = itemOptions.Values or {}
+            local selected = itemOptions.Default or values[1] or "无选项"
+            local searchValues = {}
+            for _, value in ipairs(values) do
+                searchValues[#searchValues + 1] = tostring(value)
+            end
+            local open = false
+            local root = create("Frame", {
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                ClipsDescendants = true,
+                Size = UDim2.new(1, -5, 0, 44),
+                ZIndex = content.ZIndex + 2,
+                Parent = content,
+            }, { corner(7) })
+            local button = create("TextButton", {
+                AutoButtonColor = false,
+                BackgroundTransparency = 1,
+                Size = UDim2.new(1, 0, 0, 44),
+                Font = Enum.Font.GothamSemibold,
+                Text = (itemOptions.Title or "Dropdown") .. ": " .. tostring(selected),
+                TextColor3 = Theme.Text,
+                TextSize = 12,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            }, { padding(11, 11) })
+            local choices = create("Frame", {
+                BackgroundTransparency = 1,
+                Position = UDim2.fromOffset(8, 44),
+                Size = UDim2.new(1, -16, 0, #values * 32),
+                ZIndex = root.ZIndex + 1,
+                Parent = root,
+            })
+            create("UIListLayout", { Padding = UDim.new(0, 4), Parent = choices })
+
+            local function setOpen(value)
+                open = value
+                tween(root, 0.25, { Size = UDim2.new(1, -5, 0, open and (48 + #values * 32) or 44) }, Enum.EasingStyle.Quint)
+                task.delay(0.26, refreshContent)
+            end
+            bindPress(button, function()
+                setOpen(not open)
+            end)
+            for _, choice in ipairs(values) do
+                local choiceButton = create("TextButton", {
+                    AutoButtonColor = false,
+                    BackgroundColor3 = Theme.Background,
+                    BorderSizePixel = 0,
+                    Size = UDim2.new(1, 0, 0, 28),
+                    Font = Enum.Font.GothamMedium,
+                    Text = tostring(choice),
+                    TextColor3 = Theme.Muted,
+                    TextSize = 11,
+                    ZIndex = root.ZIndex + 2,
+                    Parent = choices,
+                }, { corner(6) })
+                bindPress(choiceButton, function()
+                    selected = choice
+                    button.Text = (itemOptions.Title or "Dropdown") .. ": " .. tostring(selected)
+                    setOpen(false)
+                    if itemOptions.Callback then
+                        pcall(itemOptions.Callback, selected)
+                    end
+                end)
+            end
+            addItem(root, (itemOptions.Title or "") .. " " .. table.concat(searchValues, " "))
+            return { Get = function() return selected end }
+        end
+
+        function panel:AddLabel(text)
+            local root = create("TextLabel", {
+                BackgroundTransparency = 1,
+                Size = UDim2.new(1, -5, 0, 28),
+                Font = Enum.Font.GothamMedium,
+                Text = tostring(text or ""),
+                TextColor3 = Theme.Muted,
+                TextSize = 11,
+                TextWrapped = true,
+                TextXAlignment = Enum.TextXAlignment.Left,
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            })
+            addItem(root, text or "", 1)
+            return root
+        end
+
+        self.Panels[#self.Panels + 1] = panel
+        if window.Mobile and index > 1 then
+            panel.Visible = false
+            frame.Visible = false
+            dockButton.BackgroundColor3 = Theme.Surface
+            dockButton.TextColor3 = Theme.Muted
+        end
+        return panel
+    end
+
+    setBackdrop(true)
+
+    gui.AncestryChanged:Connect(function(_, newParent)
+        if not newParent and blur and blur.Parent then
+            blur:Destroy()
+        end
+    end)
+
+    dock.Size = UDim2.fromOffset(dockWidth, 0)
+    tween(dock, 0.42, { Size = UDim2.fromOffset(dockWidth, window.Mobile and 290 or 420) }, Enum.EasingStyle.Back)
+    return window
+end
+
+return Library
