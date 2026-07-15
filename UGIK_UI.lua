@@ -148,9 +148,15 @@ function Library:CreateWindow(options)
     local window = {
         Panels = {},
         Mode = "normal",
+        MinimizeMode = options.MinimizeMode == "button" and "button" or "island",
         Status = options.Status or "准备就绪",
         Mobile = UserInputService.TouchEnabled,
         Theme = Theme,
+        BackdropEffects = {
+            Blur = options.BackgroundBlur ~= false,
+            Particles = options.BackgroundParticles ~= false,
+            Gradient = options.BackgroundGradient ~= false,
+        },
     }
 
     for key, value in pairs(options.Theme or {}) do
@@ -197,6 +203,83 @@ function Library:CreateWindow(options)
         Visible = false,
         ZIndex = 1,
         Parent = gui,
+    })
+
+    local gradientLayer = create("Frame", {
+        BackgroundColor3 = Color3.fromRGB(20, 72, 138),
+        BackgroundTransparency = 0.68,
+        BorderSizePixel = 0,
+        Size = UDim2.fromScale(1, 1),
+        Visible = window.BackdropEffects.Gradient,
+        ZIndex = 2,
+        Parent = shade,
+    })
+    local backdropGradient = create("UIGradient", {
+        Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(7, 14, 27)),
+            ColorSequenceKeypoint.new(0.48, Color3.fromRGB(20, 86, 164)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(4, 25, 50)),
+        }),
+        Rotation = 0,
+        Parent = gradientLayer,
+    })
+
+    local particleLayer = create("Frame", {
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        Size = UDim2.fromScale(1, 1),
+        Visible = window.BackdropEffects.Particles,
+        ZIndex = 3,
+        Parent = shade,
+    })
+    local particles = {}
+    local particleCount = window.Mobile and 12 or 22
+    for index = 1, particleCount do
+        local size = math.random(3, 8)
+        local particle = create("Frame", {
+            BackgroundColor3 = index % 3 == 0 and Color3.fromRGB(121, 202, 255) or Color3.fromRGB(48, 143, 255),
+            BackgroundTransparency = math.random(20, 62) / 100,
+            BorderSizePixel = 0,
+            Position = UDim2.fromScale(math.random(), math.random()),
+            Size = UDim2.fromOffset(size, size),
+            ZIndex = 4,
+            Parent = particleLayer,
+        }, { corner(size) })
+        particles[#particles + 1] = particle
+    end
+
+    task.spawn(function()
+        while gui.Parent do
+            if shade.Visible and window.BackdropEffects.Gradient then
+                tween(backdropGradient, 5, { Rotation = backdropGradient.Rotation + 120 }, Enum.EasingStyle.Linear)
+            end
+            if shade.Visible and window.BackdropEffects.Particles then
+                for _, particle in ipairs(particles) do
+                    tween(particle, math.random(30, 65) / 10, {
+                        Position = UDim2.fromScale(math.random(), math.random()),
+                    }, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+                end
+            end
+            task.wait(4.5)
+        end
+    end)
+
+    local toastContainer = create("Frame", {
+        AnchorPoint = Vector2.new(1, 1),
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        Position = UDim2.new(1, -14, 1, -14),
+        Size = UDim2.fromOffset(window.Mobile and 270 or 330, 420),
+        ZIndex = 120,
+        Parent = gui,
+    })
+    create("UIListLayout", {
+        FillDirection = Enum.FillDirection.Vertical,
+        HorizontalAlignment = Enum.HorizontalAlignment.Right,
+        VerticalAlignment = Enum.VerticalAlignment.Bottom,
+        Padding = UDim.new(0, 8),
+        SortOrder = Enum.SortOrder.LayoutOrder,
+        Parent = toastContainer,
     })
 
     local dockWidth = window.Mobile and 132 or 152
@@ -420,7 +503,7 @@ function Library:CreateWindow(options)
         if visible then
             shade.Visible = true
             tween(shade, 0.3, { BackgroundTransparency = 0.78 }, Enum.EasingStyle.Quint)
-            tween(blur, 0.38, { Size = options.BlurSize or 12 }, Enum.EasingStyle.Quint)
+            tween(blur, 0.38, { Size = window.BackdropEffects.Blur and (options.BlurSize or 12) or 0 }, Enum.EasingStyle.Quint)
         else
             tween(shade, 0.24, { BackgroundTransparency = 1 })
             tween(blur, 0.28, { Size = 0 })
@@ -429,6 +512,26 @@ function Library:CreateWindow(options)
                     shade.Visible = false
                 end
             end)
+        end
+    end
+
+    function window:SetBackdropEffects(settings)
+        settings = settings or {}
+        for key, value in pairs(settings) do
+            if self.BackdropEffects[key] ~= nil then
+                self.BackdropEffects[key] = value == true
+            end
+        end
+        gradientLayer.Visible = self.BackdropEffects.Gradient
+        particleLayer.Visible = self.BackdropEffects.Particles
+        if self.Mode == "normal" then
+            tween(blur, 0.25, { Size = self.BackdropEffects.Blur and (options.BlurSize or 12) or 0 })
+        end
+    end
+
+    function window:SetMinimizeMode(mode)
+        if mode == "island" or mode == "button" then
+            self.MinimizeMode = mode
         end
     end
 
@@ -491,15 +594,61 @@ function Library:CreateWindow(options)
         end)
     end
 
-    function window:Notify(title, text, duration)
+    function window:Notify(title, text, duration, color)
         self:SetStatus((title and (title .. ": ") or "") .. tostring(text or ""))
-        pcall(function()
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = title or (options.Title or "UGIK"),
-                Text = tostring(text or ""),
-                Duration = duration or 2,
-            })
+        local lifetime = tonumber(duration) or 4
+        local toast = create("Frame", {
+            BackgroundColor3 = Theme.Surface,
+            BackgroundTransparency = 0.04,
+            BorderSizePixel = 0,
+            LayoutOrder = math.floor(os.clock() * 1000),
+            Size = UDim2.fromOffset(0, 72),
+            ZIndex = 121,
+            Parent = toastContainer,
+        }, { corner(8), stroke(color or Theme.Accent, 0.12) })
+        create("Frame", {
+            BackgroundColor3 = color or Theme.Accent,
+            BorderSizePixel = 0,
+            Size = UDim2.fromOffset(3, 72),
+            ZIndex = 122,
+            Parent = toast,
+        }, { corner(3) })
+        create("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(14, 9),
+            Size = UDim2.new(1, -26, 0, 20),
+            Font = Enum.Font.GothamBold,
+            Text = tostring(title or options.Title or "UGIK"),
+            TextColor3 = Theme.Text,
+            TextSize = 13,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            ZIndex = 122,
+            Parent = toast,
+        })
+        create("TextLabel", {
+            BackgroundTransparency = 1,
+            Position = UDim2.fromOffset(14, 31),
+            Size = UDim2.new(1, -26, 0, 31),
+            Font = Enum.Font.GothamMedium,
+            Text = tostring(text or ""),
+            TextColor3 = Theme.Muted,
+            TextSize = 11,
+            TextWrapped = true,
+            TextXAlignment = Enum.TextXAlignment.Left,
+            TextYAlignment = Enum.TextYAlignment.Top,
+            ZIndex = 122,
+            Parent = toast,
+        })
+        tween(toast, 0.32, { Size = UDim2.fromOffset(window.Mobile and 270 or 330, 72) }, Enum.EasingStyle.Back)
+        task.delay(lifetime, function()
+            if toast.Parent then
+                tween(toast, 0.24, { Size = UDim2.fromOffset(0, 72), BackgroundTransparency = 1 })
+                task.delay(0.26, function()
+                    if toast.Parent then toast:Destroy() end
+                end)
+            end
         end)
+        return toast
     end
 
     local function expandIsland()
@@ -518,7 +667,7 @@ function Library:CreateWindow(options)
         window:SetMode("island")
     end)
     bindPress(minimizeAction, function()
-        window:SetMode("button")
+        window:SetMode(window.MinimizeMode)
     end)
     bindPress(islandToggle, expandIsland)
     bindPress(restoreButton, function()
@@ -547,7 +696,11 @@ function Library:CreateWindow(options)
     end
 
     function window:Minimize(useIsland)
-        self:SetMode(useIsland and "island" or "button")
+        if useIsland == nil then
+            self:SetMode(self.MinimizeMode)
+        else
+            self:SetMode(useIsland and "island" or "button")
+        end
     end
 
     function window:CreatePanel(panelOptions)

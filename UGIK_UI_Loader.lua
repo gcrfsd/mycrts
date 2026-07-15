@@ -357,6 +357,10 @@ local Window = UI:CreateWindow({
     RestoreText = "UG",
     Status = tostring(#entries) .. " 个脚本已就绪",
     Accent = Color3.fromRGB(55, 157, 255),
+    MinimizeMode = "island",
+    BackgroundBlur = true,
+    BackgroundParticles = true,
+    BackgroundGradient = true,
 })
 
 local categoryOrder = { "全部脚本", "游戏", "脚本合集", "娱乐", "其他" }
@@ -447,6 +451,60 @@ for index, category in ipairs(categoryOrder) do
         Visible = index <= visiblePanelLimit,
     })
 end
+
+local settingsPanel = Window:CreatePanel({
+    Title = "界面设置",
+    ShortTitle = "设置",
+    Subtitle = "外观与提示",
+    Accent = Color3.fromRGB(55, 157, 255),
+    Search = false,
+    Visible = false,
+    Width = 280,
+    Height = 360,
+})
+
+settingsPanel:AddDropdown({
+    Title = "最小化方式",
+    Values = { "灵动岛", "悬浮按钮" },
+    Default = "灵动岛",
+    Callback = function(value)
+        Window:SetMinimizeMode(value == "灵动岛" and "island" or "button")
+        Window:Notify("界面设置", "最小化方式已切换为" .. value, 3)
+    end,
+})
+
+settingsPanel:AddToggle({
+    Title = "背景模糊",
+    Default = true,
+    Callback = function(enabled)
+        Window:SetBackdropEffects({ Blur = enabled })
+    end,
+})
+
+settingsPanel:AddToggle({
+    Title = "蓝色粒子",
+    Default = true,
+    Callback = function(enabled)
+        Window:SetBackdropEffects({ Particles = enabled })
+    end,
+})
+
+settingsPanel:AddToggle({
+    Title = "动态渐变",
+    Default = true,
+    Callback = function(enabled)
+        Window:SetBackdropEffects({ Gradient = enabled })
+    end,
+})
+
+settingsPanel:AddButton({
+    Title = "测试右下角提示",
+    Description = "显示一条 4 秒自定义提示",
+    ActionText = ">",
+    Callback = function()
+        Window:Notify("UGIK 提示", "右下角提示系统工作正常", 4, Color3.fromRGB(55, 157, 255))
+    end,
+})
 
 local gamePanels = {}
 for index, gameName in ipairs(gameOrder) do
