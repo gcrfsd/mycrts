@@ -1,5 +1,5 @@
 local BASE_URL = "https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/"
-local UI_LIBRARY_URL = "https://pastebin.com/raw/r3pvMpfn"
+local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua"
 
 local scripts = {
     "4M1NrMnc.txt",
