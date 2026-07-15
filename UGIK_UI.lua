@@ -152,6 +152,7 @@ function Library:CreateWindow(options)
         Status = options.Status or "准备就绪",
         Mobile = UserInputService.TouchEnabled,
         Theme = Theme,
+        Accent = options.Accent or Theme.Accent,
         BackdropEffects = {
             Blur = options.BackgroundBlur ~= false,
             Particles = options.BackgroundParticles ~= false,
@@ -184,6 +185,7 @@ function Library:CreateWindow(options)
         end
     end)
     window.Gui = gui
+    local baseTransparencies = setmetatable({}, { __mode = "k" })
 
     local oldBlur = Lighting:FindFirstChild(guiName .. "_Blur")
     if oldBlur then
@@ -296,6 +298,8 @@ function Library:CreateWindow(options)
         stroke(Theme.Border, 0.25),
     })
     window.Dock = dock
+    local scalableRoots = { dock }
+    create("UIScale", { Name = "UGIKScale", Scale = 1, Parent = dock })
 
     local dockAccent = create("Frame", {
         BackgroundColor3 = options.Accent or Theme.Accent,
@@ -386,6 +390,8 @@ function Library:CreateWindow(options)
         stroke(Color3.fromRGB(67, 72, 83), 0.35),
     })
     window.Island = island
+    scalableRoots[#scalableRoots + 1] = island
+    create("UIScale", { Name = "UGIKScale", Scale = 1, Parent = island })
 
     local statusDot = create("Frame", {
         AnchorPoint = Vector2.new(0, 0.5),
@@ -491,6 +497,8 @@ function Library:CreateWindow(options)
         stroke(options.Accent or Theme.Accent, 0.1),
     })
     window.RestoreButton = restore
+    scalableRoots[#scalableRoots + 1] = restore
+    create("UIScale", { Name = "UGIKScale", Scale = 1, Parent = restore })
 
     makeDraggable(dockTitle, dock)
     makeDraggable(islandTitle, island)
@@ -533,6 +541,64 @@ function Library:CreateWindow(options)
         if mode == "island" or mode == "button" then
             self.MinimizeMode = mode
         end
+    end
+
+    function window:SetScale(value)
+        local scale = math.clamp(tonumber(value) or 1, 0.7, 1.3)
+        self.Scale = scale
+        for _, root in ipairs(scalableRoots) do
+            local scaler = root:FindFirstChild("UGIKScale")
+            if scaler then scaler.Scale = scale end
+        end
+    end
+
+    function window:SetTransparency(value)
+        local amount = math.clamp(tonumber(value) or 0, 0, 0.65)
+        self.Transparency = amount
+        for _, object in ipairs(gui:GetDescendants()) do
+            if object:IsA("GuiObject") and object.ZIndex >= 10 and not object:IsA("TextLabel") and not object:IsA("TextButton") and not object:IsA("TextBox") then
+                if baseTransparencies[object] == nil then
+                    baseTransparencies[object] = object.BackgroundTransparency
+                end
+                local base = baseTransparencies[object]
+                object.BackgroundTransparency = base >= 1 and 1 or math.clamp(base + amount, 0, 0.92)
+            end
+        end
+    end
+
+    function window:SetAccent(color)
+        if typeof(color) ~= "Color3" then return end
+        local previous = self.Accent
+        self.Accent = color
+        Theme.Accent = color
+        for _, object in ipairs(gui:GetDescendants()) do
+            if object:IsA("GuiObject") and object.BackgroundColor3 == previous then
+                object.BackgroundColor3 = color
+            elseif object:IsA("TextLabel") and object.TextColor3 == previous then
+                object.TextColor3 = color
+            elseif object:IsA("UIStroke") and object.Color == previous then
+                object.Color = color
+            end
+        end
+    end
+
+    function window:SetTheme(name)
+        local presets = {
+            ["深色"] = { Background = Color3.fromRGB(13, 16, 22), Surface = Color3.fromRGB(21, 25, 34), Text = Color3.fromRGB(241, 244, 249), Muted = Color3.fromRGB(149, 159, 178) },
+            ["浅色"] = { Background = Color3.fromRGB(225, 230, 238), Surface = Color3.fromRGB(245, 247, 250), Text = Color3.fromRGB(25, 30, 39), Muted = Color3.fromRGB(91, 101, 117) },
+            ["霓虹"] = { Background = Color3.fromRGB(8, 12, 18), Surface = Color3.fromRGB(18, 26, 35), Text = Color3.fromRGB(231, 255, 249), Muted = Color3.fromRGB(126, 177, 181) },
+        }
+        local preset = presets[name]
+        if not preset then return end
+        for key, nextColor in pairs(preset) do
+            local previous = Theme[key]
+            Theme[key] = nextColor
+            for _, object in ipairs(gui:GetDescendants()) do
+                if object:IsA("GuiObject") and object.BackgroundColor3 == previous then object.BackgroundColor3 = nextColor end
+                if (object:IsA("TextLabel") or object:IsA("TextButton") or object:IsA("TextBox")) and object.TextColor3 == previous then object.TextColor3 = nextColor end
+            end
+        end
+        self.ThemeName = name
     end
 
     local function setPanelsVisible(visible)
@@ -740,6 +806,8 @@ function Library:CreateWindow(options)
             stroke(Theme.Border, 0.2),
         })
         panel.Frame = frame
+        scalableRoots[#scalableRoots + 1] = frame
+        create("UIScale", { Name = "UGIKScale", Scale = window.Scale or 1, Parent = frame })
         panel.ExpandedSize = UDim2.fromOffset(width, height)
 
         local header = create("Frame", {
@@ -1265,30 +1333,45 @@ function Library:CreateWindow(options)
             bindPress(button, function()
                 setOpen(not open)
             end)
-            for _, choice in ipairs(values) do
-                local choiceButton = create("TextButton", {
-                    AutoButtonColor = false,
-                    BackgroundColor3 = Theme.Background,
-                    BorderSizePixel = 0,
-                    Size = UDim2.new(1, 0, 0, 28),
-                    Font = Enum.Font.GothamMedium,
-                    Text = tostring(choice),
-                    TextColor3 = Theme.Muted,
-                    TextSize = 11,
-                    ZIndex = root.ZIndex + 2,
-                    Parent = choices,
-                }, { corner(6) })
-                bindPress(choiceButton, function()
-                    selected = choice
+            local function rebuildChoices()
+                for _, child in ipairs(choices:GetChildren()) do
+                    if child:IsA("TextButton") then child:Destroy() end
+                end
+                choices.Size = UDim2.new(1, -16, 0, #values * 32)
+                for _, choice in ipairs(values) do
+                    local currentChoice = choice
+                    local choiceButton = create("TextButton", {
+                        AutoButtonColor = false,
+                        BackgroundColor3 = Theme.Background,
+                        BorderSizePixel = 0,
+                        Size = UDim2.new(1, 0, 0, 28),
+                        Font = Enum.Font.GothamMedium,
+                        Text = tostring(currentChoice),
+                        TextColor3 = Theme.Muted,
+                        TextSize = 11,
+                        ZIndex = root.ZIndex + 2,
+                        Parent = choices,
+                    }, { corner(6) })
+                    bindPress(choiceButton, function()
+                        selected = currentChoice
+                        button.Text = (itemOptions.Title or "Dropdown") .. ": " .. tostring(selected)
+                        setOpen(false)
+                        if itemOptions.Callback then pcall(itemOptions.Callback, selected) end
+                    end)
+                end
+            end
+            rebuildChoices()
+            addItem(root, (itemOptions.Title or "") .. " " .. table.concat(searchValues, " "))
+            return {
+                Get = function() return selected end,
+                SetValues = function(_, nextValues)
+                    values = nextValues or {}
+                    selected = values[1] or "无选项"
                     button.Text = (itemOptions.Title or "Dropdown") .. ": " .. tostring(selected)
                     setOpen(false)
-                    if itemOptions.Callback then
-                        pcall(itemOptions.Callback, selected)
-                    end
-                end)
-            end
-            addItem(root, (itemOptions.Title or "") .. " " .. table.concat(searchValues, " "))
-            return { Get = function() return selected end }
+                    rebuildChoices()
+                end,
+            }
         end
 
         function panel:AddLabel(text)

@@ -1,5 +1,6 @@
 local BASE_URL = "https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/"
 local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua"
+local MUSIC_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_Music.lua"
 
 local scripts = {
     "4M1NrMnc.txt",
@@ -281,6 +282,7 @@ local externalScripts = {
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
+local HttpService = game:GetService("HttpService")
 
 local function urlEncode(value)
     return (value:gsub("[^%w%-%._~]", function(char)
@@ -292,33 +294,6 @@ local function contains(text, value)
     return text:find(value, 1, true) ~= nil
 end
 
-local function detectCategory(scriptName, description)
-    local text = (scriptName .. " " .. description):lower()
-    if contains(text, "doors") or contains(text, "dead rails") or contains(text, "死铁轨")
-        or contains(text, "forsaken") or contains(text, "被遗弃") or contains(text, "tsb")
-        or contains(text, "blox fruits") or contains(text, "战争大亨") or contains(text, "监狱")
-        or contains(text, "红木") or contains(text, "七日") or contains(text, "墨水")
-        or contains(text, "跳跃对决") or contains(text, "方块故事") or contains(text, "铁拳")
-        or contains(text, "终极战场") or contains(text, "军区") or contains(text, "aut/") then
-        return "游戏"
-    end
-
-    if contains(text, "hub") or contains(text, "loader") or contains(text, "加载器")
-        or contains(text, "综合") or contains(text, "合集") or contains(text, "执行器")
-        or contains(text, "synapse") or contains(text, "突触") or contains(text, "vape") then
-        return "脚本合集"
-    end
-
-    if contains(text, "动画") or contains(text, "音乐") or contains(text, "甩飞")
-        or contains(text, "空翻") or contains(text, "刷屏") or contains(text, "蜘蛛侠")
-        or contains(text, "飞车") or contains(text, "黑洞") or contains(text, "假无头")
-        or contains(text, "娱乐") or contains(text, "爱男娘") then
-        return "娱乐"
-    end
-
-    return "其他"
-end
-
 local entries = {}
 for _, scriptName in ipairs(scripts) do
     local description = descriptions[scriptName] or "未分类脚本，点击按文件名加载"
@@ -326,12 +301,39 @@ for _, scriptName in ipairs(scripts) do
         name = scriptName,
         file = scriptName,
         description = description,
-        category = detectCategory(scriptName, description),
+        category = "杂项专区",
         group = "本地脚本",
     }
 end
 
 for _, entry in ipairs(externalScripts) do
+    entry.category = "杂项专区"
+    entries[#entries + 1] = entry
+end
+
+local mainScripts = {
+    { name = "动物医院脚本", category = "游戏", group = "动物医院", url = "https://raw.githubusercontent.com/caomod2077/Script/main/FN_AnimalHospital.lua" },
+    { name = "无卡密动物医院", category = "游戏", group = "动物医院", url = "https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/AnimalHospital" },
+    { name = "99夜新脚本", category = "游戏", group = "99夜", url = "https://raw.githubusercontent.com/kyruxv1/final/refs/heads/main/final-99-nitf" },
+    { name = "AX Ink Game 汉化", category = "游戏", group = "墨水游戏", url = "https://raw.githubusercontent.com/fningna51-stack/-/main/ax%E8%84%9A%E6%9C%AC%E7%A7%8B%E8%BE%9E%E6%B1%89%E5%8C%96" },
+    { name = "最新墨水游戏", category = "游戏", group = "墨水游戏", url = "https://raw.githubusercontent.com/wefwef34/inkgames.github.io/refs/heads/main/ringta.lua" },
+    { name = "死铁轨刷债券", category = "游戏", group = "死铁轨", url = "https://raw.githubusercontent.com/erewe23/deadrailsring.github.io/refs/heads/main/ringta.lua" },
+    { name = "LC 秒换弹与杀戮光环", category = "游戏", group = "Lexington and Concord", url = "https://rawscripts.net/raw/Lexington-and-Concord-LC-75016" },
+    { name = "俄亥俄州脚本", category = "游戏", group = "俄亥俄州", url = "https://pastebin.com/raw/GUmp28kq" },
+    { name = "元素力量大亨", category = "游戏", group = "元素力量大亨", url = "https://raw.githubusercontent.com/kichetvip/Script/refs/heads/main/Kiethub-EPT" },
+    { name = "可怕的杂货店：夜班", category = "游戏", group = "杂货店夜班", url = "https://gist.githubusercontent.com/fortriftz/b622c2f8346a806a1993ee1c4e216ed7/raw/d41b6c6cc791900e1aadc01a1ab88276031242a9/gistfile1.txt" },
+    { name = "新恶魔学脚本", category = "游戏", group = "恶魔学", url = "https://raw.githubusercontent.com/kdkdirjrne/Vgxmod-Hub/refs/heads/main/Loader.lua" },
+    { name = "肌肉传奇", category = "游戏", group = "肌肉传奇", url = "https://raw.githubusercontent.com/toxicity-561/Proton-Hub/refs/heads/main/Muscle-Legends.luau" },
+    { name = "Ak47脚本", category = "其他", group = "工具", url = "https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47" },
+    { name = "20个服务器脚本中心", category = "其他", group = "脚本中心", url = "https://raw.githubusercontent.com/fningna51-stack/-/main/AF%20Hun%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD" },
+    { name = "YX脚本中心", category = "其他", group = "脚本中心", url = "https://raw.githubusercontent.com/YirdeX-Dev/scripts/refs/heads/main/YX-HubLoader.lua" },
+    { name = "BS黑洞中心", category = "其他", group = "娱乐", url = "https://gitee.com/BS_script/script/raw/master/BS_Script.Luau" },
+    { name = "旧 FE 动作脚本", category = "其他", group = "娱乐", url = "https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/Fe%20Better%3F%20Movement" },
+    { name = "死亡笔记脚本", category = "其他", group = "娱乐", url = "https://pastebin.com/raw/gErHq60M" },
+    { name = "FE 杀死所有人", category = "其他", group = "FE", callback = "killAll" },
+}
+for _, entry in ipairs(mainScripts) do
+    entry.description = entry.group .. "专用脚本"
     entries[#entries + 1] = entry
 end
 
@@ -350,33 +352,53 @@ if not ok or not UI then
     return
 end
 
+local defaultConfig = {
+    Theme = "深色", Accent = { 55, 157, 255 }, Transparency = 0,
+    Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true,
+}
+local config = defaultConfig
+pcall(function()
+    if isfile and isfile("UGIK/config.json") then
+        local loaded = HttpService:JSONDecode(readfile("UGIK/config.json"))
+        for key, value in pairs(defaultConfig) do if loaded[key] == nil then loaded[key] = value end end
+        config = loaded
+    end
+end)
+local function saveConfig()
+    pcall(function()
+        if makefolder and not isfolder("UGIK") then makefolder("UGIK") end
+        if writefile then writefile("UGIK/config.json", HttpService:JSONEncode(config)) end
+    end)
+end
+local accent = Color3.fromRGB(config.Accent[1], config.Accent[2], config.Accent[3])
+
 local Window = UI:CreateWindow({
     Name = "UGIK_Script_Hub",
     Title = "UGIK Script Hub",
     ShortTitle = "UGIK",
     RestoreText = "UG",
     Status = tostring(#entries) .. " 个脚本已就绪",
-    Accent = Color3.fromRGB(55, 157, 255),
-    MinimizeMode = "island",
-    BackgroundBlur = true,
-    BackgroundParticles = true,
-    BackgroundGradient = true,
+    Accent = accent,
+    MinimizeMode = config.MinimizeMode,
+    BackgroundBlur = config.Blur,
+    BackgroundParticles = config.Particles,
+    BackgroundGradient = config.Gradient,
 })
+Window:SetTheme(config.Theme)
+Window:SetAccent(accent)
+Window:SetScale(config.Scale)
+Window:SetTransparency(config.Transparency)
 
-local categoryOrder = { "全部脚本", "游戏", "脚本合集", "娱乐", "其他" }
+local categoryOrder = { "游戏", "其他", "杂项专区" }
 local categoryColors = {
-    ["全部脚本"] = Color3.fromRGB(59, 174, 192),
     ["游戏"] = Color3.fromRGB(52, 178, 126),
-    ["脚本合集"] = Color3.fromRGB(65, 145, 245),
-    ["娱乐"] = Color3.fromRGB(232, 123, 91),
     ["其他"] = Color3.fromRGB(172, 112, 224),
+    ["杂项专区"] = Color3.fromRGB(232, 123, 91),
 }
 local shortTitles = {
-    ["全部脚本"] = "全",
     ["游戏"] = "游",
-    ["脚本合集"] = "集",
-    ["娱乐"] = "乐",
     ["其他"] = "其",
+    ["杂项专区"] = "杂",
 }
 
 local gameAliases = {
@@ -422,7 +444,6 @@ local gameOrder = {}
 for _, category in ipairs(categoryOrder) do
     counts[category] = 0
 end
-counts["全部脚本"] = #entries
 for _, entry in ipairs(entries) do
     counts[entry.category] = (counts[entry.category] or 0) + 1
     if entry.category == "游戏" then
@@ -466,33 +487,84 @@ local settingsPanel = Window:CreatePanel({
 settingsPanel:AddDropdown({
     Title = "最小化方式",
     Values = { "灵动岛", "悬浮按钮" },
-    Default = "灵动岛",
+    Default = config.MinimizeMode == "button" and "悬浮按钮" or "灵动岛",
     Callback = function(value)
-        Window:SetMinimizeMode(value == "灵动岛" and "island" or "button")
+        config.MinimizeMode = value == "灵动岛" and "island" or "button"
+        Window:SetMinimizeMode(config.MinimizeMode)
+        saveConfig()
         Window:Notify("界面设置", "最小化方式已切换为" .. value, 3)
+    end,
+})
+
+settingsPanel:AddDropdown({
+    Title = "主题",
+    Values = { "深色", "浅色", "霓虹" },
+    Default = config.Theme,
+    Callback = function(value)
+        config.Theme = value
+        Window:SetTheme(value)
+        saveConfig()
+    end,
+})
+
+settingsPanel:AddInput({
+    Title = "强调色 RGB",
+    Default = table.concat(config.Accent, ","),
+    Placeholder = "55,157,255",
+    Callback = function(value, enterPressed)
+        if not enterPressed then return end
+        local r, g, b = value:match("(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
+        if not r then Window:Notify("颜色格式错误", "请输入 R,G,B", 3) return end
+        config.Accent = { math.clamp(tonumber(r), 0, 255), math.clamp(tonumber(g), 0, 255), math.clamp(tonumber(b), 0, 255) }
+        Window:SetAccent(Color3.fromRGB(config.Accent[1], config.Accent[2], config.Accent[3]))
+        saveConfig()
+    end,
+})
+
+settingsPanel:AddSlider({
+    Title = "界面透明度", Min = 0, Max = 65, Step = 5, Default = math.floor(config.Transparency * 100),
+    Callback = function(value)
+        config.Transparency = value / 100
+        Window:SetTransparency(config.Transparency)
+        saveConfig()
+    end,
+})
+
+settingsPanel:AddSlider({
+    Title = "UI 缩放", Min = 70, Max = 130, Step = 5, Default = math.floor(config.Scale * 100),
+    Callback = function(value)
+        config.Scale = value / 100
+        Window:SetScale(config.Scale)
+        saveConfig()
     end,
 })
 
 settingsPanel:AddToggle({
     Title = "背景模糊",
-    Default = true,
+    Default = config.Blur,
     Callback = function(enabled)
+        config.Blur = enabled
+        saveConfig()
         Window:SetBackdropEffects({ Blur = enabled })
     end,
 })
 
 settingsPanel:AddToggle({
     Title = "蓝色粒子",
-    Default = true,
+    Default = config.Particles,
     Callback = function(enabled)
+        config.Particles = enabled
+        saveConfig()
         Window:SetBackdropEffects({ Particles = enabled })
     end,
 })
 
 settingsPanel:AddToggle({
     Title = "动态渐变",
-    Default = true,
+    Default = config.Gradient,
     Callback = function(enabled)
+        config.Gradient = enabled
+        saveConfig()
         Window:SetBackdropEffects({ Gradient = enabled })
     end,
 })
@@ -503,6 +575,132 @@ settingsPanel:AddButton({
     ActionText = ">",
     Callback = function()
         Window:Notify("UGIK 提示", "右下角提示系统工作正常", 4, Color3.fromRGB(55, 157, 255))
+    end,
+})
+
+local importBox = settingsPanel:AddInput({ Title = "导入配置", Placeholder = "粘贴 JSON 后回车" })
+settingsPanel:AddButton({
+    Title = "导出配置", Description = "复制当前配置 JSON", ActionText = "复制",
+    Callback = function()
+        local text = HttpService:JSONEncode(config)
+        if setclipboard then setclipboard(text) end
+        Window:Notify("配置已导出", "JSON 已复制", 3)
+    end,
+})
+settingsPanel:AddButton({
+    Title = "应用导入配置", ActionText = ">",
+    Callback = function()
+        local success, loaded = pcall(HttpService.JSONDecode, HttpService, importBox.Text)
+        if not success then Window:Notify("导入失败", "JSON 格式错误", 4) return end
+        config = loaded
+        saveConfig()
+        Window:Notify("配置已导入", "重新执行 Loader 后生效", 4)
+    end,
+})
+settingsPanel:AddButton({
+    Title = "恢复默认配置", ActionText = ">",
+    Callback = function()
+        config = { Theme = "深色", Accent = { 55, 157, 255 }, Transparency = 0, Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true }
+        saveConfig()
+        Window:Notify("已恢复默认", "重新执行 Loader 后生效", 4)
+    end,
+})
+
+local musicPanel = Window:CreatePanel({
+    Title = "网易云音乐",
+    ShortTitle = "音乐",
+    Subtitle = "搜索与播放",
+    Accent = Color3.fromRGB(224, 72, 82),
+    Search = false,
+    Visible = false,
+    Width = 300,
+    Height = 520,
+})
+
+local musicOk, MusicLibrary = pcall(function()
+    return loadstring(game:HttpGet(MUSIC_LIBRARY_URL))()
+end)
+local music
+if musicOk and MusicLibrary then
+    music = MusicLibrary.new({
+        Api = "https://wy.rwcdh.dpdns.org",
+        Volume = 0.5,
+        OnStatus = function(message, isError)
+            Window:SetStatus(message, isError and Color3.fromRGB(242, 91, 103) or Color3.fromRGB(76, 205, 142))
+        end,
+    })
+end
+
+local searchBox = musicPanel:AddInput({ Title = "搜索歌曲", Placeholder = "歌曲名或歌手" })
+local resultIndexes = {}
+local selectedIndex = 1
+local resultDropdown = musicPanel:AddDropdown({
+    Title = "搜索结果",
+    Values = { "请先搜索" },
+    Callback = function(value)
+        selectedIndex = resultIndexes[value] or 1
+    end,
+})
+
+musicPanel:AddButton({
+    Title = "搜索", Description = "从网易云搜索前 10 条单曲", ActionText = ">",
+    Callback = function()
+        if not music then Window:Notify("音乐库加载失败", tostring(MusicLibrary), 5) return end
+        task.spawn(function()
+            local success, results = pcall(music.Search, music, searchBox.Text, 10)
+            if not success then Window:Notify("搜索失败", tostring(results), 5) return end
+            local labels = {}
+            resultIndexes = {}
+            for index, song in ipairs(results) do
+                local label = song.name .. " - " .. song.artist
+                labels[#labels + 1] = label
+                resultIndexes[label] = index
+            end
+            resultDropdown:SetValues(labels)
+            selectedIndex = 1
+            Window:Notify("搜索完成", tostring(#labels) .. " 条结果", 3)
+        end)
+    end,
+})
+
+musicPanel:AddButton({
+    Title = "播放所选歌曲", ActionText = ">",
+    Callback = function()
+        if not music then return end
+        task.spawn(function()
+            local success, message = pcall(music.Play, music, selectedIndex)
+            if not success then Window:Notify("播放失败", tostring(message), 5) end
+        end)
+    end,
+})
+musicPanel:AddButton({ Title = "播放 / 暂停", Callback = function() if music then music:TogglePause() end end })
+musicPanel:AddButton({ Title = "上一首", Callback = function() if music then task.spawn(function() pcall(music.Previous, music) end) end end })
+musicPanel:AddButton({ Title = "下一首", Callback = function() if music then task.spawn(function() pcall(music.Next, music) end) end end })
+musicPanel:AddSlider({ Title = "音量", Min = 0, Max = 100, Step = 5, Default = 50, Callback = function(value) if music then music:SetVolume(value / 100) end end })
+musicPanel:AddSlider({ Title = "播放进度", Min = 0, Max = 100, Step = 5, Default = 0, Callback = function(value) if music then music:Seek(value / 100) end end })
+musicPanel:AddDropdown({ Title = "循环模式", Values = { "列表循环", "单曲循环", "顺序播放" }, Default = "列表循环", Callback = function(value) if music then music:SetLoopMode(value) end end })
+local lyricLabel = musicPanel:AddLabel("歌词将在这里显示")
+lyricLabel.Size = UDim2.new(1, -5, 0, 120)
+lyricLabel.TextYAlignment = Enum.TextYAlignment.Top
+local currentLyric = ""
+musicPanel:AddButton({
+    Title = "获取当前歌词", ActionText = ">",
+    Callback = function()
+        if not music then return end
+        task.spawn(function()
+            local success, lyric = pcall(music.GetLyric, music)
+            currentLyric = success and lyric or ("歌词获取失败: " .. tostring(lyric))
+            lyricLabel.Text = currentLyric
+        end)
+    end,
+})
+musicPanel:AddButton({
+    Title = "复制完整歌词", ActionText = "复制",
+    Callback = function()
+        if setclipboard and currentLyric ~= "" then
+            setclipboard(currentLyric)
+            Window:Notify("歌词已复制", "完整歌词已写入剪贴板", 3)
+        end
     end,
 })
 
@@ -662,6 +860,12 @@ local function runEntry(entry)
         openWsControl()
         return
     end
+    if entry.callback == "killAll" then
+        local event = game:GetService("ReplicatedStorage"):FindFirstChild("Events")
+        event = event and event:FindFirstChild("KillEvent")
+        if event then event:FireServer() else Window:Notify("运行失败", "当前游戏没有 KillEvent", 4) end
+        return
+    end
     if busy then
         Window:SetStatus("已有脚本正在加载", Color3.fromRGB(245, 183, 76))
         return
@@ -705,7 +909,6 @@ for _, entry in ipairs(entries) do
     local categoryPanel = entry.category == "游戏" and gamePanels[entry.game]
         or panels[entry.category]
         or panels["其他"]
-    addEntryButton(panels["全部脚本"], currentEntry)
     addEntryButton(categoryPanel, currentEntry)
 end
 

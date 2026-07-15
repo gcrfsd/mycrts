@@ -1,0 +1,149 @@
+local HttpService = game:GetService("HttpService")
+local SoundService = game:GetService("SoundService")
+
+local Music = {}
+Music.__index = Music
+
+local function encode(value)
+    return HttpService:UrlEncode(tostring(value or ""))
+end
+
+local function requestFunction()
+    return request or http_request or (syn and syn.request)
+end
+
+function Music.new(options)
+    options = options or {}
+    local self = setmetatable({
+        Api = (options.Api or "https://wy.rwcdh.dpdns.org"):gsub("/$", ""),
+        Queue = {},
+        Index = 0,
+        Volume = options.Volume or 0.5,
+        LoopMode = "列表循环",
+        OnStatus = options.OnStatus,
+    }, Music)
+    self.Sound = Instance.new("Sound")
+    self.Sound.Name = "UGIK_Netease_Player"
+    self.Sound.Volume = self.Volume
+    self.Sound.Parent = SoundService
+    self.Sound.Ended:Connect(function()
+        if self.LoopMode == "单曲循环" then
+            self.Sound.TimePosition = 0
+            self.Sound:Play()
+        elseif self.LoopMode ~= "顺序播放" or self.Index < #self.Queue then
+            self:Next()
+        end
+    end)
+    return self
+end
+
+function Music:_status(text, isError)
+    if self.OnStatus then pcall(self.OnStatus, text, isError) end
+end
+
+function Music:_get(path)
+    local body = game:HttpGet(self.Api .. path)
+    return HttpService:JSONDecode(body)
+end
+
+function Music:Search(keyword, limit)
+    local data = self:_get("/cloudsearch?type=1&limit=" .. tostring(limit or 10) .. "&keywords=" .. encode(keyword))
+    local songs = data.result and data.result.songs or {}
+    local results = {}
+    for _, song in ipairs(songs) do
+        local artists = {}
+        for _, artist in ipairs(song.ar or song.artists or {}) do artists[#artists + 1] = artist.name end
+        results[#results + 1] = {
+            id = song.id,
+            name = song.name or "未知歌曲",
+            artist = table.concat(artists, "/"),
+            album = (song.al or song.album or {}).name or "",
+            duration = song.dt or song.duration or 0,
+        }
+    end
+    self.Queue = results
+    self.Index = #results > 0 and 1 or 0
+    return results
+end
+
+function Music:_assetFor(song)
+    local response = self:_get("/song/url/v1?level=standard&id=" .. tostring(song.id))
+    local info = response.data and response.data[1]
+    if not info or not info.url then error("歌曲无版权或接口未返回播放地址") end
+    local requester = requestFunction()
+    local asset = getcustomasset or getsynasset
+    if not requester or not writefile or not asset then
+        error("当前执行器缺少 request/writefile/getcustomasset")
+    end
+    local folder = "UGIK"
+    pcall(function() if makefolder and not isfolder(folder) then makefolder(folder) end end)
+    local extension = info.type or "mp3"
+    local path = folder .. "/music_" .. tostring(song.id) .. "." .. extension
+    if not (isfile and isfile(path)) then
+        local downloaded = requester({ Url = info.url, Method = "GET" })
+        local body = downloaded and (downloaded.Body or downloaded.body)
+        if not body or #body == 0 then error("音频下载失败") end
+        writefile(path, body)
+    end
+    return asset(path)
+end
+
+function Music:Play(index)
+    index = tonumber(index) or self.Index
+    local song = self.Queue[index]
+    if not song then error("播放列表为空") end
+    self.Index = index
+    self:_status("正在加载: " .. song.name)
+    self.Sound:Stop()
+    self.Sound.SoundId = self:_assetFor(song)
+    self.Sound.Volume = self.Volume
+    self.Sound:Play()
+    self:_status("正在播放: " .. song.name .. " - " .. song.artist)
+    return song
+end
+
+function Music:TogglePause()
+    if self.Sound.IsPlaying then self.Sound:Pause() else self.Sound:Resume() end
+end
+
+function Music:Next()
+    if #self.Queue == 0 then return end
+    local index = self.Index + 1
+    if index > #self.Queue then index = 1 end
+    return self:Play(index)
+end
+
+function Music:Previous()
+    if #self.Queue == 0 then return end
+    local index = self.Index - 1
+    if index < 1 then index = #self.Queue end
+    return self:Play(index)
+end
+
+function Music:SetVolume(value)
+    self.Volume = math.clamp(tonumber(value) or 0.5, 0, 1)
+    self.Sound.Volume = self.Volume
+end
+
+function Music:Seek(percent)
+    if self.Sound.TimeLength > 0 then
+        self.Sound.TimePosition = self.Sound.TimeLength * math.clamp(tonumber(percent) or 0, 0, 1)
+    end
+end
+
+function Music:SetLoopMode(mode)
+    self.LoopMode = mode
+end
+
+function Music:GetLyric(song)
+    song = song or self.Queue[self.Index]
+    if not song then return "暂无歌词" end
+    local data = self:_get("/lyric?id=" .. tostring(song.id))
+    return data.lrc and data.lrc.lyric or "暂无歌词"
+end
+
+function Music:Destroy()
+    self.Sound:Destroy()
+end
+
+return Music
