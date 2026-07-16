@@ -9,7 +9,35 @@ local function encode(value)
 end
 
 local function requestFunction()
-    return request or http_request or (syn and syn.request)
+    return request or http_request or (syn and syn.request) or (http and http.request) or (fluxus and fluxus.request)
+end
+
+local function downloadAudio(url, requester)
+    local secureUrl = url:gsub("^http://", "https://")
+    local attempts = {
+        function()
+            local response = requester({ Url = secureUrl, Method = "GET" })
+            local status = response and (response.StatusCode or response.Status)
+            if status and tonumber(status) and tonumber(status) >= 400 then error("HTTP " .. tostring(status)) end
+            return response and (response.Body or response.body)
+        end,
+        function()
+            local response = requester({ Url = url, Method = "GET" })
+            local status = response and (response.StatusCode or response.Status)
+            if status and tonumber(status) and tonumber(status) >= 400 then error("HTTP " .. tostring(status)) end
+            return response and (response.Body or response.body)
+        end,
+        function() return game:HttpGet(secureUrl) end,
+        function() return game:HttpGet(url) end,
+    }
+    local errors = {}
+    for index, attempt in ipairs(attempts) do
+        local ok, body = pcall(attempt)
+        if ok and type(body) == "string" and #body >= 1024 then return body end
+        errors[#errors + 1] = tostring(index) .. ":" .. tostring(body)
+    end
+    local host = url:match("^https?://([^/]+)") or "未知主机"
+    error("无法连接音频 CDN " .. host .. " [" .. table.concat(errors, " | ") .. "]")
 end
 
 function Music.new(options)
@@ -114,18 +142,7 @@ function Music:_assetFor(song)
     local path = folder .. "/music_" .. tostring(song.id) .. "." .. extension
     if not (isfile and isfile(path)) then
         self:_status("正在下载: " .. song.name)
-        local audioUrl = info.url:gsub("^http://", "https://")
-        local downloaded = requester({
-            Url = audioUrl,
-            Method = "GET",
-            Headers = { ["User-Agent"] = "Mozilla/5.0", Referer = "https://music.163.com/" },
-        })
-        local body = downloaded and (downloaded.Body or downloaded.body)
-        local status = downloaded and (downloaded.StatusCode or downloaded.Status)
-        if status and tonumber(status) and tonumber(status) >= 400 then
-            error("音频下载失败，HTTP " .. tostring(status))
-        end
-        if not body or #body < 1024 then error("音频下载未返回有效数据") end
+        local body = downloadAudio(info.url, requester)
         writefile(path, body)
     end
     return asset(path)
