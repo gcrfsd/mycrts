@@ -40,6 +40,34 @@ local function downloadAudio(url, requester)
     error("无法连接音频 CDN " .. host .. " [" .. table.concat(errors, " | ") .. "]")
 end
 
+local function detectAudioFormat(body)
+    if body:sub(1, 4) == "fLaC" then return "flac" end
+    if body:sub(1, 4) == "OggS" then return "ogg" end
+    if body:sub(1, 4) == "RIFF" then return "wav" end
+    if body:sub(1, 3) == "ID3" then return "mp3" end
+    local first, second = body:byte(1, 2)
+    if first == 0xFF and second and second >= 0xE0 then return "mp3" end
+    return nil
+end
+
+local function registerAsset(path)
+    local loaders = {}
+    if getcustomasset then
+        loaders[#loaders + 1] = function() return getcustomasset(path) end
+        loaders[#loaders + 1] = function() return getcustomasset(path, true) end
+    end
+    if getsynasset and getsynasset ~= getcustomasset then
+        loaders[#loaders + 1] = function() return getsynasset(path) end
+    end
+    local errors = {}
+    for index, loader in ipairs(loaders) do
+        local ok, result = pcall(loader)
+        if ok and type(result) == "string" and result ~= "" then return result end
+        errors[#errors + 1] = tostring(index) .. ":" .. tostring(result)
+    end
+    error("Delta 本地音频注册失败 [" .. table.concat(errors, " | ") .. "]")
+end
+
 function Music.new(options)
     options = options or {}
     local self = setmetatable({
@@ -132,20 +160,40 @@ function Music:_assetFor(song)
     end
     if not info or not info.url then error("歌曲无版权或接口未返回播放地址") end
     local requester = requestFunction()
-    local asset = getcustomasset or getsynasset
-    if not requester or not writefile or not asset then
+    if not requester or not writefile or (not getcustomasset and not getsynasset) then
         error("当前执行器缺少 request/writefile/getcustomasset")
     end
     local folder = "UGIK"
     pcall(function() if makefolder and not isfolder(folder) then makefolder(folder) end end)
-    local extension = info.type or "mp3"
-    local path = folder .. "/music_" .. tostring(song.id) .. "." .. extension
-    if not (isfile and isfile(path)) then
+    local pathBase = folder .. "/music_" .. tostring(song.id)
+    local path
+    if listfiles and isfile then
+        pcall(function()
+            for _, candidate in ipairs(listfiles(folder)) do
+                if candidate:find("music_" .. tostring(song.id), 1, true) and isfile(candidate) then path = candidate break end
+            end
+        end)
+    end
+    if not path then
         self:_status("正在下载: " .. song.name)
         local body = downloadAudio(info.url, requester)
+        local format = detectAudioFormat(body)
+        if format == "flac" then error("Delta 不支持当前 FLAC 音源") end
+        if not format then error("无法解析返回的音频格式") end
+        path = pathBase .. "." .. format
         writefile(path, body)
     end
-    return asset(path)
+    local cachedBody
+    if readfile then
+        local ok, result = pcall(readfile, path)
+        if ok then cachedBody = result end
+    end
+    local cachedFormat = cachedBody and detectAudioFormat(cachedBody)
+    if cachedFormat == "flac" or (cachedBody and not cachedFormat) then
+        pcall(function() if delfile then delfile(path) end end)
+        error(cachedFormat == "flac" and "Delta 不支持缓存的 FLAC 音源" or "缓存音频格式无效")
+    end
+    return registerAsset(path)
 end
 
 function Music:Play(index, attempts)
@@ -158,7 +206,9 @@ function Music:Play(index, attempts)
     local assetOk, assetOrError = pcall(self._assetFor, self, song)
     if not assetOk then
         attempts = (attempts or 0) + 1
-        if tostring(assetOrError):find("无版权", 1, true) and attempts < #self.Queue then
+        local reason = tostring(assetOrError)
+        local canSkip = reason:find("无版权", 1, true) or reason:find("FLAC", 1, true) or reason:find("音频格式", 1, true)
+        if canSkip and attempts < #self.Queue then
             self:_status(song.name .. " 无可用音源，尝试下一首", true)
             local nextIndex = index + 1
             if nextIndex > #self.Queue then nextIndex = 1 end
