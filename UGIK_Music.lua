@@ -83,13 +83,24 @@ end
 function Music:_assetFor(song)
     local info
     for _, level in ipairs({ "standard", "higher", "exhigh" }) do
-        local response = self:_get("/song/url/v1?level=" .. level .. "&id=" .. tostring(song.id))
-        info = response.data and response.data[1]
+        local ok, response = pcall(self._get, self, "/song/url/v1?level=" .. level .. "&id=" .. tostring(song.id))
+        info = ok and response.data and response.data[1] or nil
         if info and info.url then break end
     end
     if not info or not info.url then
-        local fallback = self:_get("/song/url?br=128000&id=" .. tostring(song.id))
-        info = fallback.data and fallback.data[1]
+        local ok, fallback = pcall(self._get, self, "/song/url?br=128000&id=" .. tostring(song.id))
+        info = ok and fallback.data and fallback.data[1] or nil
+    end
+    if not info or not info.url then
+        self:_status("正在尝试解灰音源: " .. song.name)
+        local ok, matched = pcall(self._get, self, "/song/url/match?id=" .. tostring(song.id))
+        if ok and matched.code == 200 then
+            local matchedUrl = matched.proxyUrl ~= "" and matched.proxyUrl or matched.data
+            if type(matchedUrl) == "string" and matchedUrl ~= "" then
+                local cleanUrl = matchedUrl:match("^[^?]+") or matchedUrl
+                info = { url = matchedUrl, type = cleanUrl:match("%.([%w]+)$") or "mp3" }
+            end
+        end
     end
     if not info or not info.url then error("歌曲无版权或接口未返回播放地址") end
     local requester = requestFunction()
@@ -120,14 +131,25 @@ function Music:_assetFor(song)
     return asset(path)
 end
 
-function Music:Play(index)
+function Music:Play(index, attempts)
     index = tonumber(index) or self.Index
     local song = self.Queue[index]
     if not song then error("播放列表为空") end
     self.Index = index
     self:_status("正在加载: " .. song.name)
     self.Sound:Stop()
-    self.Sound.SoundId = self:_assetFor(song)
+    local assetOk, assetOrError = pcall(self._assetFor, self, song)
+    if not assetOk then
+        attempts = (attempts or 0) + 1
+        if tostring(assetOrError):find("无版权", 1, true) and attempts < #self.Queue then
+            self:_status(song.name .. " 无可用音源，尝试下一首", true)
+            local nextIndex = index + 1
+            if nextIndex > #self.Queue then nextIndex = 1 end
+            return self:Play(nextIndex, attempts)
+        end
+        error(assetOrError)
+    end
+    self.Sound.SoundId = assetOrError
     self.Sound.Volume = self.Volume
     local started = os.clock()
     while not self.Sound.IsLoaded and os.clock() - started < 12 do task.wait(0.1) end
