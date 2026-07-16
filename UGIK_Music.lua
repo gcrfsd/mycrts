@@ -73,7 +73,9 @@ function Music.new(options)
     local self = setmetatable({
         Api = (options.Api or "https://wy.rwcdh.dpdns.org"):gsub("/$", ""),
         Queue = {},
+        LocalFiles = {},
         Index = 0,
+        SourceMode = "cloud",
         Volume = options.Volume or 0.5,
         LoopMode = "列表循环",
         OnStatus = options.OnStatus,
@@ -86,8 +88,11 @@ function Music.new(options)
         if self.LoopMode == "单曲循环" then
             self.Sound.TimePosition = 0
             self.Sound:Play()
-        elseif self.LoopMode ~= "顺序播放" or self.Index < #self.Queue then
-            self:Next()
+        else
+            local count = self.SourceMode == "local" and #self.LocalFiles or #self.Queue
+            if self.LoopMode ~= "顺序播放" or self.Index < count then
+                self:Next()
+            end
         end
     end)
     return self
@@ -131,9 +136,80 @@ function Music:Search(keyword, limit)
         }
     end
     self.Queue = results
+    self.SourceMode = "cloud"
     self.Index = #results > 0 and 1 or 0
     self:_status(#results > 0 and ("已返回 " .. tostring(#results) .. " 首歌曲") or "没有搜索到歌曲", #results == 0)
     return results
+end
+
+function Music:ScanLocal(directory)
+    if not listfiles then error("当前执行器不支持 listfiles") end
+    local requested = tostring(directory or "")
+    local candidates = { requested }
+    if requested == "" then
+        candidates = { "/storage/emulated/0/Delta/Workspace/UGIK/myself", "UGIK/myself" }
+    elseif requested:find("/storage/emulated/0/Delta/Workspace/", 1, true) == 1 then
+        candidates[#candidates + 1] = requested:gsub("^/storage/emulated/0/Delta/Workspace/", "")
+    end
+    local files
+    local usedDirectory
+    for _, candidate in ipairs(candidates) do
+        local ok, result = pcall(listfiles, candidate)
+        if ok and type(result) == "table" then files, usedDirectory = result, candidate break end
+    end
+    if not files and makefolder then
+        pcall(function() if not isfolder or not isfolder("UGIK") then makefolder("UGIK") end end)
+        pcall(function() if not isfolder or not isfolder("UGIK/myself") then makefolder("UGIK/myself") end end)
+        local ok, result = pcall(listfiles, "UGIK/myself")
+        if ok and type(result) == "table" then files, usedDirectory = result, "UGIK/myself" end
+    end
+    if not files then error("无法扫描目录，请确认目录存在且 Delta 已授权存储权限") end
+    local results = {}
+    for _, path in ipairs(files) do
+        local extension = path:lower():match("%.([%w]+)$")
+        if extension == "mp3" or extension == "ogg" or extension == "wav" then
+            results[#results + 1] = { path = path, name = path:match("([^/\\]+)$") or path }
+        end
+    end
+    table.sort(results, function(a, b) return a.name:lower() < b.name:lower() end)
+    self.LocalFiles = results
+    self.LocalDirectory = usedDirectory
+    self.SourceMode = "local"
+    self.Index = #results > 0 and 1 or 0
+    self:_status("已扫描 " .. tostring(#results) .. " 首本地歌曲")
+    return results
+end
+
+function Music:PlayLocal(indexOrPath)
+    local entry
+    if type(indexOrPath) == "number" then
+        self.Index = indexOrPath
+        entry = self.LocalFiles[indexOrPath]
+    else
+        local path = tostring(indexOrPath or "")
+        for index, item in ipairs(self.LocalFiles) do
+            if item.path == path then self.Index, entry = index, item break end
+        end
+        entry = entry or { path = path, name = path:match("([^/\\]+)$") or path }
+    end
+    if not entry or entry.path == "" then error("未选择本地歌曲") end
+    if readfile then
+        local ok, body = pcall(readfile, entry.path)
+        if not ok then error("无法读取本地歌曲: " .. tostring(body)) end
+        local format = detectAudioFormat(body)
+        if format == "flac" then error("Delta 不支持 FLAC，请转换为 MP3/OGG/WAV") end
+        if not format then error("无法识别本地音频格式") end
+    end
+    self.SourceMode = "local"
+    self.Sound:Stop()
+    self.Sound.SoundId = registerAsset(entry.path)
+    self.Sound.Volume = self.Volume
+    local started = os.clock()
+    while not self.Sound.IsLoaded and os.clock() - started < 12 do task.wait(0.1) end
+    if not self.Sound.IsLoaded then error("Delta 未能加载本地歌曲") end
+    self.Sound:Play()
+    self:_status("正在播放本地歌曲: " .. entry.name)
+    return entry
 end
 
 function Music:_assetFor(song)
@@ -241,6 +317,12 @@ function Music:TogglePause()
 end
 
 function Music:Next()
+    if self.SourceMode == "local" then
+        if #self.LocalFiles == 0 then return end
+        local index = self.Index + 1
+        if index > #self.LocalFiles then index = 1 end
+        return self:PlayLocal(index)
+    end
     if #self.Queue == 0 then return end
     local index = self.Index + 1
     if index > #self.Queue then index = 1 end
@@ -248,6 +330,12 @@ function Music:Next()
 end
 
 function Music:Previous()
+    if self.SourceMode == "local" then
+        if #self.LocalFiles == 0 then return end
+        local index = self.Index - 1
+        if index < 1 then index = #self.LocalFiles end
+        return self:PlayLocal(index)
+    end
     if #self.Queue == 0 then return end
     local index = self.Index - 1
     if index < 1 then index = #self.Queue end

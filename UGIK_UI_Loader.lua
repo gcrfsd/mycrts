@@ -679,6 +679,46 @@ musicPanel:AddButton({ Title = "下一首", Callback = function() if music then 
 musicPanel:AddSlider({ Title = "音量", Min = 0, Max = 100, Step = 5, Default = 50, Callback = function(value) if music then music:SetVolume(value / 100) end end })
 musicPanel:AddSlider({ Title = "播放进度", Min = 0, Max = 100, Step = 5, Default = 0, Callback = function(value) if music then music:Seek(value / 100) end end })
 musicPanel:AddDropdown({ Title = "循环模式", Values = { "列表循环", "单曲循环", "顺序播放" }, Default = "列表循环", Callback = function(value) if music then music:SetLoopMode(value) end end })
+
+local localDirectory = musicPanel:AddInput({
+    Title = "本地歌曲目录",
+    Default = "/storage/emulated/0/Delta/Workspace/UGIK/myself",
+    Placeholder = "输入 Delta Workspace 目录",
+})
+local localIndexes = {}
+local selectedLocalIndex = 1
+local localDropdown = musicPanel:AddDropdown({
+    Title = "本地歌曲",
+    Values = { "点击扫描本地歌曲" },
+    Callback = function(value) selectedLocalIndex = localIndexes[value] or 1 end,
+})
+musicPanel:AddButton({
+    Title = "扫描本地歌曲", Description = "支持 MP3、OGG、WAV", ActionText = ">",
+    Callback = function()
+        if not music then return end
+        local success, files = pcall(music.ScanLocal, music, localDirectory.Text)
+        if not success then Window:Notify("扫描失败", tostring(files), 5) return end
+        local labels = {}
+        localIndexes = {}
+        for index, entry in ipairs(files) do
+            labels[#labels + 1] = entry.name
+            localIndexes[entry.name] = index
+        end
+        localDropdown:SetValues(labels)
+        selectedLocalIndex = 1
+        Window:Notify("扫描完成", tostring(#labels) .. " 首本地歌曲", 3)
+    end,
+})
+musicPanel:AddButton({
+    Title = "播放本地歌曲", ActionText = ">",
+    Callback = function()
+        if not music then return end
+        task.spawn(function()
+            local success, message = pcall(music.PlayLocal, music, selectedLocalIndex)
+            if not success then Window:Notify("本地播放失败", tostring(message), 5) end
+        end)
+    end,
+})
 local lyricLabel = musicPanel:AddLabel("歌词将在这里显示")
 lyricLabel.Size = UDim2.new(1, -5, 0, 120)
 lyricLabel.TextYAlignment = Enum.TextYAlignment.Top
