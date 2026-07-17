@@ -1,6 +1,7 @@
 local BASE_URL = "https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/"
-local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua"
-local MUSIC_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_Music.lua"
+local LIBRARY_VERSION = "20260718-glass-lyrics"
+local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua?v=" .. LIBRARY_VERSION
+local MUSIC_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_Music.lua?v=" .. LIBRARY_VERSION
 
 local scripts = {
     "4M1NrMnc.txt",
@@ -354,7 +355,7 @@ end
 
 local defaultConfig = {
     Theme = "深色", Accent = { 55, 157, 255 }, Transparency = 0,
-    Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true,
+    Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true, Glass = true,
 }
 local config = defaultConfig
 pcall(function()
@@ -383,6 +384,7 @@ local Window = UI:CreateWindow({
     BackgroundBlur = config.Blur,
     BackgroundParticles = config.Particles,
     BackgroundGradient = config.Gradient,
+    LiquidGlass = config.Glass,
 })
 Window:SetTheme(config.Theme)
 Window:SetAccent(accent)
@@ -569,6 +571,16 @@ settingsPanel:AddToggle({
     end,
 })
 
+settingsPanel:AddToggle({
+    Title = "液态玻璃",
+    Default = config.Glass,
+    Callback = function(enabled)
+        config.Glass = enabled
+        Window:SetLiquidGlass(enabled)
+        saveConfig()
+    end,
+})
+
 settingsPanel:AddButton({
     Title = "测试右下角提示",
     Description = "显示一条 4 秒自定义提示",
@@ -600,7 +612,7 @@ settingsPanel:AddButton({
 settingsPanel:AddButton({
     Title = "恢复默认配置", ActionText = ">",
     Callback = function()
-        config = { Theme = "深色", Accent = { 55, 157, 255 }, Transparency = 0, Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true }
+        config = { Theme = "深色", Accent = { 55, 157, 255 }, Transparency = 0, Scale = 1, MinimizeMode = "island", Blur = true, Particles = true, Gradient = true, Glass = true }
         saveConfig()
         Window:Notify("已恢复默认", "重新执行 Loader 后生效", 4)
     end,
@@ -621,12 +633,16 @@ local musicOk, MusicLibrary = pcall(function()
     return loadstring(game:HttpGet(MUSIC_LIBRARY_URL))()
 end)
 local music
+local lyricView
 if musicOk and MusicLibrary then
     music = MusicLibrary.new({
         Api = "https://wy.rwcdh.dpdns.org",
         Volume = 0.5,
         OnStatus = function(message, isError)
             Window:SetStatus(message, isError and Color3.fromRGB(242, 91, 103) or Color3.fromRGB(76, 205, 142))
+        end,
+        OnLyric = function(lines, currentIndex)
+            if lyricView then lyricView:SetLines(lines, currentIndex) end
         end,
     })
 end
@@ -719,9 +735,7 @@ musicPanel:AddButton({
         end)
     end,
 })
-local lyricLabel = musicPanel:AddLabel("歌词将在这里显示")
-lyricLabel.Size = UDim2.new(1, -5, 0, 120)
-lyricLabel.TextYAlignment = Enum.TextYAlignment.Top
+lyricView = musicPanel:AddScrollingText({ Title = "滚动歌词", Height = 180 })
 local currentLyric = ""
 musicPanel:AddButton({
     Title = "获取当前歌词", ActionText = ">",
@@ -730,7 +744,11 @@ musicPanel:AddButton({
         task.spawn(function()
             local success, lyric = pcall(music.GetLyric, music)
             currentLyric = success and lyric or ("歌词获取失败: " .. tostring(lyric))
-            lyricLabel.Text = currentLyric
+            if success then
+                music:SetLyricText(lyric)
+            else
+                lyricView:SetLines({ { text = currentLyric } }, 1)
+            end
         end)
     end,
 })

@@ -1,5 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local SoundService = game:GetService("SoundService")
+local RunService = game:GetService("RunService")
 
 local Music = {}
 Music.__index = Music
@@ -79,11 +80,25 @@ function Music.new(options)
         Volume = options.Volume or 0.5,
         LoopMode = "列表循环",
         OnStatus = options.OnStatus,
+        OnLyric = options.OnLyric,
+        LyricLines = {},
+        CurrentLyricIndex = 0,
     }, Music)
     self.Sound = Instance.new("Sound")
     self.Sound.Name = "UGIK_Netease_Player"
     self.Sound.Volume = self.Volume
     self.Sound.Parent = SoundService
+    self._lyricConnection = RunService.Heartbeat:Connect(function()
+        if not self.Sound.IsPlaying or #self.LyricLines == 0 then return end
+        local current = 0
+        for index, line in ipairs(self.LyricLines) do
+            if line.time <= self.Sound.TimePosition then current = index else break end
+        end
+        if current > 0 and current ~= self.CurrentLyricIndex then
+            self.CurrentLyricIndex = current
+            if self.OnLyric then pcall(self.OnLyric, self.LyricLines, current) end
+        end
+    end)
     self.Sound.Ended:Connect(function()
         if self.LoopMode == "单曲循环" then
             self.Sound.TimePosition = 0
@@ -137,6 +152,7 @@ function Music:Search(keyword, limit)
     end
     self.Queue = results
     self.SourceMode = "cloud"
+    self:ClearLyrics()
     self.Index = #results > 0 and 1 or 0
     self:_status(#results > 0 and ("已返回 " .. tostring(#results) .. " 首歌曲") or "没有搜索到歌曲", #results == 0)
     return results
@@ -175,6 +191,7 @@ function Music:ScanLocal(directory)
     self.LocalFiles = results
     self.LocalDirectory = usedDirectory
     self.SourceMode = "local"
+    self:ClearLyrics()
     self.Index = #results > 0 and 1 or 0
     self:_status("已扫描 " .. tostring(#results) .. " 首本地歌曲")
     return results
@@ -364,7 +381,31 @@ function Music:GetLyric(song)
     return data.lrc and data.lrc.lyric or "暂无歌词"
 end
 
+function Music:SetLyricText(text)
+    self.LyricLines = {}
+    self.CurrentLyricIndex = 0
+    for rawLine in tostring(text or ""):gmatch("[^\r\n]+") do
+        local lyricText = rawLine:gsub("%[[^%]]+%]", ""):match("^%s*(.-)%s*$")
+        for minutes, seconds, centiseconds in rawLine:gmatch("%[(%d+):(%d+)%.?(%d*)%]") do
+            local time = tonumber(minutes) * 60 + tonumber(seconds) + (tonumber((centiseconds .. "00"):sub(1, 2)) or 0) / 100
+            if lyricText and lyricText ~= "" then
+                self.LyricLines[#self.LyricLines + 1] = { time = time, text = lyricText }
+            end
+        end
+    end
+    table.sort(self.LyricLines, function(a, b) return a.time < b.time end)
+    if self.OnLyric then pcall(self.OnLyric, self.LyricLines, 0) end
+    return self.LyricLines
+end
+
+function Music:ClearLyrics()
+    self.LyricLines = {}
+    self.CurrentLyricIndex = 0
+    if self.OnLyric then pcall(self.OnLyric, {}, 0) end
+end
+
 function Music:Destroy()
+    if self._lyricConnection then self._lyricConnection:Disconnect() end
     self.Sound:Destroy()
 end
 

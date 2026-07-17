@@ -29,6 +29,9 @@ local function create(className, properties, children)
     for key, value in pairs(properties or {}) do
         object[key] = value
     end
+    if object:IsA("GuiObject") and properties and properties.BackgroundTransparency ~= nil then
+        object:SetAttribute("UGIKBaseTransparency", properties.BackgroundTransparency)
+    end
     for _, child in ipairs(children or {}) do
         child.Parent = object
     end
@@ -158,6 +161,7 @@ function Library:CreateWindow(options)
             Particles = options.BackgroundParticles ~= false,
             Gradient = options.BackgroundGradient ~= false,
         },
+        LiquidGlass = options.LiquidGlass ~= false,
     }
 
     for key, value in pairs(options.Theme or {}) do
@@ -185,7 +189,7 @@ function Library:CreateWindow(options)
         end
     end)
     window.Gui = gui
-    local baseTransparencies = setmetatable({}, { __mode = "k" })
+    local glassObjects = {}
 
     local oldBlur = Lighting:FindFirstChild(guiName .. "_Blur")
     if oldBlur then
@@ -523,6 +527,43 @@ function Library:CreateWindow(options)
         end
     end
 
+    local function registerGlass(object)
+        glassObjects[#glassObjects + 1] = object
+        local gradient = create("UIGradient", {
+            Color = ColorSequence.new({
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+                ColorSequenceKeypoint.new(0.45, Color3.fromRGB(180, 215, 255)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+            }),
+            Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0.92),
+                NumberSequenceKeypoint.new(0.5, 0.78),
+                NumberSequenceKeypoint.new(1, 0.94),
+            }),
+            Offset = Vector2.new(-1, 0),
+            Rotation = 18,
+            Parent = object,
+        })
+        gradient.Name = "UGIKGlassHighlight"
+        object:SetAttribute("UGIKGlass", true)
+        object:SetAttribute("UGIKGlassSurface", true)
+    end
+
+    task.spawn(function()
+        local offset = -1
+        while gui.Parent do
+            if window.LiquidGlass then
+                offset = offset + 0.025
+                if offset > 1 then offset = -1 end
+                for _, object in ipairs(glassObjects) do
+                    local gradient = object:FindFirstChild("UGIKGlassHighlight")
+                    if gradient then gradient.Offset = Vector2.new(offset, 0) end
+                end
+            end
+            task.wait(0.08)
+        end
+    end)
+
     function window:SetBackdropEffects(settings)
         settings = settings or {}
         for key, value in pairs(settings) do
@@ -536,6 +577,19 @@ function Library:CreateWindow(options)
             tween(blur, 0.25, { Size = self.BackdropEffects.Blur and (options.BlurSize or 12) or 0 })
         end
     end
+
+    function window:SetLiquidGlass(enabled)
+        self.LiquidGlass = enabled == true
+        for _, object in ipairs(glassObjects) do
+            local gradient = object:FindFirstChild("UGIKGlassHighlight")
+            if gradient then gradient.Enabled = self.LiquidGlass end
+        end
+        self:SetTransparency(self.Transparency or 0)
+    end
+
+    registerGlass(dock)
+    registerGlass(island)
+    registerGlass(restore)
 
     function window:SetMinimizeMode(mode)
         if mode == "island" or mode == "button" then
@@ -557,11 +611,10 @@ function Library:CreateWindow(options)
         self.Transparency = amount
         for _, object in ipairs(gui:GetDescendants()) do
             if object:IsA("GuiObject") and object.ZIndex >= 10 and not object:IsA("TextLabel") and not object:IsA("TextButton") and not object:IsA("TextBox") then
-                if baseTransparencies[object] == nil then
-                    baseTransparencies[object] = object.BackgroundTransparency
-                end
-                local base = baseTransparencies[object]
-                object.BackgroundTransparency = base >= 1 and 1 or math.clamp(base + amount, 0, 0.92)
+                local base = object:GetAttribute("UGIKBaseTransparency")
+                if base == nil then base = object.BackgroundTransparency end
+                local glassBoost = self.LiquidGlass and object:GetAttribute("UGIKGlassSurface") and 0.08 or 0
+                object.BackgroundTransparency = base >= 1 and 1 or math.clamp(base + amount + glassBoost, 0, 0.92)
             end
         end
     end
@@ -806,6 +859,7 @@ function Library:CreateWindow(options)
             stroke(Theme.Border, 0.2),
         })
         panel.Frame = frame
+        registerGlass(frame)
         scalableRoots[#scalableRoots + 1] = frame
         create("UIScale", { Name = "UGIKScale", Scale = window.Scale or 1, Parent = frame })
         panel.ExpandedSize = UDim2.fromOffset(width, height)
@@ -1391,7 +1445,81 @@ function Library:CreateWindow(options)
             return root
         end
 
+        function panel:AddScrollingText(itemOptions)
+            itemOptions = itemOptions or {}
+            local root = create("ScrollingFrame", {
+                Active = true,
+                AutomaticCanvasSize = Enum.AutomaticSize.Y,
+                BackgroundColor3 = Theme.Surface,
+                BorderSizePixel = 0,
+                CanvasSize = UDim2.fromOffset(0, 0),
+                ClipsDescendants = true,
+                ScrollBarThickness = 3,
+                ScrollingDirection = Enum.ScrollingDirection.Y,
+                Size = UDim2.new(1, -5, 0, itemOptions.Height or 180),
+                ZIndex = content.ZIndex + 1,
+                Parent = content,
+            }, { corner(7), padding(10, 10, 8, 8) })
+            local layout = create("UIListLayout", {
+                Padding = UDim.new(0, 5),
+                SortOrder = Enum.SortOrder.LayoutOrder,
+                Parent = root,
+            })
+            local lines = {}
+            local view = {}
+
+            function view:SetLines(nextLines, currentIndex)
+                for _, child in ipairs(root:GetChildren()) do
+                    if child:IsA("TextLabel") then child:Destroy() end
+                end
+                lines = nextLines or {}
+                for index, line in ipairs(lines) do
+                    if type(line) ~= "table" then
+                        lines[index] = { text = tostring(line) }
+                        line = lines[index]
+                    end
+                    local label = create("TextLabel", {
+                        BackgroundTransparency = 1,
+                        LayoutOrder = index,
+                        Size = UDim2.new(1, -4, 0, 24),
+                        Font = Enum.Font.GothamMedium,
+                        Text = line.text or tostring(line),
+                        TextColor3 = index == currentIndex and Theme.Text or Theme.Muted,
+                        TextSize = index == currentIndex and 12 or 11,
+                        TextWrapped = true,
+                        TextXAlignment = Enum.TextXAlignment.Center,
+                        ZIndex = root.ZIndex + 1,
+                        Parent = root,
+                    })
+                    lines[index].Label = label
+                end
+                view:SetCurrent(currentIndex)
+            end
+
+            function view:SetCurrent(currentIndex)
+                for index, line in ipairs(lines) do
+                    if line.Label and line.Label.Parent then
+                        line.Label.TextColor3 = index == currentIndex and Theme.Text or Theme.Muted
+                        line.Label.TextSize = index == currentIndex and 12 or 11
+                        line.Label.Font = index == currentIndex and Enum.Font.GothamBold or Enum.Font.GothamMedium
+                    end
+                end
+                if currentIndex and lines[currentIndex] and lines[currentIndex].Label then
+                    local label = lines[currentIndex].Label
+                    local target = math.max(0, label.AbsolutePosition.Y - root.AbsolutePosition.Y - root.AbsoluteSize.Y * 0.4)
+                    tween(root, 0.22, { CanvasPosition = Vector2.new(0, target) }, Enum.EasingStyle.Quint)
+                end
+            end
+
+            addItem(root, itemOptions.Title or "滚动文本", 1)
+            view:SetLines(itemOptions.Lines or {})
+            return view
+        end
+
         self.Panels[#self.Panels + 1] = panel
+        if self.Transparency then
+            self:SetTransparency(self.Transparency)
+        end
         if window.Mobile and index > 1 then
             panel.Visible = false
             frame.Visible = false
