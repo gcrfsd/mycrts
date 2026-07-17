@@ -81,6 +81,7 @@ function Music.new(options)
         LoopMode = "列表循环",
         OnStatus = options.OnStatus,
         OnLyric = options.OnLyric,
+        OnSong = options.OnSong,
         LyricLines = {},
         CurrentLyricIndex = 0,
     }, Music)
@@ -183,7 +184,7 @@ function Music:ScanLocal(directory)
     local results = {}
     for _, path in ipairs(files) do
         local extension = path:lower():match("%.([%w]+)$")
-        if extension == "mp3" or extension == "ogg" or extension == "wav" then
+        if extension == "mp3" or extension == "ogg" or extension == "wav" or extension == "flac" then
             results[#results + 1] = { path = path, name = path:match("([^/\\]+)$") or path }
         end
     end
@@ -214,7 +215,6 @@ function Music:PlayLocal(indexOrPath)
         local ok, body = pcall(readfile, entry.path)
         if not ok then error("无法读取本地歌曲: " .. tostring(body)) end
         local format = detectAudioFormat(body)
-        if format == "flac" then error("Delta 不支持 FLAC，请转换为 MP3/OGG/WAV") end
         if not format then error("无法识别本地音频格式") end
     end
     self.SourceMode = "local"
@@ -231,19 +231,17 @@ end
 
 function Music:_assetFor(song)
     local info
-    for _, level in ipairs({ "standard", "higher", "exhigh" }) do
-        local ok, response = pcall(self._get, self, "/song/url/v1?level=" .. level .. "&id=" .. tostring(song.id))
-        info = ok and response.data and response.data[1] or nil
-        if info and info.url then break end
+    self:_status("正在通过 API 解锁歌曲: " .. song.name)
+    local ok, response = pcall(self._get, self, "/song/url/v1?level=standard&unblock=true&id=" .. tostring(song.id))
+    if ok and response.code == 200 then
+        local candidate = response.data and (response.data[1] or response.data)
+        if type(candidate) == "table" and candidate.url then
+            info = { url = candidate.url, type = candidate.type or "mp3" }
+        end
     end
-    if not info or not info.url then
-        local ok, fallback = pcall(self._get, self, "/song/url?br=128000&id=" .. tostring(song.id))
-        info = ok and fallback.data and fallback.data[1] or nil
-    end
-    if not info or not info.url then
-        self:_status("正在尝试解灰音源: " .. song.name)
-        local ok, matched = pcall(self._get, self, "/song/url/match?id=" .. tostring(song.id))
-        if ok and matched.code == 200 then
+    if not info then
+        local matchOk, matched = pcall(self._get, self, "/song/url/match?id=" .. tostring(song.id))
+        if matchOk and matched.code == 200 then
             local matchedUrl = matched.proxyUrl ~= "" and matched.proxyUrl or matched.data
             if type(matchedUrl) == "string" and matchedUrl ~= "" then
                 local cleanUrl = matchedUrl:match("^[^?]+") or matchedUrl
@@ -271,7 +269,6 @@ function Music:_assetFor(song)
         self:_status("正在下载: " .. song.name)
         local body = downloadAudio(info.url, requester)
         local format = detectAudioFormat(body)
-        if format == "flac" then error("Delta 不支持当前 FLAC 音源") end
         if not format then error("无法解析返回的音频格式") end
         path = pathBase .. "." .. format
         writefile(path, body)
@@ -282,9 +279,9 @@ function Music:_assetFor(song)
         if ok then cachedBody = result end
     end
     local cachedFormat = cachedBody and detectAudioFormat(cachedBody)
-    if cachedFormat == "flac" or (cachedBody and not cachedFormat) then
+    if cachedBody and not cachedFormat then
         pcall(function() if delfile then delfile(path) end end)
-        error(cachedFormat == "flac" and "Delta 不支持缓存的 FLAC 音源" or "缓存音频格式无效")
+        error("缓存音频格式无效")
     end
     return registerAsset(path)
 end
@@ -300,7 +297,7 @@ function Music:Play(index, attempts)
     if not assetOk then
         attempts = (attempts or 0) + 1
         local reason = tostring(assetOrError)
-        local canSkip = reason:find("无版权", 1, true) or reason:find("FLAC", 1, true) or reason:find("音频格式", 1, true)
+        local canSkip = reason:find("无版权", 1, true) or reason:find("音频格式", 1, true) or reason:find("本地音频注册失败", 1, true)
         if canSkip and attempts < #self.Queue then
             self:_status(song.name .. " 无可用音源，尝试下一首", true)
             local nextIndex = index + 1
@@ -326,6 +323,11 @@ function Music:Play(index, attempts)
     end
     self.Sound:Play()
     self:_status("正在播放: " .. song.name .. " - " .. song.artist)
+    if self.OnSong then pcall(self.OnSong, song) end
+    task.spawn(function()
+        local lyricOk, lyric = pcall(self.GetLyric, self, song)
+        if lyricOk then self:SetLyricText(lyric) end
+    end)
     return song
 end
 
@@ -377,17 +379,36 @@ end
 function Music:GetLyric(song)
     song = song or self.Queue[self.Index]
     if not song then return "暂无歌词" end
-    local data = self:_get("/lyric?id=" .. tostring(song.id))
-    return data.lrc and data.lrc.lyric or "暂无歌词"
+    local ok, data = pcall(self._get, self, "/lyric/new?id=" .. tostring(song.id))
+    if ok then
+        if data.yrc and data.yrc.lyric and data.yrc.lyric ~= "" then return data.yrc.lyric end
+        if data.lrc and data.lrc.lyric and data.lrc.lyric ~= "" then return data.lrc.lyric end
+    end
+    local fallback = self:_get("/lyric?id=" .. tostring(song.id))
+    return fallback.lrc and fallback.lrc.lyric or "暂无歌词"
 end
 
 function Music:SetLyricText(text)
     self.LyricLines = {}
     self.CurrentLyricIndex = 0
     for rawLine in tostring(text or ""):gmatch("[^\r\n]+") do
-        local lyricText = rawLine:gsub("%[[^%]]+%]", ""):match("^%s*(.-)%s*$")
-        for minutes, seconds, centiseconds in rawLine:gmatch("%[(%d+):(%d+)%.?(%d*)%]") do
-            local time = tonumber(minutes) * 60 + tonumber(seconds) + (tonumber((centiseconds .. "00"):sub(1, 2)) or 0) / 100
+        local yrcStart, yrcDuration = rawLine:match("^%[(%d+),(%d+)%]")
+        local lyricText = rawLine:gsub("%[[^%]]+%]", ""):gsub("%(%d+,%d+,%d+%)", ""):match("^%s*(.-)%s*$")
+        local timestamps = {}
+        if yrcStart then
+            timestamps[#timestamps + 1] = tonumber(yrcStart) / 1000
+        else
+            for minutes, seconds, fraction in rawLine:gmatch("%[(%d+):(%d+)%.(%d+)%]") do
+                timestamps[#timestamps + 1] = tonumber(minutes) * 60 + tonumber(seconds) + tonumber((fraction .. "00"):sub(1, 2)) / 100
+            end
+            for minutes, seconds, fraction in rawLine:gmatch("%[(%d+):(%d+):(%d+)%]") do
+                timestamps[#timestamps + 1] = tonumber(minutes) * 60 + tonumber(seconds) + tonumber((fraction .. "00"):sub(1, 2)) / 100
+            end
+            for minutes, seconds in rawLine:gmatch("%[(%d+):(%d+)%]") do
+                timestamps[#timestamps + 1] = tonumber(minutes) * 60 + tonumber(seconds)
+            end
+        end
+        for _, time in ipairs(timestamps) do
             if lyricText and lyricText ~= "" then
                 self.LyricLines[#self.LyricLines + 1] = { time = time, text = lyricText }
             end

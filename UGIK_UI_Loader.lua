@@ -644,6 +644,9 @@ if musicOk and MusicLibrary then
         OnLyric = function(lines, currentIndex)
             if lyricView then lyricView:SetLines(lines, currentIndex) end
         end,
+        OnSong = function()
+            if lyricView then lyricView:SetLines({ { text = "正在获取歌词..." } }, 1) end
+        end,
     })
 end
 
@@ -709,7 +712,7 @@ local localDropdown = musicPanel:AddDropdown({
     Callback = function(value) selectedLocalIndex = localIndexes[value] or 1 end,
 })
 musicPanel:AddButton({
-    Title = "扫描本地歌曲", Description = "支持 MP3、OGG、WAV", ActionText = ">",
+    Title = "扫描本地歌曲", Description = "支持 MP3、OGG、WAV、FLAC", ActionText = ">",
     Callback = function()
         if not music then return end
         local success, files = pcall(music.ScanLocal, music, localDirectory.Text)

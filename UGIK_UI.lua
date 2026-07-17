@@ -531,14 +531,14 @@ function Library:CreateWindow(options)
         glassObjects[#glassObjects + 1] = object
         local gradient = create("UIGradient", {
             Color = ColorSequence.new({
-                ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-                ColorSequenceKeypoint.new(0.45, Color3.fromRGB(180, 215, 255)),
-                ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(75, 105, 135)),
+                ColorSequenceKeypoint.new(0.45, Color3.fromRGB(125, 165, 205)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(75, 105, 135)),
             }),
             Transparency = NumberSequence.new({
-                NumberSequenceKeypoint.new(0, 0.92),
-                NumberSequenceKeypoint.new(0.5, 0.78),
-                NumberSequenceKeypoint.new(1, 0.94),
+                NumberSequenceKeypoint.new(0, 0.97),
+                NumberSequenceKeypoint.new(0.5, 0.9),
+                NumberSequenceKeypoint.new(1, 0.98),
             }),
             Offset = Vector2.new(-1, 0),
             Rotation = 18,
