@@ -517,12 +517,24 @@ end
 
 function Music:_assetFor(song)
     local info
-    self:_status("正在通过 API 解锁歌曲: " .. song.name)
-    local ok, response = pcall(self._get, self, "/song/url/v1?level=standard&unblock=true&id=" .. tostring(song.id))
-    if ok and response.code == 200 then
-        local candidate = response.data and (response.data[1] or response.data)
+    self:_status("正在通过 API 获取 MP3: " .. song.name)
+    local normalOk, normalResponse = pcall(self._get, self, "/song/url?br=320000&id=" .. tostring(song.id))
+    if normalOk and normalResponse.code == 200 and normalResponse.data then
+        local candidate = normalResponse.data[1] or normalResponse.data
         if type(candidate) == "table" and candidate.url then
-            info = { url = candidate.url, type = candidate.type or "mp3" }
+            local cleanUrl = candidate.url:match("^[^?]+") or candidate.url
+            local format = candidate.type or cleanUrl:match("%.([%w]+)$") or "mp3"
+            if format ~= "flac" then info = { url = candidate.url, type = format } end
+        end
+    end
+    if not info then
+        self:_status("正在通过 API 解锁歌曲: " .. song.name)
+        local ok, response = pcall(self._get, self, "/song/url/v1?level=standard&unblock=true&id=" .. tostring(song.id))
+        if ok and response.code == 200 then
+            local candidate = response.data and (response.data[1] or response.data)
+            if type(candidate) == "table" and candidate.url then
+                info = { url = candidate.url, type = candidate.type or "mp3" }
+            end
         end
     end
     if not info then
