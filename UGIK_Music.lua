@@ -240,7 +240,7 @@ local function encodePcm(samples, channels, bits)
     return table.concat(output)
 end
 
-local function decodeFlac(data)
+local function decodeFlac(data, onProgress)
     if data:sub(1, 4) ~= "fLaC" then error("不是有效的 FLAC 文件") end
     local position = 5
     local sampleRate, channels, bits
@@ -261,8 +261,14 @@ local function decodeFlac(data)
     if not sampleRate or not channels or not bits then error("FLAC 缺少 STREAMINFO") end
     local chunks = {}
     local totalSamples = 0
+    local frameCount = 0
     while position + 4 <= #data do
         activeFlacFrame = position
+        frameCount = frameCount + 1
+        if frameCount % 4 == 0 then
+            if onProgress then pcall(onProgress, clampNumber(position / #data, 0, 1)) end
+            if task and task.wait then task.wait() end
+        end
         local first, second, third, fourth = string.byte(data, position, position + 3)
         if first ~= 255 or math.floor(second / 4) ~= 62 then break end
         local blockCode = math.floor(third / 16)
@@ -316,11 +322,11 @@ local function decodeFlac(data)
     return header .. pcm
 end
 
-local function convertFlac(inputPath, outputPath)
+local function convertFlac(inputPath, outputPath, onProgress)
     if not readfile or not writefile then return false end
     local ok, body = pcall(readfile, inputPath)
     if not ok then return false end
-    local decoded, wav = pcall(decodeFlac, body)
+    local decoded, wav = pcall(decodeFlac, body, onProgress)
     if not decoded then return false end
     writefile(outputPath, wav)
     return isfile and isfile(outputPath) or true
@@ -477,7 +483,9 @@ function Music:PlayLocal(indexOrPath)
             local convertedPath = "UGIK/local_" .. tostring(self.Index) .. ".wav"
             pcall(function() if makefolder and not isfolder("UGIK") then makefolder("UGIK") end end)
             writefile("UGIK/local_" .. tostring(self.Index) .. ".flac", body)
-            if not convertFlac("UGIK/local_" .. tostring(self.Index) .. ".flac", convertedPath) then
+            if not convertFlac("UGIK/local_" .. tostring(self.Index) .. ".flac", convertedPath, function(progress)
+                self:_status("Lua 解码本地 FLAC " .. math.floor(progress * 100) .. "%")
+            end) then
                 error("本地 FLAC 解码失败")
             end
             pcall(function() if delfile then delfile("UGIK/local_" .. tostring(self.Index) .. ".flac") end end)
@@ -542,7 +550,9 @@ function Music:_assetFor(song)
         if format == "flac" then
             local convertedPath = pathBase .. ".wav"
             self:_status("正在用 Lua 解码 FLAC: " .. song.name)
-            if not convertFlac(path, convertedPath) then
+            if not convertFlac(path, convertedPath, function(progress)
+                self:_status("Lua 解码 FLAC " .. math.floor(progress * 100) .. "%")
+            end) then
                 error("FLAC Lua 解码失败")
             end
             pcall(function() if delfile then delfile(path) end end)
@@ -562,7 +572,9 @@ function Music:_assetFor(song)
     if cachedFormat == "flac" then
         local convertedPath = pathBase .. ".wav"
         self:_status("正在用 Lua 解码缓存 FLAC: " .. song.name)
-        if not convertFlac(path, convertedPath) then
+        if not convertFlac(path, convertedPath, function(progress)
+            self:_status("Lua 解码缓存 FLAC " .. math.floor(progress * 100) .. "%")
+        end) then
             error("缓存 FLAC Lua 解码失败")
         end
         pcall(function() if delfile then delfile(path) end end)
