@@ -4,13 +4,16 @@ local RunService = game:GetService("RunService")
 
 local Music = {}
 Music.__index = Music
+local nativeFlacSupport
 local activeFlacFrame = 0
 local decoderWork = 0
 local decoderLastYield = 0
 local bitLibrary = bit32
 local bitBand = bitLibrary and bitLibrary.band
 local bitRshift = bitLibrary and bitLibrary.rshift
-local powersOfTwo = { 1, 2, 4, 8, 16, 32, 64, 128, 256 }
+local bufferLibrary = buffer
+local powersOfTwo = {}
+for exponent = 0, 32 do powersOfTwo[exponent] = 2 ^ exponent end
 local leadingZeros = {}
 for value = 0, 255 do
     local count = 0
@@ -22,9 +25,9 @@ for value = 0, 255 do
     leadingZeros[value] = count
 end
 
-local function yieldDecoder()
-    decoderWork = decoderWork + 1
-    if decoderWork < 4096 then return end
+local function yieldDecoder(work)
+    decoderWork = decoderWork + (work or 1)
+    if decoderWork < 16384 then return end
     decoderWork = 0
     if task and task.wait and os.clock() - decoderLastYield >= 0.025 then
         task.wait()
@@ -96,11 +99,45 @@ local function registerAsset(path)
     error("Delta 本地音频注册失败 [" .. table.concat(errors, " | ") .. "]")
 end
 
+local function tryNativeFlac(sound, path)
+    if nativeFlacSupport == false or not sound or not (getcustomasset or getsynasset) then return false end
+    local ok, asset = pcall(registerAsset, path)
+    if not ok then
+        nativeFlacSupport = false
+        return false
+    end
+    sound:Stop()
+    sound.SoundId = asset
+    local started = os.clock()
+    while os.clock() - started < 1.5 do
+        if sound.IsLoaded and sound.TimeLength and sound.TimeLength > 0 then
+            nativeFlacSupport = true
+            sound:Play()
+            return true
+        end
+        if task and task.wait then task.wait(0.05) end
+    end
+    nativeFlacSupport = false
+    sound:Stop()
+    return false
+end
+
 local BitReader = {}
 BitReader.__index = BitReader
 
-function BitReader.new(data, position)
-    return setmetatable({ data = data, byte = position or 1, bit = 0, buffer = 0, bits = 0 }, BitReader)
+function BitReader.new(data, position, dataBuffer)
+    if not dataBuffer and bufferLibrary and bufferLibrary.fromstring and bufferLibrary.readu8 then
+        local ok, result = pcall(bufferLibrary.fromstring, data)
+        if ok then dataBuffer = result end
+    end
+    return setmetatable({ data = data, dataBuffer = dataBuffer, byte = position or 1, bit = 0, buffer = 0, bits = 0 }, BitReader)
+end
+
+function BitReader:ReadByte()
+    if self.dataBuffer then
+        return bufferLibrary.readu8(self.dataBuffer, self.byte - 1)
+    end
+    return string.byte(self.data, self.byte)
 end
 
 function BitReader:Read(count)
@@ -108,14 +145,14 @@ function BitReader:Read(count)
     while count > 0 do
         if self.bits == 0 then
             if self.byte > #self.data then error("FLAC 位流提前结束") end
-            self.buffer = string.byte(self.data, self.byte)
+            self.buffer = self:ReadByte()
             self.byte = self.byte + 1
             self.bits = 8
         end
         local take = math.min(count, self.bits)
         local shift = self.bits - take
-        local divisor = powersOfTwo[shift + 1]
-        local mask = powersOfTwo[take + 1] - 1
+        local divisor = powersOfTwo[shift]
+        local mask = powersOfTwo[take] - 1
         local chunk
         if bitBand then
             chunk = bitBand(bitRshift(self.buffer, shift), mask)
@@ -134,8 +171,8 @@ end
 
 function BitReader:Signed(count)
     local value = self:Read(count)
-    local limit = 2 ^ (count - 1)
-    return value >= limit and value - (2 ^ count) or value
+    local limit = powersOfTwo[count - 1]
+    return value >= limit and value - powersOfTwo[count] or value
 end
 
 function BitReader:Unary()
@@ -143,14 +180,14 @@ function BitReader:Unary()
     while true do
         if self.bits == 0 then
             if self.byte > #self.data then error("FLAC 位流提前结束") end
-            self.buffer = string.byte(self.data, self.byte)
+            self.buffer = self:ReadByte()
             self.byte = self.byte + 1
             self.bits = 8
         end
         local zerosInBuffer = leadingZeros[self.buffer] - (8 - self.bits)
         if zerosInBuffer < self.bits then
             local consume = zerosInBuffer + 1
-            local divisor = powersOfTwo[self.bits - consume + 1]
+            local divisor = powersOfTwo[self.bits - consume]
             if bitBand then
                 self.buffer = bitBand(self.buffer, divisor - 1)
             else
@@ -189,8 +226,8 @@ local function decodeResidual(reader, samples, startIndex, count, order)
         local parameterBits = method == 0 and 4 or method == 1 and 5 or nil
         if not parameterBits then error("FLAC 使用了不支持的 Rice 编码: " .. tostring(method) .. " frame=" .. tostring(activeFlacFrame) .. " byte=" .. tostring(reader.byte) .. " bit=" .. tostring(reader.bit)) end
         local parameter = reader:Read(parameterBits)
-        local escapeParameter = (2 ^ parameterBits) - 1
-        local quotientMultiplier = parameter == 0 and 1 or 2 ^ parameter
+        local escapeParameter = powersOfTwo[parameterBits] - 1
+        local quotientMultiplier = powersOfTwo[parameter]
         for offset = 1, partitionCount do
             local value
             if parameter == escapeParameter then
@@ -203,7 +240,7 @@ local function decodeResidual(reader, samples, startIndex, count, order)
                 value = unsigned % 2 == 0 and unsigned / 2 or -(unsigned + 1) / 2
             end
             samples[startIndex + offset - 1] = value
-            if offset % 256 == 0 then yieldDecoder() end
+            if offset % 4096 == 0 then yieldDecoder(4096) end
         end
         startIndex = startIndex + partitionCount
     end
@@ -218,7 +255,7 @@ local function decodeSubframe(reader, blockSize, bits)
         while reader:Read(1) == 0 do wastedBits = wastedBits + 1 end
         bits = bits - wastedBits
     end
-    local samples = {}
+    local samples = table.create and table.create(blockSize) or {}
     if subframeType == 0 then
         local value = reader:Signed(bits)
         for index = 1, blockSize do samples[index] = value end
@@ -228,7 +265,7 @@ local function decodeSubframe(reader, blockSize, bits)
     if subframeType == 1 then
     for index = 1, blockSize do
         samples[index] = reader:Signed(bits)
-        if index % 256 == 0 then yieldDecoder() end
+        if index % 4096 == 0 then yieldDecoder(4096) end
     end
         return samples
     elseif subframeType >= 8 and subframeType <= 12 then
@@ -244,15 +281,16 @@ local function decodeSubframe(reader, blockSize, bits)
         local precision = reader:Read(4) + 1
         if precision == 16 then error("FLAC LPC 精度异常") end
         local shift = reader:Signed(5)
-        local coefficients = {}
+        local coefficients = table.create and table.create(order) or {}
         for index = 1, order do coefficients[index] = reader:Signed(precision) end
         decodeResidual(reader, samples, order + 1, blockSize, order)
+        local scale = shift >= 0 and 1 / powersOfTwo[shift] or powersOfTwo[-shift]
         for index = order + 1, blockSize do
             local sum = 0
             for coefficient = 1, order do sum = sum + coefficients[coefficient] * samples[index - coefficient] end
-            local prediction = shift >= 0 and math.floor(sum / (2 ^ shift)) or sum * (2 ^ (-shift))
+            local prediction = shift >= 0 and math.floor(sum * scale) or sum * scale
             samples[index] = samples[index] + prediction
-            if index % 256 == 0 then yieldDecoder() end
+            if index % 4096 == 0 then yieldDecoder(4096) end
         end
     else
         decodeResidual(reader, samples, order + 1, blockSize, order)
@@ -264,7 +302,7 @@ local function decodeSubframe(reader, blockSize, bits)
             elseif order == 3 then prediction = 3 * samples[index - 1] - 3 * samples[index - 2] + samples[index - 3]
             else prediction = 4 * samples[index - 1] - 6 * samples[index - 2] + 4 * samples[index - 3] - samples[index - 4] end
             samples[index] = samples[index] + prediction
-            if index % 256 == 0 then yieldDecoder() end
+            if index % 4096 == 0 then yieldDecoder(4096) end
         end
     end
     return samples
@@ -283,16 +321,17 @@ local function clampNumber(value, minimum, maximum)
 end
 
 local function encodePcm(samples, channels, bits)
-    local output = {}
-    local limit = 2 ^ (bits - 1)
+    local output = table.create and table.create(#samples[1]) or {}
+    local limit = powersOfTwo[bits - 1]
     local maximum = limit - 1
+    local unsignedOffset = powersOfTwo[bits]
     local function signedValue(value)
         value = math.floor(value or 0)
         value = clampNumber(value, -limit, maximum)
         return value
     end
     local function unsignedValue(value)
-        return value < 0 and value + 2 ^ bits or value
+        return value < 0 and value + unsignedOffset or value
     end
     for index = 1, #samples[1] do
         if channels == 1 then
@@ -326,7 +365,7 @@ local function encodePcm(samples, channels, bits)
                 output[#output + 1] = little32(unsignedValue(left)) .. little32(unsignedValue(right))
             end
         else
-            local bytes = {}
+            local bytes = table.create and table.create(channels * math.ceil(bits / 8)) or {}
             for channel = 1, channels do
                 local value = signedValue(samples[channel][index])
                 if bits == 8 then
@@ -341,7 +380,7 @@ local function encodePcm(samples, channels, bits)
             end
             output[#output + 1] = string.char(table.unpack(bytes))
         end
-        yieldDecoder()
+        if index % 4096 == 0 then yieldDecoder(4096) end
     end
     return table.concat(output)
 end
@@ -367,7 +406,12 @@ local function decodeFlac(data, onProgress)
         position = position + 4 + length
     end
     if not sampleRate or not channels or not bits then error("FLAC 缺少 STREAMINFO") end
-    local chunks = {}
+    local dataBuffer
+    if bufferLibrary and bufferLibrary.fromstring and bufferLibrary.readu8 then
+        local ok, result = pcall(bufferLibrary.fromstring, data)
+        if ok then dataBuffer = result end
+    end
+    local chunks = table.create and table.create(1024) or {}
     local totalSamples = 0
     local frameCount = 0
     while position + 4 <= #data do
@@ -395,10 +439,10 @@ local function decodeFlac(data, onProgress)
         local sampleRateCode = third % 16
         if sampleRateCode == 12 then position = position + 1 elseif sampleRateCode >= 13 and sampleRateCode <= 14 then position = position + 2 end
         position = position + 1
-        local frameReader = BitReader.new(data, position)
+        local frameReader = BitReader.new(data, position, dataBuffer)
         local frameBits = sizeCode == 1 and 8 or sizeCode == 2 and 12 or sizeCode == 4 and 16 or sizeCode == 5 and 20 or sizeCode == 6 and 24 or bits
         local subframeCount = channelAssignment >= 8 and 2 or channels
-        local samples = {}
+        local samples = table.create and table.create(subframeCount) or {}
         for channel = 1, subframeCount do
             local channelBits = frameBits
             if channelAssignment == 8 and channel == 2 then channelBits = channelBits + 1 end
@@ -409,15 +453,22 @@ local function decodeFlac(data, onProgress)
         frameReader:Align()
         position = frameReader.byte + 2
         if channelAssignment == 8 then
-            for index = 1, blockSize do samples[2][index] = samples[1][index] - samples[2][index] end
+            for index = 1, blockSize do
+                samples[2][index] = samples[1][index] - samples[2][index]
+                if index % 4096 == 0 then yieldDecoder(4096) end
+            end
         elseif channelAssignment == 9 then
-            for index = 1, blockSize do samples[1][index] = samples[1][index] + samples[2][index] end
+            for index = 1, blockSize do
+                samples[1][index] = samples[1][index] + samples[2][index]
+                if index % 4096 == 0 then yieldDecoder(4096) end
+            end
         elseif channelAssignment == 10 then
             for index = 1, blockSize do
                 local mid = samples[1][index] * 2 + (samples[2][index] % 2)
                 local side = samples[2][index]
                 samples[1][index] = math.floor((mid + side) / 2)
                 samples[2][index] = math.floor((mid - side) / 2)
+                if index % 4096 == 0 then yieldDecoder(4096) end
             end
         end
         chunks[#chunks + 1] = encodePcm(samples, channels, bits)
@@ -597,6 +648,13 @@ function Music:PlayLocal(indexOrPath)
             self:_status("使用已缓存 WAV: " .. entry.name)
         else
             pcall(function() if delfile then delfile(cachedPath) end end)
+        end
+    end
+    if not cachedWav and sourcePath:lower():match("%.flac$") then
+        self.SourceMode = "local"
+        if tryNativeFlac(self.Sound, sourcePath) then
+            self:_status("原生 FLAC 播放: " .. entry.name)
+            return entry
         end
     end
     if not cachedWav and readfile then
