@@ -1513,6 +1513,14 @@ function Library:CreateWindow(options)
                 end
             end
 
+            function view:UpdateCurrent(currentIndex)
+                view:SetCurrent(currentIndex)
+            end
+
+            function view:GetLineCount()
+                return #lines
+            end
+
             function view:SetVisible(visible)
                 root.Visible = visible == true
             end
@@ -1533,6 +1541,84 @@ function Library:CreateWindow(options)
             addItem(root, itemOptions.Title or "滚动文本", 1)
             view:SetLines(itemOptions.Lines or {})
             return view
+        end
+
+        function window:CreateLyricOverlay(overlayOptions)
+            overlayOptions = overlayOptions or {}
+            local overlay = create("Frame", {
+                AnchorPoint = Vector2.new(0.5, 1),
+                BackgroundColor3 = Theme.Background,
+                BackgroundTransparency = 0.18,
+                BorderSizePixel = 0,
+                ClipsDescendants = true,
+                Position = UDim2.new(0.5, 0, 1, -24),
+                Size = UDim2.fromOffset(window.Mobile and 300 or 430, overlayOptions.Height or 72),
+                Visible = false,
+                ZIndex = 115,
+                Parent = gui,
+            }, { corner(12), stroke(Theme.Border, 0.18), padding(12, 12, 7, 7) })
+            registerGlass(overlay)
+            makeDraggable(overlay, overlay)
+            local overlayLayout = create("UIListLayout", {
+                Padding = UDim.new(0, 2),
+                HorizontalAlignment = Enum.HorizontalAlignment.Center,
+                VerticalAlignment = Enum.VerticalAlignment.Center,
+                Parent = overlay,
+            })
+            local lines = {}
+            local autoScroll = true
+            local textSize = 12
+            local api = {}
+
+            function api:SetLines(nextLines, currentIndex)
+                for _, child in ipairs(overlay:GetChildren()) do
+                    if child:IsA("TextLabel") then child:Destroy() end
+                end
+                lines = nextLines or {}
+                local startIndex = math.max(1, (currentIndex or 1) - 1)
+                local endIndex = math.min(#lines, startIndex + 2)
+                for index = startIndex, endIndex do
+                    local line = lines[index]
+                    create("TextLabel", {
+                        BackgroundTransparency = 1,
+                        LayoutOrder = index,
+                        Size = UDim2.new(1, -4, 0, index == currentIndex and 24 or 18),
+                        Font = index == currentIndex and Enum.Font.GothamBold or Enum.Font.GothamMedium,
+                        Text = line.text or tostring(line),
+                        TextColor3 = index == currentIndex and Theme.Text or Theme.Muted,
+                        TextSize = index == currentIndex and textSize + 1 or textSize - 1,
+                        TextTruncate = Enum.TextTruncate.AtEnd,
+                        TextXAlignment = Enum.TextXAlignment.Center,
+                        ZIndex = overlay.ZIndex + 1,
+                        Parent = overlay,
+                    })
+                end
+                if autoScroll and currentIndex and lines[currentIndex] then
+                    overlay.Visible = true
+                end
+            end
+
+            function api:SetVisible(visible)
+                overlay.Visible = visible == true
+            end
+
+            function api:SetAutoScroll(enabled)
+                autoScroll = enabled == true
+            end
+
+            function api:SetTextSize(size)
+                textSize = math.clamp(tonumber(size) or 12, 9, 20)
+            end
+
+            function api:SetHeight(height)
+                overlay.Size = UDim2.fromOffset(overlay.AbsoluteSize.X, math.clamp(tonumber(height) or 72, 48, 180))
+            end
+
+            function api:UpdateCurrent(currentIndex)
+                api:SetLines(lines, currentIndex)
+            end
+
+            return api
         end
 
         self.Panels[#self.Panels + 1] = panel

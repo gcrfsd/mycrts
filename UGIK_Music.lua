@@ -6,6 +6,10 @@ local Music = {}
 Music.__index = Music
 local activeFlacFrame = 0
 
+local function yieldDecoder()
+    if task and task.wait then task.wait() end
+end
+
 local function encode(value)
     return HttpService:UrlEncode(tostring(value or ""))
 end
@@ -143,6 +147,7 @@ local function decodeResidual(reader, samples, startIndex, count, order)
                 value = unsigned % 2 == 0 and unsigned / 2 or -(unsigned + 1) / 2
             end
             samples[startIndex + offset - 1] = value
+            if offset % 256 == 0 then yieldDecoder() end
         end
         startIndex = startIndex + partitionCount
     end
@@ -165,7 +170,10 @@ local function decodeSubframe(reader, blockSize, bits)
     end
     local order = 0
     if subframeType == 1 then
-        for index = 1, blockSize do samples[index] = reader:Signed(bits) end
+    for index = 1, blockSize do
+        samples[index] = reader:Signed(bits)
+        if index % 256 == 0 then yieldDecoder() end
+    end
         return samples
     elseif subframeType >= 8 and subframeType <= 12 then
         order = subframeType - 8
@@ -188,6 +196,7 @@ local function decodeSubframe(reader, blockSize, bits)
             for coefficient = 1, order do sum = sum + coefficients[coefficient] * samples[index - coefficient] end
             local prediction = shift >= 0 and math.floor(sum / (2 ^ shift)) or sum * (2 ^ (-shift))
             samples[index] = samples[index] + prediction
+            if index % 256 == 0 then yieldDecoder() end
         end
     else
         decodeResidual(reader, samples, order + 1, blockSize, order)
@@ -199,6 +208,7 @@ local function decodeSubframe(reader, blockSize, bits)
             elseif order == 3 then prediction = 3 * samples[index - 1] - 3 * samples[index - 2] + samples[index - 3]
             else prediction = 4 * samples[index - 1] - 6 * samples[index - 2] + 4 * samples[index - 3] - samples[index - 4] end
             samples[index] = samples[index] + prediction
+            if index % 256 == 0 then yieldDecoder() end
         end
     end
     return samples
@@ -236,6 +246,7 @@ local function encodePcm(samples, channels, bits)
                 output[#output + 1] = little32(value)
             end
         end
+        if index % 256 == 0 then yieldDecoder() end
     end
     return table.concat(output)
 end

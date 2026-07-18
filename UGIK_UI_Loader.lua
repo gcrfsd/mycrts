@@ -1,5 +1,5 @@
 local BASE_URL = "https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/"
-local LIBRARY_VERSION = "20260718-glass-lyrics"
+local LIBRARY_VERSION = "20260718-lyrics-overlay"
 local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua?v=" .. LIBRARY_VERSION
 local MUSIC_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_Music.lua?v=" .. LIBRARY_VERSION
 
@@ -634,6 +634,8 @@ local musicOk, MusicLibrary = pcall(function()
 end)
 local music
 local lyricView
+local lyricOverlay = Window:CreateLyricOverlay({ Height = 78 })
+local lyricOverlayEnabled = true
 if musicOk and MusicLibrary then
     music = MusicLibrary.new({
         Api = "https://wy.rwcdh.dpdns.org",
@@ -642,10 +644,17 @@ if musicOk and MusicLibrary then
             Window:SetStatus(message, isError and Color3.fromRGB(242, 91, 103) or Color3.fromRGB(76, 205, 142))
         end,
         OnLyric = function(lines, currentIndex)
-            if lyricView then lyricView:SetLines(lines, currentIndex) end
+            if lyricView then
+                if lyricView:GetLineCount() == #lines then lyricView:UpdateCurrent(currentIndex) else lyricView:SetLines(lines, currentIndex) end
+            end
+            if lyricOverlay then
+                lyricOverlay:SetLines(lines, currentIndex)
+                lyricOverlay:SetVisible(lyricOverlayEnabled and #lines > 0)
+            end
         end,
         OnSong = function()
             if lyricView then lyricView:SetLines({ { text = "正在获取歌词..." } }, 1) end
+            if lyricOverlay and lyricOverlayEnabled then lyricOverlay:SetVisible(true) end
         end,
     })
 end
@@ -745,13 +754,27 @@ musicPanel:AddToggle({
     Callback = function(enabled) lyricView:SetVisible(enabled) end,
 })
 musicPanel:AddToggle({
+    Title = "菜单外显示歌词",
+    Default = true,
+    Callback = function(enabled)
+        lyricOverlayEnabled = enabled
+        lyricOverlay:SetVisible(enabled and music and #music.LyricLines > 0)
+    end,
+})
+musicPanel:AddToggle({
     Title = "歌词自动滚动",
     Default = true,
-    Callback = function(enabled) lyricView:SetAutoScroll(enabled) end,
+    Callback = function(enabled)
+        lyricView:SetAutoScroll(enabled)
+        lyricOverlay:SetAutoScroll(enabled)
+    end,
 })
 musicPanel:AddSlider({
     Title = "歌词字号", Min = 9, Max = 18, Step = 1, Default = 11,
-    Callback = function(value) lyricView:SetTextSize(value) end,
+    Callback = function(value)
+        lyricView:SetTextSize(value)
+        lyricOverlay:SetTextSize(value)
+    end,
 })
 musicPanel:AddSlider({
     Title = "歌词区域高度", Min = 100, Max = 360, Step = 10, Default = 180,
