@@ -721,7 +721,7 @@ local localDropdown = musicPanel:AddDropdown({
     Callback = function(value) selectedLocalIndex = localIndexes[value] or 1 end,
 })
 musicPanel:AddButton({
-    Title = "扫描本地歌曲", Description = "支持 MP3、OGG、WAV、FLAC", ActionText = ">",
+    Title = "扫描本地歌曲", Description = "支持 MP3、OGG、WAV、FLAC；FLAC 首次播放会解析一会，之后使用缓存", ActionText = ">",
     Callback = function()
         if not music then return end
         local success, files = pcall(music.ScanLocal, music, localDirectory.Text)
@@ -738,7 +738,7 @@ musicPanel:AddButton({
     end,
 })
 musicPanel:AddButton({
-    Title = "播放本地歌曲", ActionText = ">",
+    Title = "播放本地歌曲", Description = "FLAC 首次播放期间请等待解析完成，进度会显示在状态栏", ActionText = ">",
     Callback = function()
         if not music then return end
         task.spawn(function()
