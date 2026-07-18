@@ -1467,6 +1467,8 @@ function Library:CreateWindow(options)
             })
             local lines = {}
             local view = {}
+            local autoScroll = true
+            local textSize = 11
 
             function view:SetLines(nextLines, currentIndex)
                 for _, child in ipairs(root:GetChildren()) do
@@ -1485,7 +1487,7 @@ function Library:CreateWindow(options)
                         Font = Enum.Font.GothamMedium,
                         Text = line.text or tostring(line),
                         TextColor3 = index == currentIndex and Theme.Text or Theme.Muted,
-                        TextSize = index == currentIndex and 12 or 11,
+                        TextSize = index == currentIndex and textSize + 1 or textSize,
                         TextWrapped = true,
                         TextXAlignment = Enum.TextXAlignment.Center,
                         ZIndex = root.ZIndex + 1,
@@ -1500,15 +1502,32 @@ function Library:CreateWindow(options)
                 for index, line in ipairs(lines) do
                     if line.Label and line.Label.Parent then
                         line.Label.TextColor3 = index == currentIndex and Theme.Text or Theme.Muted
-                        line.Label.TextSize = index == currentIndex and 12 or 11
+                        line.Label.TextSize = index == currentIndex and textSize + 1 or textSize
                         line.Label.Font = index == currentIndex and Enum.Font.GothamBold or Enum.Font.GothamMedium
                     end
                 end
-                if currentIndex and lines[currentIndex] and lines[currentIndex].Label then
+                if autoScroll and currentIndex and lines[currentIndex] and lines[currentIndex].Label then
                     local label = lines[currentIndex].Label
                     local target = math.max(0, label.AbsolutePosition.Y - root.AbsolutePosition.Y - root.AbsoluteSize.Y * 0.4)
                     tween(root, 0.22, { CanvasPosition = Vector2.new(0, target) }, Enum.EasingStyle.Quint)
                 end
+            end
+
+            function view:SetVisible(visible)
+                root.Visible = visible == true
+            end
+
+            function view:SetAutoScroll(enabled)
+                autoScroll = enabled == true
+            end
+
+            function view:SetTextSize(size)
+                textSize = math.clamp(tonumber(size) or 11, 9, 18)
+                view:SetCurrent(nil)
+            end
+
+            function view:SetHeight(height)
+                root.Size = UDim2.new(1, -5, 0, math.clamp(tonumber(height) or 180, 100, 360))
             end
 
             addItem(root, itemOptions.Title or "滚动文本", 1)

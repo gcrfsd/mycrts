@@ -739,6 +739,28 @@ musicPanel:AddButton({
     end,
 })
 lyricView = musicPanel:AddScrollingText({ Title = "滚动歌词", Height = 180 })
+musicPanel:AddToggle({
+    Title = "显示滚动歌词",
+    Default = true,
+    Callback = function(enabled) lyricView:SetVisible(enabled) end,
+})
+musicPanel:AddToggle({
+    Title = "歌词自动滚动",
+    Default = true,
+    Callback = function(enabled) lyricView:SetAutoScroll(enabled) end,
+})
+musicPanel:AddSlider({
+    Title = "歌词字号", Min = 9, Max = 18, Step = 1, Default = 11,
+    Callback = function(value) lyricView:SetTextSize(value) end,
+})
+musicPanel:AddSlider({
+    Title = "歌词区域高度", Min = 100, Max = 360, Step = 10, Default = 180,
+    Callback = function(value) lyricView:SetHeight(value) end,
+})
+musicPanel:AddSlider({
+    Title = "歌词延迟", Min = -5, Max = 5, Step = 0.5, Default = 0,
+    Callback = function(value) if music then music:SetLyricOffset(value) end end,
+})
 local currentLyric = ""
 musicPanel:AddButton({
     Title = "获取当前歌词", ActionText = ">",
