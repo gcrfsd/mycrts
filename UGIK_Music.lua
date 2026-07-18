@@ -517,6 +517,31 @@ end
 
 function Music:_assetFor(song)
     local info
+    local folder = "UGIK"
+    local pathBase = folder .. "/music_" .. tostring(song.id)
+    local cachedPath
+    if listfiles and isfile then
+        pcall(function()
+            for _, candidate in ipairs(listfiles(folder)) do
+                if candidate:find("music_" .. tostring(song.id), 1, true) and isfile(candidate) then
+                    local extension = candidate:lower():match("%.([%w]+)$")
+                    if extension == "mp3" or extension == "wav" or extension == "ogg" then cachedPath = candidate break end
+                end
+            end
+        end)
+    end
+    if cachedPath then
+        local validCache = true
+        if readfile then
+            local readOk, body = pcall(readfile, cachedPath)
+            validCache = readOk and detectAudioFormat(body) ~= nil
+        end
+        if validCache then
+            self:_status("正在播放缓存歌曲: " .. song.name)
+            return registerAsset(cachedPath)
+        end
+        pcall(function() if delfile then delfile(cachedPath) end end)
+    end
     self:_status("正在通过 API 获取 MP3: " .. song.name)
     local normalOk, normalResponse = pcall(self._get, self, "/song/url?br=320000&id=" .. tostring(song.id))
     if normalOk and normalResponse.code == 200 and normalResponse.data then
@@ -552,9 +577,7 @@ function Music:_assetFor(song)
     if not requester or not writefile or (not getcustomasset and not getsynasset) then
         error("当前执行器缺少 request/writefile/getcustomasset")
     end
-    local folder = "UGIK"
     pcall(function() if makefolder and not isfolder(folder) then makefolder(folder) end end)
-    local pathBase = folder .. "/music_" .. tostring(song.id)
     local path
     if listfiles and isfile then
         pcall(function()
