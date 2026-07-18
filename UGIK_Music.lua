@@ -5,9 +5,31 @@ local RunService = game:GetService("RunService")
 local Music = {}
 Music.__index = Music
 local activeFlacFrame = 0
+local decoderWork = 0
+local decoderLastYield = 0
+local bitLibrary = bit32
+local bitBand = bitLibrary and bitLibrary.band
+local bitRshift = bitLibrary and bitLibrary.rshift
+local powersOfTwo = { 1, 2, 4, 8, 16, 32, 64, 128, 256 }
+local leadingZeros = {}
+for value = 0, 255 do
+    local count = 0
+    local probe = 128
+    while probe > 0 and math.floor(value / probe) % 2 == 0 do
+        count = count + 1
+        probe = probe / 2
+    end
+    leadingZeros[value] = count
+end
 
 local function yieldDecoder()
-    if task and task.wait then task.wait() end
+    decoderWork = decoderWork + 1
+    if decoderWork < 4096 then return end
+    decoderWork = 0
+    if task and task.wait and os.clock() - decoderLastYield >= 0.025 then
+        task.wait()
+        decoderLastYield = os.clock()
+    end
 end
 
 local function encode(value)
@@ -78,23 +100,35 @@ local BitReader = {}
 BitReader.__index = BitReader
 
 function BitReader.new(data, position)
-    return setmetatable({ data = data, byte = position or 1, bit = 0 }, BitReader)
+    return setmetatable({ data = data, byte = position or 1, bit = 0, buffer = 0, bits = 0 }, BitReader)
 end
 
 function BitReader:Read(count)
     local value = 0
     while count > 0 do
-        if self.byte > #self.data then error("FLAC 位流提前结束") end
-        local available = 8 - self.bit
-        local take = math.min(count, available)
-        local current = string.byte(self.data, self.byte)
-        local divisor = 2 ^ (available - take)
-        local chunk = math.floor(current / divisor) % (2 ^ take)
-        value = value * (2 ^ take) + chunk
-        self.bit = self.bit + take
-        if self.bit == 8 then self.byte = self.byte + 1 self.bit = 0 end
+        if self.bits == 0 then
+            if self.byte > #self.data then error("FLAC 位流提前结束") end
+            self.buffer = string.byte(self.data, self.byte)
+            self.byte = self.byte + 1
+            self.bits = 8
+        end
+        local take = math.min(count, self.bits)
+        local shift = self.bits - take
+        local divisor = powersOfTwo[shift + 1]
+        local mask = powersOfTwo[take + 1] - 1
+        local chunk
+        if bitBand then
+            chunk = bitBand(bitRshift(self.buffer, shift), mask)
+            self.buffer = bitBand(self.buffer, divisor - 1)
+        else
+            chunk = math.floor(self.buffer / divisor) % (mask + 1)
+            self.buffer = self.buffer % divisor
+        end
+        value = value * (mask + 1) + chunk
+        self.bits = self.bits - take
         count = count - take
     end
+    self.bit = 8 - self.bits
     return value
 end
 
@@ -106,15 +140,35 @@ end
 
 function BitReader:Unary()
     local zeros = 0
-    while self:Read(1) == 0 do
-        zeros = zeros + 1
+    while true do
+        if self.bits == 0 then
+            if self.byte > #self.data then error("FLAC 位流提前结束") end
+            self.buffer = string.byte(self.data, self.byte)
+            self.byte = self.byte + 1
+            self.bits = 8
+        end
+        local zerosInBuffer = leadingZeros[self.buffer] - (8 - self.bits)
+        if zerosInBuffer < self.bits then
+            local consume = zerosInBuffer + 1
+            local divisor = powersOfTwo[self.bits - consume + 1]
+            if bitBand then
+                self.buffer = bitBand(self.buffer, divisor - 1)
+            else
+                self.buffer = self.buffer % divisor
+            end
+            self.bits = self.bits - consume
+            self.bit = 8 - self.bits
+            return zeros + zerosInBuffer
+        end
+        zeros = zeros + self.bits
+        self.buffer = 0
+        self.bits = 0
         if zeros > 1048576 then error("FLAC Rice 编码异常") end
     end
-    return zeros
 end
 
 function BitReader:Align()
-    if self.bit ~= 0 then self.byte = self.byte + 1 self.bit = 0 end
+    if self.bits ~= 0 then self.bits = 0 self.buffer = 0 self.bit = 0 end
 end
 
 local function readUtf8Number(data, position)
@@ -135,15 +189,17 @@ local function decodeResidual(reader, samples, startIndex, count, order)
         local parameterBits = method == 0 and 4 or method == 1 and 5 or nil
         if not parameterBits then error("FLAC 使用了不支持的 Rice 编码: " .. tostring(method) .. " frame=" .. tostring(activeFlacFrame) .. " byte=" .. tostring(reader.byte) .. " bit=" .. tostring(reader.bit)) end
         local parameter = reader:Read(parameterBits)
+        local escapeParameter = (2 ^ parameterBits) - 1
+        local quotientMultiplier = parameter == 0 and 1 or 2 ^ parameter
         for offset = 1, partitionCount do
             local value
-            if parameter == (2 ^ parameterBits) - 1 then
+            if parameter == escapeParameter then
                 local rawBits = reader:Read(5)
                 value = rawBits == 0 and 0 or reader:Signed(rawBits)
             else
                 local quotient = reader:Unary()
                 local remainder = parameter == 0 and 0 or reader:Read(parameter)
-                local unsigned = quotient * (2 ^ parameter) + remainder
+                local unsigned = quotient * quotientMultiplier + remainder
                 value = unsigned % 2 == 0 and unsigned / 2 or -(unsigned + 1) / 2
             end
             samples[startIndex + offset - 1] = value
@@ -228,31 +284,72 @@ end
 
 local function encodePcm(samples, channels, bits)
     local output = {}
+    local limit = 2 ^ (bits - 1)
+    local maximum = limit - 1
+    local function signedValue(value)
+        value = math.floor(value or 0)
+        value = clampNumber(value, -limit, maximum)
+        return value
+    end
+    local function unsignedValue(value)
+        return value < 0 and value + 2 ^ bits or value
+    end
     for index = 1, #samples[1] do
-        for channel = 1, channels do
-            local value = math.floor(samples[channel][index] or 0)
-            local limit = 2 ^ (bits - 1)
-            value = clampNumber(value, -limit, limit - 1)
+        if channels == 1 then
+            local value = signedValue(samples[1][index])
             if bits == 8 then
-                output[#output + 1] = string.char((value + 128) % 256)
+                output[#output + 1] = string.char(value + 128)
             elseif bits == 16 then
-                if value < 0 then value = value + 65536 end
+                value = unsignedValue(value)
                 output[#output + 1] = string.char(value % 256, math.floor(value / 256) % 256)
             elseif bits == 24 then
-                if value < 0 then value = value + 16777216 end
+                value = unsignedValue(value)
                 output[#output + 1] = string.char(value % 256, math.floor(value / 256) % 256, math.floor(value / 65536) % 256)
             else
-                if value < 0 then value = value + 4294967296 end
-                output[#output + 1] = little32(value)
+                output[#output + 1] = little32(unsignedValue(value))
             end
+        elseif channels == 2 then
+            local left = signedValue(samples[1][index])
+            local right = signedValue(samples[2][index])
+            if bits == 8 then
+                output[#output + 1] = string.char(left + 128, right + 128)
+            elseif bits == 16 then
+                left, right = unsignedValue(left), unsignedValue(right)
+                output[#output + 1] = string.char(left % 256, math.floor(left / 256) % 256, right % 256, math.floor(right / 256) % 256)
+            elseif bits == 24 then
+                left, right = unsignedValue(left), unsignedValue(right)
+                output[#output + 1] = string.char(
+                    left % 256, math.floor(left / 256) % 256, math.floor(left / 65536) % 256,
+                    right % 256, math.floor(right / 256) % 256, math.floor(right / 65536) % 256
+                )
+            else
+                output[#output + 1] = little32(unsignedValue(left)) .. little32(unsignedValue(right))
+            end
+        else
+            local bytes = {}
+            for channel = 1, channels do
+                local value = signedValue(samples[channel][index])
+                if bits == 8 then
+                    bytes[#bytes + 1] = value + 128
+                else
+                    value = unsignedValue(value)
+                    bytes[#bytes + 1] = value % 256
+                    bytes[#bytes + 1] = math.floor(value / 256) % 256
+                    if bits >= 24 then bytes[#bytes + 1] = math.floor(value / 65536) % 256 end
+                    if bits >= 32 then bytes[#bytes + 1] = math.floor(value / 16777216) % 256 end
+                end
+            end
+            output[#output + 1] = string.char(table.unpack(bytes))
         end
-        if index % 256 == 0 then yieldDecoder() end
+        yieldDecoder()
     end
     return table.concat(output)
 end
 
 local function decodeFlac(data, onProgress)
     if data:sub(1, 4) ~= "fLaC" then error("不是有效的 FLAC 文件") end
+    decoderWork = 0
+    decoderLastYield = os.clock()
     local position = 5
     local sampleRate, channels, bits
     local lastMetadata = false
@@ -276,9 +373,9 @@ local function decodeFlac(data, onProgress)
     while position + 4 <= #data do
         activeFlacFrame = position
         frameCount = frameCount + 1
-        if frameCount % 4 == 0 then
+        if frameCount % 16 == 0 then
             if onProgress then pcall(onProgress, clampNumber(position / #data, 0, 1)) end
-            if task and task.wait then task.wait() end
+            yieldDecoder()
         end
         local first, second, third, fourth = string.byte(data, position, position + 3)
         if first ~= 255 or math.floor(second / 4) ~= 62 then break end
@@ -333,14 +430,18 @@ local function decodeFlac(data, onProgress)
     return header .. pcm
 end
 
+local function convertFlacBody(body, outputPath, onProgress)
+    local decoded, wav = pcall(decodeFlac, body, onProgress)
+    if not decoded then return false end
+    local written = pcall(writefile, outputPath, wav)
+    return written and (not isfile or isfile(outputPath))
+end
+
 local function convertFlac(inputPath, outputPath, onProgress)
     if not readfile or not writefile then return false end
     local ok, body = pcall(readfile, inputPath)
     if not ok then return false end
-    local decoded, wav = pcall(decodeFlac, body, onProgress)
-    if not decoded then return false end
-    writefile(outputPath, wav)
-    return isfile and isfile(outputPath) or true
+    return convertFlacBody(body, outputPath, onProgress)
 end
 
 function Music.new(options)
@@ -485,22 +586,32 @@ function Music:PlayLocal(indexOrPath)
         entry = entry or { path = path, name = path:match("([^/\\]+)$") or path }
     end
     if not entry or entry.path == "" then error("未选择本地歌曲") end
-    if readfile then
+    local sourcePath = entry.path
+    local cachedPath = "UGIK/local_" .. tostring(self.Index) .. ".wav"
+    local cachedWav = false
+    if sourcePath:lower():match("%.flac$") and isfile and readfile and isfile(cachedPath) then
+        local cacheOk, cacheBody = pcall(readfile, cachedPath)
+        cachedWav = cacheOk and type(cacheBody) == "string" and detectAudioFormat(cacheBody) == "wav"
+        if cachedWav then
+            entry = { path = cachedPath, name = entry.name }
+            self:_status("使用已缓存 WAV: " .. entry.name)
+        else
+            pcall(function() if delfile then delfile(cachedPath) end end)
+        end
+    end
+    if not cachedWav and readfile then
         local ok, body = pcall(readfile, entry.path)
         if not ok then error("无法读取本地歌曲: " .. tostring(body)) end
         local format = detectAudioFormat(body)
         if not format then error("无法识别本地音频格式") end
         if format == "flac" then
-            local convertedPath = "UGIK/local_" .. tostring(self.Index) .. ".wav"
             pcall(function() if makefolder and not isfolder("UGIK") then makefolder("UGIK") end end)
-            writefile("UGIK/local_" .. tostring(self.Index) .. ".flac", body)
-            if not convertFlac("UGIK/local_" .. tostring(self.Index) .. ".flac", convertedPath, function(progress)
+            if not convertFlacBody(body, cachedPath, function(progress)
                 self:_status("Lua 解码本地 FLAC " .. math.floor(progress * 100) .. "%")
             end) then
                 error("本地 FLAC 解码失败")
             end
-            pcall(function() if delfile then delfile("UGIK/local_" .. tostring(self.Index) .. ".flac") end end)
-            entry = { path = convertedPath, name = entry.name }
+            entry = { path = cachedPath, name = entry.name }
         end
     end
     self.SourceMode = "local"

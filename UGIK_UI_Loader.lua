@@ -1,5 +1,5 @@
 local BASE_URL = "https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/"
-local LIBRARY_VERSION = "20260718-mp3-fast"
+local LIBRARY_VERSION = "20260718-flac-cache"
 local UI_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_UI.lua?v=" .. LIBRARY_VERSION
 local MUSIC_LIBRARY_URL = "https://raw.githubusercontent.com/gcrfsd/mycrts/refs/heads/main/UGIK_Music.lua?v=" .. LIBRARY_VERSION
 
